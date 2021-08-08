@@ -2,10 +2,21 @@
   --ts-link-weight: 500;
   --ts-text-padding: 0px 1px 0px 1px;
   --ts-text-border: 0px solid var(--ts-text-background);
+  --ts-bullet-closed-color: rgba(53, 42, 42, 0.3);
+  --ts-tag-color: var(--cd-standby-color-1);
+  --ts-tag-color-hover: var(--cd-active-color-1);
   --ts-tag-weight: 500;
   --ts-tag-padding: 0px 4px 0px 4px;
-  --ts-tag-border: 1px solid var(--cd-active-color-2);
-  --ts-tag-border-hover: 1px solid var(--cd-active-color-3);
+  --ts-tag-border: 1px solid var(--ts-tag-color);
+  --ts-tag-border-hover: 1px solid var(--ts-tag-color-hover);
+  --ts-tag-box-shadow: 1px 1px;
+  --ts-text-bold-color: var(--cd-active-color-6);
+  --ts-text-italic-color: var(--cd-active-color-2);
+  --ts-text-underline-style: underline;
+  --ts-text-underline-color: var(--cd-primary-text-color);
+  --ts-checkbox-border: 2px solid var(--cd-active-color-1);
+  --ts-checkbox-border-radius: 4px;
+  --ts-checkbox-background: transparent;
 }
 
 .colors-dark, html[data-theme=dark] {
@@ -66,7 +77,7 @@
   --ls-secondary-background-color: var(--cd-secondary-bg-color);
   --ls-tertiary-background-color: var(--cd-alternate-bg-color);
   --ls-quaternary-background-color: var(--cd-highlight-bg-color);
-  --ls-table-tr-even-background-color: var(--cd-alternate-bg-color);
+  --ls-table-tr-even-background-color: var(--cd-active-color-1);
   --ls-block-properties-background-color: var(--cd-alternate-bg-color);
   --ls-page-properties-background-color: var(--cd-alternate-bg-color);
   --ls-slide-background-color: var(--cd-primary-bg-color);
@@ -81,8 +92,8 @@
   --ls-active-primary-color: var(--ls-primary-text-color);
   --ls-active-secondary-color: var(--ls-secondary-text-color);
   /* == Tags == */
-  --ls-tag-text-color: var(--cd-active-color-2);
-  --ls-tag-text-hover-color: var(--cd-active-color-3);
+  --ls-tag-text-color: var(--ts-tag-color);
+  --ls-tag-text-hover-color: var(--ts-tag-color-hover);
   /* == Links == */
   --ls-link-text-color: var(--cd-active-color-1);
   --ls-link-text-hover-color: var(--cd-standby-color-1);
@@ -145,8 +156,8 @@
   --ls-active-primary-color: var(--ls-primary-text-color);
   --ls-active-secondary-color: var(--ls-secondary-text-color);
   /* == Tags == */
-  --ls-tag-text-color: var(--cd-active-color-1);
-  --ls-tag-text-hover-color: var(--cd-active-color-2);
+  --ls-tag-text-color: var(--ts-tag-color);
+  --ls-tag-text-hover-color: var(--ts-tag-color-hover);
   /* == Links == */
   --ls-link-text-color: var(--cd-active-color-1);
   --ls-link-text-hover-color: var(--cd-standby-color-1);
@@ -211,7 +222,7 @@
 :root {
   --ls-main-content-max-width: 1000px;
   --ls-font-family: "Avenir Next";
-  /*--ls-font-family: 'Basis Grotesque Pro';*/
+  --ls-font-family: 'Basis Grotesque Pro';
 }
 
 /* === Links === */
@@ -255,6 +266,7 @@ a.tag {
   font-weight: var(--ts-tag-weight);
   padding: var(--ts-tag-padding);
   border: var(--ts-tag-border);
+  box-shadow: var(--ts-tag-box-shadow);
 }
 
 a.tag:hover {
@@ -262,13 +274,9 @@ a.tag:hover {
 }
 
 .form-checkbox {
-  border: 2px solid var(--ls-page-checkbox-color);
-  border-radius: 50%;
-  background: transparent;
-}
-
-.form-checkbox:hover {
-  filter: brightness(150%);
+  border: var(--ts-checkbox-border);
+  border-radius: var(--ts-checkbox-border-radius);
+  background: var(--ts-checkbox-background);
 }
 
 li {
@@ -290,11 +298,11 @@ li {
 }
 
 i {
-  color: var(--cd-active-color-2);
+  color: var(--ts-text-italic-color);
 }
 
 b {
-  color: var(--cd-active-color-3);
+  color: var(--ts-text-bold-color);
 }
 
 .block-highlight, .content .selected {
@@ -302,7 +310,7 @@ b {
 }
 
 .bullet-container.bullet-closed {
-  background: transparent;
+  background: var(--ts-bullet-closed-color);
 }
 
 .bullet-container.bullet-closed .bullet {
