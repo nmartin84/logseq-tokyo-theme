@@ -225,6 +225,14 @@
   --ls-font-family: 'Basis Grotesque Pro';
 }
 
+#main-container {
+  padding: 2em;
+}
+
+#sidebar-nav-wrapper {
+  border: none !important;
+}
+
 /* === Links === */
 .page-ref {
   font-weight: var(--ts-text-weight);
