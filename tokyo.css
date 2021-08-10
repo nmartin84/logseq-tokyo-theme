@@ -222,7 +222,8 @@
 
 :root {
   --ls-main-content-max-width: 1000px;
-  --ls-font-family: "Avenir Next";
+  --ls-main-content-max-width-wide: 80%;
+  /*--ls-font-family: "Avenir Next";*/
   --ls-font-family: 'Basis Grotesque Pro';
 }
 
