@@ -237,7 +237,7 @@
   --ls-main-content-max-width: 1000px;
   --ls-main-content-max-width-wide: 1400px;
   --ls-font-family: "Avenir Next";
-  --ls-font-family: 'Basis Grotesque Pro';
+  /*--ls-font-family: 'Basis Grotesque Pro';*/
 }
 
 #main-container {
