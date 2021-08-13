@@ -59,9 +59,9 @@
   --cd-primary-text-color: #222436;
   --cd-alternate-text-color: #383a4a;
   --cd-active-color-1: #028090;
-  --cd-active-color-2: #18a999;
+  --cd-active-color-2: #133c55;
   --cd-active-color-3: #2e5077;
-  --cd-standby-color-1: #133c55;
+  --cd-standby-color-1: #18a999;
   --cd-mark-yellow: #e9c46a;
   --cd-mark-red: #DB3A34;
   --cd-mark-purple: #5941a9;
@@ -222,8 +222,8 @@
 
 :root {
   --ls-main-content-max-width: 1000px;
-  --ls-main-content-max-width-wide: 80%;
-  /*--ls-font-family: "Avenir Next";*/
+  --ls-main-content-max-width-wide: 1400px;
+  --ls-font-family: "Avenir Next";
   --ls-font-family: 'Basis Grotesque Pro';
 }
 
@@ -245,7 +245,7 @@
 }
 
 mark {
-  background: var(--cd-active-color-1);
+  background: var(--cd-standby-color-1);
 }
 mark.yellow {
   background: var(--cd-mark-yellow);
