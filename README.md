@@ -6,4 +6,4 @@ Ported from Obsidian, all credits for the theme and its colors go to the origina
 ![](tokyo-night1.png)
 
 ## Light Theme
-![](tokyo-day.png)
+![](tokyo-day1.png)
