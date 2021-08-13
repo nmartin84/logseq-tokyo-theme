@@ -10,7 +10,7 @@
   --ts-tag-border: 1px solid var(--ts-tag-color);
   --ts-tag-border-hover: 1px solid var(--ts-tag-color-hover);
   --ts-tag-box-shadow: 1px 1px;
-  --ts-text-bold-color: var(--cd-active-color-6);
+  --ts-text-bold-color: var(--cd-active-color-3);
   --ts-text-italic-color: var(--cd-active-color-2);
   --ts-text-underline-style: underline;
   --ts-text-underline-color: var(--cd-primary-text-color);
@@ -32,10 +32,10 @@
   --cd-link-text-hover-color: # ;
   --cd-primary-text-color: #C0CDF3;
   --cd-alternate-text-color: #adb9db;
-  --cd-active-color-1: #9ECE6A;
-  --cd-active-color-2: #2AC3DE;
+  --cd-active-color-1: #2AC3DE;
+  --cd-active-color-2: #B7A6F6;
   --cd-active-color-3: #b4f9f8;
-  --cd-standby-color-1: #FF9E64;
+  --cd-standby-color-1: #2ac3de;
   --cd-mark-yellow: #e9c46a;
   --cd-mark-red: #DB3A34;
   --cd-mark-purple: #5941a9;
@@ -198,6 +198,19 @@
   --color-level-4: var(--cd-fifth-bg-color);
   --color-level-5: var(--cd-sixth-bg-color);
   --color-level-6: #3a7e8e;
+}
+
+.ls-block:not(:focus-within) .bullet {
+  opacity: 0.3;
+  filter: saturate(0);
+}
+
+.block-children {
+  border-left: 1.5px solid var(--ls-guideline-color);
+}
+
+.block-children:not(:focus-within) {
+  border-left: 1.5px solid var(--cd-highlight-bg-color);
 }
 
 /* ==== Fonts ==== */
