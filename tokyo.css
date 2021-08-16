@@ -1,15 +1,18 @@
 .theme-settings, html[data-theme=dark], html[data-theme=light] {
+  --ts-border-settings: 1px solid var(--cd-standby-color-1);
+  --ts-border-radius: 4px;
   --ts-link-weight: 500;
   --ts-text-padding: 0px 1px 0px 1px;
   --ts-text-border: 0px solid var(--ts-text-background);
   --ts-bullet-closed-color: rgba(53, 42, 42, 0.3);
-  --ts-tag-color: var(--cd-standby-color-1);
+  --ts-tag-color: var(--cd-primary-text-color);
   --ts-tag-color-hover: var(--cd-active-color-1);
+  --ts-tag-background-color: var(--cd-standby-color-1);
   --ts-tag-weight: 500;
   --ts-tag-padding: 0px 4px 0px 4px;
-  --ts-tag-border: 1px solid var(--ts-tag-color);
-  --ts-tag-border-hover: 1px solid var(--ts-tag-color-hover);
-  --ts-tag-box-shadow: 1px 1px;
+  --ts-tag-border: var(--ts-border-radius);
+  --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
+  --ts-tag-box-shadow: 0px 0px;
   --ts-text-bold-color: var(--cd-active-color-3);
   --ts-text-italic-color: var(--cd-active-color-2);
   --ts-text-underline-style: underline;
@@ -18,6 +21,10 @@
   --ts-checkbox-border-radius: 4px;
   --ts-checkbox-background: transparent;
   --ts-table-rows: var(--cd-highlight-bg-color);
+  --ts-property-background-color: transparent;
+  --ts-property-value-weight: 800;
+  --ts-property-key-weight: 600;
+  --ts-property-key-color: var(--cd-primary-text-color);
 }
 
 .colors-dark, html[data-theme=dark] {
@@ -200,6 +207,21 @@
   --color-level-6: #3a7e8e;
 }
 
+.block-content[data-type=annotation] a.prefix-link:before { content: "📗 "; }
+
+.block-properties {
+    background-color: var(--ts-property-background-color);
+    margin: 0px 0px;
+    padding: 0px 0px 4px;
+    font-weight: var(--ts-property-value-weight);
+  }
+
+.font-medium {
+    font-weight: var(--ts-property-key-weight);
+    color: var(--ts-property-key-color);
+    text-transform: lowercase;
+}
+
 .ls-block:not(:focus-within) .bullet {
   opacity: 0.3;
   filter: saturate(0);
@@ -286,9 +308,11 @@ mark.pink {
 }
 
 a.tag {
+  background: var(--ts-tag-background-color);
   font-weight: var(--ts-tag-weight);
   padding: var(--ts-tag-padding);
-  border: var(--ts-tag-border);
+  border: var(--ts-border-settings);
+  border-radius: var(--ts-border-radius);
   box-shadow: var(--ts-tag-box-shadow);
 }
 
