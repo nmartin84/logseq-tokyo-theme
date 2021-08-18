@@ -5,7 +5,7 @@
   --ts-text-padding: 0px 1px 0px 1px;
   --ts-text-border: 0px solid var(--ts-text-background);
   --ts-bullet-closed-color: rgba(53, 42, 42, 0.3);
-  --ts-tag-color: var(--cd-primary-text-color);
+  --ts-tag-color: var(--cd-primary-bg-color);
   --ts-tag-color-hover: var(--cd-active-color-1);
   --ts-tag-background-color: var(--cd-standby-color-1);
   --ts-tag-weight: 500;
@@ -317,7 +317,8 @@ a.tag {
 }
 
 a.tag:hover {
-  border: var(--ts-tag-border-hover);
+  color: var(--cd-primary-bg-color);
+  filter: brightness(120%);
 }
 
 .form-checkbox {
