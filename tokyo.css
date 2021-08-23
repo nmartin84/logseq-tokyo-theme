@@ -1,4 +1,5 @@
 .theme-settings, html[data-theme=dark], html[data-theme=light] {
+  --ts-headline-color: var(--cd-standby-color-1);
   --ts-border-settings: 1px solid var(--cd-standby-color-1);
   --ts-border-radius: 4px;
   --ts-link-weight: 500;
@@ -13,7 +14,7 @@
   --ts-tag-border: var(--ts-border-radius);
   --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
   --ts-tag-box-shadow: 0px 0px;
-  --ts-text-bold-color: var(--cd-active-color-3);
+  --ts-text-bold-color: var(--cd-active-color-2);
   --ts-text-italic-color: var(--cd-active-color-2);
   --ts-text-underline-style: underline;
   --ts-text-underline-color: var(--cd-primary-text-color);
@@ -66,7 +67,7 @@
   --cd-primary-text-color: #222436;
   --cd-alternate-text-color: #383a4a;
   --cd-active-color-1: #028090;
-  --cd-active-color-2: #133c55;
+  --cd-active-color-2: #565f89;
   --cd-active-color-3: #2e5077;
   --cd-standby-color-1: #18a999;
   --cd-mark-yellow: #e9c46a;
@@ -309,6 +310,7 @@ mark.pink {
 
 a.tag {
   background: var(--ts-tag-background-color);
+  font-size: 100%;
   font-weight: var(--ts-tag-weight);
   padding: var(--ts-tag-padding);
   border: var(--ts-border-settings);
@@ -318,6 +320,7 @@ a.tag {
 
 a.tag:hover {
   color: var(--cd-primary-bg-color);
+  font-size: 100%;
   filter: brightness(120%);
 }
 
@@ -334,6 +337,7 @@ li {
 
 .ls-block :is(h1, h2, h3, h4, h5, h6) {
   border-bottom: 0px solid red;
+  color: var(--ts-headline-color);
   margin: 0;
 }
 
