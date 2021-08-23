@@ -1,5 +1,5 @@
 .theme-settings, html[data-theme=dark], html[data-theme=light] {
-  --ts-headline-color: var(--cd-standby-color-1);
+  --ts-headline-color: var(--cd-active-color-3);
   --ts-border-settings: 1px solid var(--cd-standby-color-1);
   --ts-border-radius: 4px;
   --ts-link-weight: 500;
@@ -42,7 +42,7 @@
   --cd-alternate-text-color: #adb9db;
   --cd-active-color-1: #2AC3DE;
   --cd-active-color-2: #B7A6F6;
-  --cd-active-color-3: #b4f9f8;
+  --cd-active-color-3: #ff9e64;
   --cd-standby-color-1: #2ac3de;
   --cd-mark-yellow: #e9c46a;
   --cd-mark-red: #DB3A34;
@@ -128,7 +128,7 @@
   --ls-scrollbar-thumb-hover-color: var(--cd-active-color-1);
   /* == Misc == */
   --ls-menu-hover-color: var(--ls-secondary-background-color);
-  --ls-title-text-color: var(--cd-standby-color-1);
+  --ls-title-text-color: var(--cd-active-color-3);
   --ls-block-highlight-color: var(--cd-highlight-bg-color);
   --ls-head-text-color: var(--ls-link-text-color);
   --ls-icon-color: var(--cd-primary-text-color);
