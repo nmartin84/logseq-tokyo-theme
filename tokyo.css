@@ -392,6 +392,7 @@ b {
 
 .bullet-container.bullet-closed {
     background: var(--ts-bullet-closed-color);
+    border: 2px solid var(--cd-highlight-bg-color);
 }
 
 .bullet-container.bullet-closed .bullet {
