@@ -1,3 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@font-face {
+    font-family: "Basis Grotesque Pro";
+    src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot");
+    /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff2") format("woff2"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff") format("woff"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.svg#Basis Grotesque Pro") format("svg");
+    /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url(public/fonts/94f2f163d4b698242fef.otf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --ls-font-family: "Airbnb Cereal App", "Euclid Circular A", "Avenir Next", "Basis Grotesque Pro";
+}
+
+.CodeMirror-lines {
+    font-family: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace;
+}
+
 .theme-settings,
 html[data-theme=dark],
 html[data-theme=light] {
@@ -243,34 +272,9 @@ html[data-theme=light] {
     border-left: 1.5px solid var(--cd-highlight-bg-color);
 }
 
-
-/* ==== Fonts ==== */
-
-@font-face {
-    font-family: "Basis Grotesque Pro";
-    src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot");
-    /* IE9*/
-    src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff2") format("woff2"), /* chrome firefox */
-    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff") format("woff"), /* chrome firefox */
-    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.svg#Basis Grotesque Pro") format("svg");
-    /* iOS 4.1- */
-}
-
-@font-face {
-    font-family: 'Avenir Next';
-    src: url(public/fonts/94f2f163d4b698242fef.otf);
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 :root {
-    --ls-main-content-max-width: 1000px;
-    --ls-main-content-max-width-wide: 1200px;
-    --ls-font-family: "Euclid Circular A", "Avenir Next", "Basis Grotesque Pro";
-    /*--ls-font-family: 'Basis Grotesque Pro';*/
+    --ls-main-content-max-width: 800px;
+    --ls-main-content-max-width-wide: 1000px;
 }
 
 #main-container {
@@ -351,7 +355,7 @@ a.tag:hover {
 }
 
 li {
-    list-style: square;
+    list-style: lower-roman;
     color: var(--cd-standby-color-1);
 }
 
@@ -511,12 +515,16 @@ figcaption {
     border-bottom: 2px solid var(--ls-border-color);
 }
 
-.CodeMirror-gutter {
-    background: var(--ls-tertiary-background-color);
+.CodeMirror-gutter,
+.CodeMirror-lines,
+.CodeMirror-scroll,
+.CodeMirror-sizer {
+    background: var(--ls-secondary-background-color);
 }
 
-.CodeMirror-lines {
-    background: var(--ls-secondary-background-color);
+.cm-s-solarized.cm-s-dark .CodeMirror-linenumber {
+    color: var(--cd-primary-text-color);
+    filter: opacity(0.3);
 }
 
 div.table-wrapper {
