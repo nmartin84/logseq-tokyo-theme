@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 @font-face {
     font-family: "Basis Grotesque Pro";
     src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot");
-    /* IE9*/
-    src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff2") format("woff2"), /* chrome firefox */
-    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff") format("woff"), /* chrome firefox */
-    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.ttf") format("truetype"),
     url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.svg#Basis Grotesque Pro") format("svg");
-    /* iOS 4.1- */
 }
 
 @font-face {
@@ -20,7 +19,7 @@
 }
 
 :root {
-    --ls-font-family: "Airbnb Cereal App", "Euclid Circular A", "Avenir Next", "Basis Grotesque Pro";
+    --ls-font-family: "Euclid Circular A", "Airbnb Cereal App", "Euclid Circular A", "Avenir Next", "Basis Grotesque Pro";
 }
 
 .CodeMirror-lines {
@@ -289,7 +288,7 @@ html[data-theme=light] {
 /* === Links === */
 
 .page-ref {
-    font-weight: var(--ts-text-weight);
+    font-weight: 600;
     background: var(--ts-text-background);
     border: var(--ts-text-border);
     border-radius: var(--ts-text-border-radius);
@@ -297,7 +296,8 @@ html[data-theme=light] {
 }
 
 mark {
-    background: var(--cd-standby-color-1);
+    background: var(--cd-active-color-3);
+    color: var(--cd-primary-bg-color);
 }
 
 mark.yellow {
@@ -346,6 +346,28 @@ a.tag:hover {
     color: var(--cd-primary-bg-color);
     font-size: 100%;
     filter: brightness(120%);
+}
+
+.opacity-50 {
+    opacity: 0.8;
+}
+
+a.priority[href="#/page/A"] {
+    color: var(--cd-active-color-1);
+    font-weight: 600;
+    font-size: 90%;
+}
+
+a.priority[href="#/page/B"] {
+    color: var(--cd-active-color-2);
+    font-weight: 600;
+    font-size: 90%;
+}
+
+a.priority[href="#/page/C"] {
+    color: var(--cd-active-color-3);
+    font-weight: 600;
+    font-size: 90%;
 }
 
 .form-checkbox {
