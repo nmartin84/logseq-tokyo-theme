@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-@font-face {
+/*@font-face {
     font-family: "Basis Grotesque Pro";
     src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot");
     src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot?#iefix") format("embedded-opentype"),
@@ -16,11 +16,11 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+}*/
 
-:root {
-    --ls-font-family: "Euclid Circular A", "Airbnb Cereal App", "Euclid Circular A", "Avenir Next", "Basis Grotesque Pro";
-}
+/*:root {
+    --ls-font-family: "Airbnb Cereal App", "Euclid Circular A", "Avenir Next", "Basis Grotesque Pro";
+}*/
 
 .CodeMirror-lines {
     font-family: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace;
