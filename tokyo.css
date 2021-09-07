@@ -5,11 +5,10 @@
     src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot");
     src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot?#iefix") format("embedded-opentype"),
     url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff2") format("woff2"),
-    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff") format("woff"), 
     url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.ttf") format("truetype"),
     url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.svg#Basis Grotesque Pro") format("svg");
 }
-
 @font-face {
     font-family: 'Avenir Next';
     src: url(public/fonts/94f2f163d4b698242fef.otf);
@@ -29,9 +28,9 @@
 .theme-settings,
 html[data-theme=dark],
 html[data-theme=light] {
-    --ts-headline-color: var(--cd-standby-color-1);
-    --ts-title-color: var(--cd-standby-color-1);
-    --ts-border-settings: 1px solid var(--cd-standby-color-1);
+    --ts-headline-color: var(--cd-primary-text-color);
+    --ts-title-color: var(--cd-primary-text-color);
+    --ts-border-settings: 0px solid var(--cd-active-color-2);
     --ts-border-radius: 4px;
     --ts-link-weight: 500;
     --ts-text-padding: 0px 1px 0px 1px;
@@ -39,8 +38,8 @@ html[data-theme=light] {
     --ts-bullet-closed-color: rgba(53, 42, 42, 0.3);
     --ts-tag-color: var(--cd-primary-bg-color);
     --ts-tag-color-hover: var(--cd-active-color-1);
-    --ts-tag-background-color: var(--cd-standby-color-1);
-    --ts-tag-weight: 500;
+    --ts-tag-background-color: var(--cd-active-color-2);
+    --ts-tag-weight: 300;
     --ts-tag-padding: 0px 4px 0px 4px;
     --ts-tag-border: var(--ts-border-radius);
     --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
@@ -296,7 +295,7 @@ html[data-theme=light] {
 }
 
 mark {
-    background: var(--cd-active-color-3);
+    background: var(--cd-active-color-2);
     color: var(--cd-primary-bg-color);
 }
 
@@ -333,8 +332,9 @@ mark.pink {
 }
 
 a.tag {
-    background: var(--ts-tag-background-color);
-    font-size: 85%;
+    background: transparent;
+    color: var(--cd-active-color-2);
+    font-size: 80%;
     font-weight: var(--ts-tag-weight);
     padding: var(--ts-tag-padding);
     border: var(--ts-border-settings);
@@ -343,8 +343,7 @@ a.tag {
 }
 
 a.tag:hover {
-    color: var(--cd-primary-bg-color);
-    font-size: 100%;
+    color: var(--cd-active-color-1);
     filter: brightness(120%);
 }
 
@@ -377,7 +376,6 @@ a.priority[href="#/page/C"] {
 }
 
 li {
-    list-style: lower-roman;
     color: var(--cd-standby-color-1);
 }
 
