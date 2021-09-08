@@ -1,30 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-
-/*@font-face {
-    font-family: "Basis Grotesque Pro";
-    src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot");
-    src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot?#iefix") format("embedded-opentype"),
-    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff2") format("woff2"),
-    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff") format("woff"), 
-    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.ttf") format("truetype"),
-    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.svg#Basis Grotesque Pro") format("svg");
-}
-@font-face {
-    font-family: 'Avenir Next';
-    src: url(public/fonts/94f2f163d4b698242fef.otf);
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}*/
-
-/*:root {
-    --ls-font-family: "Airbnb Cereal App", "Euclid Circular A", "Avenir Next", "Basis Grotesque Pro";
-}*/
-
-.CodeMirror-lines {
-    font-family: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace;
-}
-
 .theme-settings,
 html[data-theme=dark],
 html[data-theme=light] {
@@ -101,6 +74,14 @@ html[data-theme=light] {
     --cd-active-color-1: #028090;
     --cd-active-color-2: #565f89;
     --cd-active-color-3: #2e5077;
+    --cd-active-color-4: #8c4351;
+    --cd-active-color-5: #965027;
+    --cd-active-color-6: #8f5e15;
+    --cd-active-color-7: #485e30;
+    --cd-active-color-8: #33635c;
+    --cd-active-color-9: #166775;
+    --cd-active-color-10: #34548a;
+    --cd-active-color-11: #5a4a78;
     --cd-standby-color-1: #18a999;
     --cd-mark-yellow: #e9c46a;
     --cd-mark-red: #DB3A34;
@@ -154,7 +135,7 @@ html[data-theme=dark] {
     /* == Borders + Outlines */
     --ls-border-color: var(--cd-active-color-1);
     --ls-secondary-border-color: var(--cd-standby-color-1);
-    --ls-guideline-color: var(--cd-standby-color-1);
+    --ls-guideline-color: var(--cd-primary-text-color);
     /* == Scrollbars == */
     --ls-scrollbar-foreground-color: var(--cd-standby-color-1);
     --ls-scrollbar-background-color: var(--cd-highlight-bg-color);
@@ -168,7 +149,7 @@ html[data-theme=dark] {
     --ls-search-icon-color: var(--cd-active-color-1);
     --ls-a-chosen-bg: var(--cd-highlight-bg-color);
     --ls-block-bullet-border-color: var(--cd-standby-color-1);
-    --ls-block-bullet-color: var(--cd-standby-color-1);
+    --ls-block-bullet-color: var(--cd-primary-text-color);
     --color-level-1: var(--ls-secondary-background-color);
     --color-level-2: var(--ls-tertiary-background-color);
     --color-level-3: var(--ls-quaternary-background-color);
@@ -219,7 +200,7 @@ html[data-theme=light] {
     /* == Borders + Outlines */
     --ls-border-color: var(--cd-active-color-1);
     --ls-secondary-border-color: var(--cd-standby-color-1);
-    --ls-guideline-color: var(--cd-standby-color-1);
+    --ls-guideline-color: var(--cd-primary-text-color);
     /* == Scrollbars == */
     --ls-scrollbar-foreground-color: var(--cd-standby-color-1);
     --ls-scrollbar-background-color: var(--cd-highlight-bg-color);
@@ -233,13 +214,42 @@ html[data-theme=light] {
     --ls-search-icon-color: var(--cd-active-color-1);
     --ls-a-chosen-bg: var(--cd-highlight-bg-color);
     --ls-block-bullet-border-color: var(--cd-standby-color-1);
-    --ls-block-bullet-color: var(--cd-standby-color-1);
+    --ls-block-bullet-color: var(--cd-primary-text-color);
     --color-level-1: var(--ls-secondary-background-color);
     --color-level-2: var(--ls-tertiary-background-color);
     --color-level-3: var(--ls-quaternary-background-color);
     --color-level-4: var(--cd-fifth-bg-color);
     --color-level-5: var(--cd-sixth-bg-color);
     --color-level-6: #3a7e8e;
+}
+
+/* == FONTS == */
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/*@font-face {
+    font-family: "Basis Grotesque Pro";
+    src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot");
+    src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff") format("woff"), 
+    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.svg#Basis Grotesque Pro") format("svg");
+}
+@font-face {
+    font-family: 'Avenir Next';
+    src: url(public/fonts/94f2f163d4b698242fef.otf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}*/
+
+/*:root {
+    --ls-font-family: "Airbnb Cereal App", "Euclid Circular A", "Avenir Next", "Basis Grotesque Pro";
+}*/
+
+.CodeMirror-lines {
+    font-family: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace;
 }
 
 .block-content[data-type=annotation] a.prefix-link:before {
@@ -263,14 +273,17 @@ html[data-theme=light] {
 }
 
 .block-children {
-    border-left: 1.5px solid var(--ls-guideline-color);
+    border-left: 2px solid var(--ls-guideline-color);
 }
 
 .block-children:not(:focus-within) {
-    border-left: 1.5px solid var(--cd-highlight-bg-color);
+    border-left: 2px solid var(--cd-alternate-bg-color);
 }
 
-:root {
+
+/* ==== Fonts ==== */
+
+ :root {
     --ls-main-content-max-width: 800px;
     --ls-main-content-max-width-wide: 1000px;
 }
@@ -295,7 +308,7 @@ html[data-theme=light] {
 }
 
 mark {
-    background: var(--cd-active-color-2);
+    background: var(--cd-active-color-3);
     color: var(--cd-primary-bg-color);
 }
 
@@ -331,22 +344,6 @@ mark.pink {
     background: var(--cd-mark-pink);
 }
 
-a.tag {
-    background: transparent;
-    color: var(--cd-active-color-2);
-    font-size: 80%;
-    font-weight: var(--ts-tag-weight);
-    padding: var(--ts-tag-padding);
-    border: var(--ts-border-settings);
-    border-radius: var(--ts-border-radius);
-    box-shadow: var(--ts-tag-box-shadow);
-}
-
-a.tag:hover {
-    color: var(--cd-active-color-1);
-    filter: brightness(120%);
-}
-
 .opacity-50 {
     opacity: 0.8;
 }
@@ -367,6 +364,22 @@ a.priority[href="#/page/C"] {
     color: var(--cd-active-color-3);
     font-weight: 600;
     font-size: 90%;
+}
+
+a.tag {
+    background: transparent;
+    color: var(--cd-active-color-2);
+    font-size: 80%;
+    font-weight: var(--ts-tag-weight);
+    padding: var(--ts-tag-padding);
+    border: var(--ts-border-settings);
+    border-radius: var(--ts-border-radius);
+    box-shadow: var(--ts-tag-box-shadow);
+}
+
+a.tag:hover {
+    color: var(--cd-active-color-2);
+    filter: brightness(120%);
 }
 
 .form-checkbox {
