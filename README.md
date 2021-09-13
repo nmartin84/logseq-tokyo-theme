@@ -18,35 +18,18 @@ The idea is to promote a visually appealing experience, while building an enviro
 ![picture 7](images/79b880c3055cace72a5df1a5ae1843eb1551037dfde6be821845e7b1031e1b43.png)  
 
 ## Settings
-You can pick and choose what pieces you want from this section, drop it into your custom.css and modify the theme settings from there.
+You can pick and choose what pieces you want from this section, drop it into your `custom.css` and modify the theme settings from there.
 
 ```css
 .theme-settings,
 html[data-theme=dark] {
-    /* === GENERAL COLORS === */
-    --ts-editor-block-text-color: var(--cd-standby-color-1);
-    --ts-title-color: var(--cd-primary-text-color); /* PAGE TITLES */
-    --ts-headline-color: var(--cd-primary-text-color); /* H1, H2, H3, H4, H5, H6 {HEADERS} */
-    --ts-page-ref-color: var(--cd-active-color-1);
-    --ts-text-bold-color: var(--cd-primary-text-color);
-    --ts-text-italic-color: var(--cd-primary-text-color);
-    --ts-highlight-color: var(--cd-primary-text-color);
-    --ts-highlight-background-color: transparent;
-    --ts-highlight-decoration-style: underline;
-    --ts-highlight-decoration-color: var(--cd-active-color-1);
-    --ts-highlight-underline-thickness: 4px;
-    --ts-underline-color: var(--cd-standby-color-1);
-    --ts-strikethrough-color: var(--cd-primary-text-color);
-    --ts-inline-code-bg: var(--cd-alternate-bg-color);
-    --ts-inline-code-color: var(--cd-primary-text-color);
-    /* == EXTRAS GO BELOW HERE == */
+    /* === FONTS === */
+    --ts-monospace-font: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
+    --ts-serif-font: "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     /* === LS Features === */
     --ts-cloze-color: var(--cd-active-color-2);
     /* === SELECTIONS === */
     --ts-selected-bg-color: var(--cd-highlight-bg-color);
-    /* === FONTS === */
-    --ts-monospace-font: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
-    --ts-serif-font: "Airbnb Cereal App"; /* Used for 90% of all blocks */
     /* === TAGS === */
     --ts-tag-color: var(--cd-primary-bg-color);
     --ts-tag-background-color: var(--cd-active-color-1);
@@ -61,6 +44,7 @@ html[data-theme=dark] {
     --ts-tag-text-decoration-thickness: 2px;
     --ts-tag-text-decoration-color: var(--cd-active-color-1);
     /* === PAGE REFERENCES === */
+    --ts-page-ref-color: var(--cd-active-color-1);
     --ts-page-ref-padding: 0px 1px 0px 1px;
     --ts-page-ref-border: 0px solid var(--ts-text-background);
     --ts-page-ref-border-radius: 0px;
@@ -97,7 +81,22 @@ html[data-theme=dark] {
     --ts-embed-border: 0px;
     --ts-embed-border-radius: 0px;
     /* === MARKDOWN === */
+    --ts-title-color: var(--cd-primary-text-color);
+    --ts-text-bold-color: var(--cd-primary-text-color);
+    --ts-text-italic-color: var(--cd-primary-text-color);
+    --ts-editor-block-text-color: var(--cd-standby-color-1);
+    --ts-underline-color: var(--cd-standby-color-1);
+    --ts-strikethrough-color: var(--cd-primary-text-color);
+    /* === HIGHLIGHTER === */
+    --ts-headline-color: var(--cd-primary-text-color);
+    --ts-highlight-color: var(--cd-primary-text-color);
+    --ts-highlight-background-color: transparent;
+    --ts-highlight-decoration-style: underline;
+    --ts-highlight-decoration-color: var(--cd-active-color-1);
+    --ts-highlight-underline-thickness: 4px;
     /* === CODE BLOCKS === */
+    --ts-inline-code-bg: var(--cd-alternate-bg-color);
+    --ts-inline-code-color: var(--cd-primary-text-color);
     /* === TABLES === */
     --ts-table-rows: var(--cd-highlight-bg-color);
     /* === EXT LINKS === */
@@ -141,28 +140,13 @@ html[data-theme=dark] {
 
 .theme-settings,
 html[data-theme=light] {
-    /* === GENERAL COLORS === */
-    --ts-editor-block-text-color: var(--cd-standby-color-1);
-    --ts-title-color: var(--cd-primary-text-color); /* PAGE TITLES */
-    --ts-headline-color: var(--cd-primary-text-color); /* H1, H2, H3, H4, H5, H6 {HEADERS} */
-    --ts-page-ref-color: var(--cd-active-color-1);
-    --ts-text-bold-color: var(--cd-primary-text-color);
-    --ts-text-italic-color: var(--cd-primary-text-color);
-    --ts-highlight-color: var(--cd-primary-text-color);
-    --ts-highlight-background-color: transparent;
-    --ts-highlight-decoration-color: var(--cd-standby-color-1);
-    --ts-underline-color: var(--cd-standby-color-1);
-    --ts-strikethrough-color: var(--cd-alternate-text-color);
-    --ts-inline-code-bg: var(--cd-alternate-bg-color);
-    --ts-inline-code-color: var(--cd-primary-text-color);
-    /* == EXTRAS GO BELOW HERE == */
+    /* === FONTS === */
+    --ts-monospace-font: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
+    --ts-serif-font: "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     /* === LS Features === */
     --ts-cloze-color: var(--cd-active-color-1);
     /* === SELECTIONS === */
     --ts-selected-bg-color: var(--cd-highlight-bg-color);
-    /* === FONTS === */
-    --ts-monospace-font: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
-    --ts-serif-font: "Airbnb Cereal App"; /* Used for 90% of all blocks */
     /* === TAGS === */
     --ts-tag-weight: 500;
     --ts-tag-color: var(--cd-primary-bg-color);
@@ -178,6 +162,7 @@ html[data-theme=light] {
     --ts-tag-text-decoration-color: var(--cd-active-color-4);
     --ts-tag-text-decoration-skip: none;
     /* === PAGE REFERENCES === */
+    --ts-page-ref-color: var(--cd-active-color-1);
     --ts-page-ref-padding: 0px 1px 0px 1px;
     --ts-page-ref-border: 0px solid var(--ts-text-background);
     --ts-page-ref-border-radius: 0px;
@@ -213,10 +198,23 @@ html[data-theme=light] {
     /* === EMBEDS === */
     --ts-embed-border: 0px;
     --ts-embed-border-radius: 0px;
+    /* === MARKDOWN === */
+    --ts-editor-block-text-color: var(--cd-standby-color-1);
+    --ts-title-color: var(--cd-primary-text-color); /* PAGE TITLES */
+    --ts-headline-color: var(--cd-primary-text-color); /* H1, H2, H3, H4, H5, H6 {HEADERS} */
+    --ts-text-bold-color: var(--cd-primary-text-color);
+    --ts-text-italic-color: var(--cd-primary-text-color);
+    --ts-underline-color: var(--cd-standby-color-1);
+    --ts-strikethrough-color: var(--cd-alternate-text-color);
     /* === HIGHLIGHTER === */
     --ts-highlight-decoration-style: underline;
     --ts-highlight-underline-thickness: 4px;
+    --ts-highlight-color: var(--cd-primary-text-color);
+    --ts-highlight-background-color: transparent;
+    --ts-highlight-decoration-color: var(--cd-standby-color-1);
     /* === CODE BLOCKS === */
+    --ts-inline-code-bg: var(--cd-alternate-bg-color);
+    --ts-inline-code-color: var(--cd-primary-text-color);
     /* === TABLES === */
     --ts-table-rows: var(--cd-highlight-bg-color);
     /* === EXT LINKS === */
@@ -256,5 +254,4 @@ html[data-theme=light] {
     --cd-mark-blue: #548687;
     --cd-mark-pink: #fab2ea;
 }
-
 ```
