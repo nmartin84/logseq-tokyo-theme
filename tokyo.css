@@ -23,7 +23,7 @@ html[data-theme=dark] {
     --ts-selected-bg-color: var(--cd-highlight-bg-color);
     /* === FONTS === */
     --ts-monospace-font: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
-    --ts-serif-font: "Airbnb Cereal App"; /* Used for 90% of all blocks */
+    --ts-serif-font: "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     /* === TAGS === */
     --ts-tag-color: var(--cd-primary-bg-color);
     --ts-tag-background-color: var(--cd-active-color-1);
@@ -139,7 +139,7 @@ html[data-theme=light] {
     --ts-selected-bg-color: var(--cd-highlight-bg-color);
     /* === FONTS === */
     --ts-monospace-font: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
-    --ts-serif-font: "Airbnb Cereal App"; /* Used for 90% of all blocks */
+    --ts-serif-font: "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     /* === TAGS === */
     --ts-tag-weight: 500;
     --ts-tag-color: var(--cd-primary-bg-color);
