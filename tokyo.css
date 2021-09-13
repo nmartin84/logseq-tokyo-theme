@@ -548,6 +548,10 @@ b {
     content: "📗 ";
 }
 
+.block-ref-wrap[data-hl-type=area] .block-ref {
+    display: flex;
+}
+
 /* === Guidelines === */
 
 .block-children {
