@@ -1,29 +1,12 @@
 .theme-settings,
 html[data-theme=dark] {
-    /* === GENERAL COLORS === */
-    --ts-editor-block-text-color: var(--cd-standby-color-1);
-    --ts-title-color: var(--cd-primary-text-color); /* PAGE TITLES */
-    --ts-headline-color: var(--cd-primary-text-color); /* H1, H2, H3, H4, H5, H6 {HEADERS} */
-    --ts-page-ref-color: var(--cd-active-color-1);
-    --ts-text-bold-color: var(--cd-primary-text-color);
-    --ts-text-italic-color: var(--cd-primary-text-color);
-    --ts-highlight-color: var(--cd-primary-text-color);
-    --ts-highlight-background-color: transparent;
-    --ts-highlight-decoration-style: underline;
-    --ts-highlight-decoration-color: var(--cd-active-color-1);
-    --ts-highlight-underline-thickness: 4px;
-    --ts-underline-color: var(--cd-standby-color-1);
-    --ts-strikethrough-color: var(--cd-primary-text-color);
-    --ts-inline-code-bg: var(--cd-alternate-bg-color);
-    --ts-inline-code-color: var(--cd-primary-text-color);
-    /* == EXTRAS GO BELOW HERE == */
+    /* === FONTS === */
+    --ts-monospace-font: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
+    --ts-serif-font: "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     /* === LS Features === */
     --ts-cloze-color: var(--cd-active-color-2);
     /* === SELECTIONS === */
     --ts-selected-bg-color: var(--cd-highlight-bg-color);
-    /* === FONTS === */
-    --ts-monospace-font: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
-    --ts-serif-font: "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     /* === TAGS === */
     --ts-tag-color: var(--cd-primary-bg-color);
     --ts-tag-background-color: var(--cd-active-color-1);
@@ -38,6 +21,7 @@ html[data-theme=dark] {
     --ts-tag-text-decoration-thickness: 2px;
     --ts-tag-text-decoration-color: var(--cd-active-color-1);
     /* === PAGE REFERENCES === */
+    --ts-page-ref-color: var(--cd-active-color-1);
     --ts-page-ref-padding: 0px 1px 0px 1px;
     --ts-page-ref-border: 0px solid var(--ts-text-background);
     --ts-page-ref-border-radius: 0px;
@@ -74,7 +58,22 @@ html[data-theme=dark] {
     --ts-embed-border: 0px;
     --ts-embed-border-radius: 0px;
     /* === MARKDOWN === */
+    --ts-title-color: var(--cd-primary-text-color);
+    --ts-text-bold-color: var(--cd-primary-text-color);
+    --ts-text-italic-color: var(--cd-primary-text-color);
+    --ts-editor-block-text-color: var(--cd-standby-color-1);
+    --ts-underline-color: var(--cd-standby-color-1);
+    --ts-strikethrough-color: var(--cd-primary-text-color);
+    /* === HIGHLIGHTER === */
+    --ts-headline-color: var(--cd-primary-text-color);
+    --ts-highlight-color: var(--cd-primary-text-color);
+    --ts-highlight-background-color: transparent;
+    --ts-highlight-decoration-style: underline;
+    --ts-highlight-decoration-color: var(--cd-active-color-1);
+    --ts-highlight-underline-thickness: 4px;
     /* === CODE BLOCKS === */
+    --ts-inline-code-bg: var(--cd-alternate-bg-color);
+    --ts-inline-code-color: var(--cd-primary-text-color);
     /* === TABLES === */
     --ts-table-rows: var(--cd-highlight-bg-color);
     /* === EXT LINKS === */
@@ -118,28 +117,13 @@ html[data-theme=dark] {
 
 .theme-settings,
 html[data-theme=light] {
-    /* === GENERAL COLORS === */
-    --ts-editor-block-text-color: var(--cd-standby-color-1);
-    --ts-title-color: var(--cd-primary-text-color); /* PAGE TITLES */
-    --ts-headline-color: var(--cd-primary-text-color); /* H1, H2, H3, H4, H5, H6 {HEADERS} */
-    --ts-page-ref-color: var(--cd-active-color-1);
-    --ts-text-bold-color: var(--cd-primary-text-color);
-    --ts-text-italic-color: var(--cd-primary-text-color);
-    --ts-highlight-color: var(--cd-primary-text-color);
-    --ts-highlight-background-color: transparent;
-    --ts-highlight-decoration-color: var(--cd-standby-color-1);
-    --ts-underline-color: var(--cd-standby-color-1);
-    --ts-strikethrough-color: var(--cd-alternate-text-color);
-    --ts-inline-code-bg: var(--cd-alternate-bg-color);
-    --ts-inline-code-color: var(--cd-primary-text-color);
-    /* == EXTRAS GO BELOW HERE == */
+    /* === FONTS === */
+    --ts-monospace-font: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
+    --ts-serif-font: "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     /* === LS Features === */
     --ts-cloze-color: var(--cd-active-color-1);
     /* === SELECTIONS === */
     --ts-selected-bg-color: var(--cd-highlight-bg-color);
-    /* === FONTS === */
-    --ts-monospace-font: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
-    --ts-serif-font: "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     /* === TAGS === */
     --ts-tag-weight: 500;
     --ts-tag-color: var(--cd-primary-bg-color);
@@ -155,6 +139,7 @@ html[data-theme=light] {
     --ts-tag-text-decoration-color: var(--cd-active-color-4);
     --ts-tag-text-decoration-skip: none;
     /* === PAGE REFERENCES === */
+    --ts-page-ref-color: var(--cd-active-color-1);
     --ts-page-ref-padding: 0px 1px 0px 1px;
     --ts-page-ref-border: 0px solid var(--ts-text-background);
     --ts-page-ref-border-radius: 0px;
@@ -190,10 +175,23 @@ html[data-theme=light] {
     /* === EMBEDS === */
     --ts-embed-border: 0px;
     --ts-embed-border-radius: 0px;
+    /* === MARKDOWN === */
+    --ts-editor-block-text-color: var(--cd-standby-color-1);
+    --ts-title-color: var(--cd-primary-text-color); /* PAGE TITLES */
+    --ts-headline-color: var(--cd-primary-text-color); /* H1, H2, H3, H4, H5, H6 {HEADERS} */
+    --ts-text-bold-color: var(--cd-primary-text-color);
+    --ts-text-italic-color: var(--cd-primary-text-color);
+    --ts-underline-color: var(--cd-standby-color-1);
+    --ts-strikethrough-color: var(--cd-alternate-text-color);
     /* === HIGHLIGHTER === */
     --ts-highlight-decoration-style: underline;
     --ts-highlight-underline-thickness: 4px;
+    --ts-highlight-color: var(--cd-primary-text-color);
+    --ts-highlight-background-color: transparent;
+    --ts-highlight-decoration-color: var(--cd-standby-color-1);
     /* === CODE BLOCKS === */
+    --ts-inline-code-bg: var(--cd-alternate-bg-color);
+    --ts-inline-code-color: var(--cd-primary-text-color);
     /* === TABLES === */
     --ts-table-rows: var(--cd-highlight-bg-color);
     /* === EXT LINKS === */
@@ -444,6 +442,7 @@ html[data-theme=light] {
     border-radius: var(--ts-embed-border-radius);
 }
 
+/* === BLOCK PROPERTIES === */
 .block-properties {
     border: var(--ts-property-border);
     border-radius: var(--ts-property-border-radius);
@@ -472,21 +471,14 @@ li {
     color: var(--cd-standby-color-1);
 }
 
-.ls-block :is(h1,
-h2,
-h3,
-h4,
-h5,
-h6) {
+.ls-block :is(h1, h2, h3, h4, h5, h6) {
     border-bottom: 0px solid red;
     color: var(--ts-headline-color);
     margin: 0;
 }
 
 .editor-inner .h1,
-.editor-inner .h2,
-.ls-block :is(h1,
-h2) {
+.editor-inner .h2 {
     border-bottom: 0px solid transparent;
 }
 
