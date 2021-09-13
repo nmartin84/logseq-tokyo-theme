@@ -1,53 +1,109 @@
 .theme-settings,
-html[data-theme=dark],
-html[data-theme=light] {
-    --ts-headline-color: var(--cd-primary-text-color);
-    --ts-title-color: var(--cd-primary-text-color);
-    --ts-border-settings: 0px solid var(--cd-active-color-2);
-    --ts-border-radius: 4px;
-    --ts-link-weight: 500;
-    --ts-text-padding: 0px 1px 0px 1px;
-    --ts-text-border: 0px solid var(--ts-text-background);
-    --ts-bullet-closed-color: rgba(53, 42, 42, 0.3);
+html[data-theme=dark] {
+    /* === GENERAL COLORS === */
+    --ts-editor-block-text-color: var(--cd-standby-color-1);
+    --ts-title-color: var(--cd-primary-text-color); /* PAGE TITLES */
+    --ts-headline-color: var(--cd-primary-text-color); /* H1, H2, H3, H4, H5, H6 {HEADERS} */
+    --ts-page-ref-color: var(--cd-active-color-1);
+    --ts-text-bold-color: var(--cd-primary-text-color);
+    --ts-text-italic-color: var(--cd-primary-text-color);
+    --ts-highlight-color: var(--cd-primary-text-color);
+    --ts-highlight-background-color: transparent;
+    --ts-highlight-decoration-style: underline;
+    --ts-highlight-decoration-color: var(--cd-active-color-1);
+    --ts-highlight-underline-thickness: 4px;
+    --ts-underline-color: var(--cd-standby-color-1);
+    --ts-strikethrough-color: var(--cd-primary-text-color);
+    --ts-inline-code-bg: var(--cd-alternate-bg-color);
+    --ts-inline-code-color: var(--cd-primary-text-color);
+    /* == EXTRAS GO BELOW HERE == */
+    /* === SELECTIONS === */
+    --ts-selected-bg-color: var(--cd-highlight-bg-color);
+    /* === FONTS === */
+    --ts-monospace-font: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
+    --ts-serif-font: "Airbnb Cereal App"; /* Used for 90% of all blocks */
+    /* === TAGS === */
     --ts-tag-color: var(--cd-primary-bg-color);
-    --ts-tag-color-hover: var(--cd-active-color-1);
-    --ts-tag-background-color: var(--cd-active-color-2);
-    --ts-tag-weight: 300;
-    --ts-tag-padding: 0px 4px 0px 4px;
-    --ts-tag-border: var(--ts-border-radius);
+    --ts-tag-background-color: var(--cd-active-color-1);
+    --ts-tag-weight: 500;
+    --ts-tag-color-hover: var(--cd-primary-bg-color);
     --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
+    --ts-tag-border: 0px solid var(--cd-active-color-1);
+    --ts-tag-border-radius: 2px;
+    --ts-tag-padding: 0px 4px 0px 4px;
     --ts-tag-box-shadow: 0px 0px;
-    --ts-text-bold-color: var(--cd-active-color-2);
-    --ts-text-italic-color: var(--cd-active-color-2);
-    --ts-text-underline-style: underline;
-    --ts-text-underline-color: var(--cd-primary-text-color);
-    --ts-checkbox-border: 2px solid var(--cd-active-color-1);
-    --ts-checkbox-border-radius: 4px;
-    --ts-checkbox-background: transparent;
-    --ts-table-rows: var(--cd-highlight-bg-color);
+    --ts-tag-text-decoration: underline;
+    --ts-tag-text-decoration-thickness: 2px;
+    --ts-tag-text-decoration-color: var(--cd-active-color-1);
+    /* === PAGE REFERENCES === */
+    --ts-page-ref-padding: 0px 1px 0px 1px;
+    --ts-page-ref-border: 0px solid var(--ts-text-background);
+    --ts-page-ref-border-radius: 0px;
+    --ts-page-ref-background: transparent;
+    --ts-page-ref-bracket-color: var(--cd-standby-color-1);
+    /* === PROPERTIES === */
     --ts-property-background-color: var(--cd-secondary-bg-color);
     --ts-property-value-weight: 800;
-    --ts-property-key-weight: 600;
+    --ts-property-key-weight: 500;
     --ts-property-key-color: var(--cd-primary-text-color);
-}
-
-.colors-dark,
-html[data-theme=dark] {
+    --ts-property-border: 0px;
+    --ts-property-border-radius: 0px;
+    --ts-embed-border: 0px;
+    --ts-embed-border-radius: 0px;
+    --ts-property-key-transform: uppercase;
+    --ts-property-key-color: var(--cd-primary-text-color);
+    --ts-property-value-color: var(--cd-primary-text-color);
+    --ts-property-value-weight: 500;
+    --ts-property-value-transform: lowercase;
+    /* === TASKS === */
+    --ts-checkbox-border: 0px solid var(--cd-standby-color-1);
+    --ts-checkbox-border-radius: 0px;
+    --ts-checkbox-background: var(--cd-standby-color-1);
+    --ts-task-color: var(--cd-standby-color-1);
+    --ts-task-opacity: 0.8;
+    /* === PRIORITY ITEMS === */
+    --ts-priority-a-color: var(--cd-active-color-2);
+    --ts-priority-b-color: var(--cd-active-color-4);
+    --ts-priority-c-color: var(--cd-active-color-1);
+    /* === GUIDELINE === */
+    --ts-guideline-inactive-color: var(--cd-inactive-color);
+    --ts-guideline-active-color: var(--cd-active-color);
+    /* === BULLET === */
+    --ts-bullet-closed-color: rgba(53, 42, 42, 0.3);
+    /* === EMBEDS === */
+    /* === MARKDOWN === */
+    /* === CODE BLOCKS === */
+    /* === TABLES === */
+    --ts-table-rows: var(--cd-highlight-bg-color);
+    /* === EXT LINKS === */
+    --ts-ext-link-color: var(--cd-active-color-5);
+    --ts-ext-link-bg-color: transparent;
+    --ts-ext-link-border-bottom: 2px solid var(--cd-active-color-5);
+    --ts-ext-link-weight: 300;
+    --ts-ext-link-style: italic;
+    /* == COLORS == */
     --cd-primary-bg-color: #222436;
     --cd-secondary-bg-color: #1f2031;
     --cd-alternate-bg-color: #1b1d2b;
     --cd-quaternary-bg-color: #181926;
-    --cd-fifth-bg-color: #141620;
-    --cd-sixth-bg-color: #11121b;
-    --cd-highlight-bg-color: #383a4a;
-    --cd-link-text-color: #;
-    --cd-link-text-hover-color: #;
+    --cd-highlight-bg-color: #31344E;
+    --cd-inactive-color: #323347;
+    --cd-active-color: #41435e;
     --cd-primary-text-color: #C0CDF3;
     --cd-alternate-text-color: #adb9db;
     --cd-active-color-1: #9ece6a;
-    --cd-active-color-2: #ff9e64;
-    --cd-active-color-3: #b4f9f8;
+    --cd-active-color-2: #f7768e;
+    --cd-active-color-3: #ff9e64;
+    --cd-active-color-4: #e0af68;
+    --cd-active-color-5: #73daca;
+    --cd-active-color-6: #2ac3de;
+    --cd-active-color-7: #7dcfff;
+    --cd-active-color-8: #7aa2f7;
+    --cd-active-color-9: #bb9af7;
+    --cd-active-color-10: ;
+    --cd-active-color-11: ;
     --cd-standby-color-1: #2ac3de;
+    /* Highlighter Plugin */
     --cd-mark-yellow: #e9c46a;
     --cd-mark-red: #DB3A34;
     --cd-mark-purple: #5941a9;
@@ -58,26 +114,108 @@ html[data-theme=dark] {
     --cd-mark-pink: #fab2ea;
 }
 
-.colors-light,
+.theme-settings,
 html[data-theme=light] {
+    /* === GENERAL COLORS === */
+    --ts-editor-block-text-color: var(--cd-standby-color-1);
+    --ts-title-color: var(--cd-primary-text-color); /* PAGE TITLES */
+    --ts-headline-color: var(--cd-primary-text-color); /* H1, H2, H3, H4, H5, H6 {HEADERS} */
+    --ts-page-ref-color: var(--cd-active-color-1);
+    --ts-text-bold-color: var(--cd-primary-text-color);
+    --ts-text-italic-color: var(--cd-primary-text-color);
+    --ts-highlight-color: var(--cd-primary-text-color);
+    --ts-highlight-background-color: transparent;
+    --ts-highlight-decoration-color: var(--cd-standby-color-1);
+    --ts-underline-color: var(--cd-standby-color-1);
+    --ts-strikethrough-color: var(--cd-alternate-text-color);
+    --ts-inline-code-bg: var(--cd-alternate-bg-color);
+    --ts-inline-code-color: var(--cd-primary-text-color);
+    /* == EXTRAS GO BELOW HERE == */
+    /* === SELECTIONS === */
+    --ts-selected-bg-color: var(--cd-highlight-bg-color);
+    /* === FONTS === */
+    --ts-monospace-font: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
+    --ts-serif-font: "Airbnb Cereal App"; /* Used for 90% of all blocks */
+    /* === TAGS === */
+    --ts-tag-weight: 500;
+    --ts-tag-color: var(--cd-primary-bg-color);
+    --ts-tag-color-hover: var(--cd-primary-bg-color);
+    --ts-tag-background-color: var(--cd-active-color-1);
+    --ts-tag-border: 0px solid var(--cd-active-color-4);
+    --ts-tag-border-radius: 2px;
+    --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
+    --ts-tag-padding: 0px 4px 0px 4px;
+    --ts-tag-box-shadow: 0px 0px;
+    --ts-tag-text-decoration: none;
+    --ts-tag-text-decoration-thickness: 0px;
+    --ts-tag-text-decoration-color: var(--cd-active-color-4);
+    --ts-tag-text-decoration-skip: none;
+    /* === PAGE REFERENCES === */
+    --ts-page-ref-padding: 0px 1px 0px 1px;
+    --ts-page-ref-border: 0px solid var(--ts-text-background);
+    --ts-page-ref-border-radius: 0px;
+    --ts-page-ref-background: transparent;
+    --ts-page-ref-bracket-color: var(--cd-standby-color-1);
+    /* === PROPERTIES === */
+    --ts-property-background-color: var(--cd-secondary-bg-color);
+    --ts-property-value-weight: 800;
+    --ts-property-key-weight: 500;
+    --ts-property-key-color: var(--cd-primary-text-color);
+    --ts-property-border: 0px;
+    --ts-property-border-radius: 0px;
+    --ts-embed-border: 0px;
+    --ts-embed-border-radius: 0px;
+    --ts-property-key-transform: uppercase;
+    --ts-property-key-color: var(--cd-primary-text-color);
+    --ts-property-key-weight: 500;
+    --ts-property-value-color: var(--cd-primary-text-color);
+    --ts-property-value-weight: 600;
+    --ts-property-value-transform: lowercase;
+    /* === TASKS === */
+    --ts-checkbox-border: 0px solid var(--cd-standby-color-1);
+    --ts-checkbox-border-radius: 0px;
+    --ts-checkbox-background: var(--cd-standby-color-1);
+    --ts-task-color: var(--cd-standby-color-1);
+    --ts-task-opacity: 0.8;
+    /* === PRIORITY ITEMS === */
+    --ts-priority-a-color: var(--cd-active-color-4);
+    --ts-priority-b-color: var(--cd-active-color-6);
+    --ts-priority-c-color: var(--cd-active-color-8);
+    /* === GUIDELINE === */
+    --ts-guideline-inactive-color: var(--cd-inactive-color);
+    --ts-guideline-active-color: var(--cd-active-color);
+    /* === BULLET === */
+    --ts-bullet-closed-color: rgba(53, 42, 42, 0.3);
+    /* === EMBEDS === */
+    /* === HIGHLIGHTER === */
+    --ts-highlight-decoration-style: underline;
+    --ts-highlight-underline-thickness: 4px;
+    /* === CODE BLOCKS === */
+    /* === TABLES === */
+    --ts-table-rows: var(--cd-highlight-bg-color);
+    /* === EXT LINKS === */
+    --ts-ext-link-color: var(--cd-active-color-5);
+    --ts-ext-link-bg-color: transparent;
+    --ts-ext-link-border-bottom: 2px solid var(--cd-active-color-5);
+    --ts-ext-link-weight: 300;
+    --ts-ext-link-style: italic;
+    /* == COLORS == */
     --cd-primary-bg-color: #FCFFFC;
     --cd-secondary-bg-color: #EFF2EF;
     --cd-alternate-bg-color: #E3E6E3;
     --cd-quaternary-bg-color: #D6D9D6;
-    --cd-fifth-bg-color: #CACCCA;
-    --cd-sixth-bg-color: #BDBFBD;
     --cd-highlight-bg-color: #dddee2;
-    --cd-link-text-color: #;
-    --cd-link-text-hover-color: #;
-    --cd-primary-text-color: #222436;
-    --cd-alternate-text-color: #383a4a;
+    --cd-inactive-color: #ececec;
+    --cd-active-color: #dadada;
+    --cd-primary-text-color: #646564;
+    --cd-alternate-text-color: #313131;
     --cd-active-color-1: #028090;
     --cd-active-color-2: #565f89;
     --cd-active-color-3: #2e5077;
     --cd-active-color-4: #8c4351;
     --cd-active-color-5: #965027;
     --cd-active-color-6: #8f5e15;
-    --cd-active-color-7: #485e30;
+    --cd-active-color-7: #83ac57;
     --cd-active-color-8: #33635c;
     --cd-active-color-9: #166775;
     --cd-active-color-10: #34548a;
@@ -117,12 +255,6 @@ html[data-theme=dark] {
     /* == Tags == */
     --ls-tag-text-color: var(--ts-tag-color);
     --ls-tag-text-hover-color: var(--ts-tag-color-hover);
-    /* == Links == */
-    --ls-link-text-color: var(--cd-active-color-1);
-    --ls-link-text-hover-color: var(--cd-standby-color-1);
-    --ls-link-ref-text-color: var(--cd-active-color-1);
-    --ls-link-ref-text-hover-color: var(--cd-standby-color-1);
-    --ls-block-ref-link-text-color: var(--cd-active-color-1);
     /* == Code blocks == */
     --ls-page-inline-code-color: var(--cd-active-color-3);
     --ls-page-inline-code-bg-color: var(--cd-highlight-bg-color);
@@ -135,7 +267,7 @@ html[data-theme=dark] {
     /* == Borders + Outlines */
     --ls-border-color: var(--cd-active-color-1);
     --ls-secondary-border-color: var(--cd-standby-color-1);
-    --ls-guideline-color: var(--cd-primary-text-color);
+    --ls-guideline-color: var(--ts-guideline-inactive-color);
     /* == Scrollbars == */
     --ls-scrollbar-foreground-color: var(--cd-standby-color-1);
     --ls-scrollbar-background-color: var(--cd-highlight-bg-color);
@@ -182,12 +314,6 @@ html[data-theme=light] {
     /* == Tags == */
     --ls-tag-text-color: var(--ts-tag-color);
     --ls-tag-text-hover-color: var(--ts-tag-color-hover);
-    /* == Links == */
-    --ls-link-text-color: var(--cd-active-color-1);
-    --ls-link-text-hover-color: var(--cd-standby-color-1);
-    --ls-link-ref-text-color: var(--cd-active-color-1);
-    --ls-link-ref-text-hover-color: var(--cd-standby-color-1);
-    --ls-block-ref-link-text-color: var(--cd-active-color-1);
     /* == Code blocks == */
     --ls-page-inline-code-color: var(--cd-active-color-3);
     --ls-page-inline-code-bg-color: var(--cd-highlight-bg-color);
@@ -200,7 +326,7 @@ html[data-theme=light] {
     /* == Borders + Outlines */
     --ls-border-color: var(--cd-active-color-1);
     --ls-secondary-border-color: var(--cd-standby-color-1);
-    --ls-guideline-color: var(--cd-primary-text-color);
+    --ls-guideline-color: var(--ts-guideline-inactive-color);
     /* == Scrollbars == */
     --ls-scrollbar-foreground-color: var(--cd-standby-color-1);
     --ls-scrollbar-background-color: var(--cd-highlight-bg-color);
@@ -225,6 +351,10 @@ html[data-theme=light] {
 
 /* == FONTS == */
 
+:root {
+    --ls-font-family: var(--ts-serif-font);
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /*@font-face {
@@ -244,50 +374,79 @@ html[data-theme=light] {
     font-display: swap;
 }*/
 
-/*:root {
-    --ls-font-family: "Airbnb Cereal App", "Euclid Circular A", "Avenir Next", "Basis Grotesque Pro";
-}*/
+/* ==== BULLETS ==== */
 
-.CodeMirror-lines {
-    font-family: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace;
+.bullet-container.bullet-closed .bullet { background-color: transparent; }
+.ls-block .bullet-container.bullet-closed .bullet {
+    background: transparent;
+    border: 0px solid;
+    width: 6px;
+    height: 6px;
+}
+.ls-block .bullet-container.bullet-closed { /* bullet closed actively clicked on */
+    background-color: transparent;
+    border: 1.5px solid var(--cd-standby-color-1);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 6px;
+    right: -3px;
+}
+.ls-block:not(:focus-within) .bullet-container.bullet-closed { /* closed bullets not in focus */
+    background: transparent;
+    border: 1.5px solid var(--cd-active-color);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position:relative;
+    right: -3px;
+}
+.ls-block .bullet { /* active bullet when clicked inside child */
+    background-color: var(--cd-standby-color-1);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+.ls-block:not(:focus-within) .bullet { /* bullets not in focus */
+    background-color: var(--cd-active-color);
+    border: 2px solid var(--cd-active-color);
+    border-radius: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
 }
 
-.block-content[data-type=annotation] a.prefix-link:before {
-    content: "📗 ";
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+/* === EMBEDS === */
+
+.color-level.embed.embed-page.bg-base-2, .px-3.pt-1.pb-2 {
+    border: var(--ts-embed-border);
+    border-radius: var(--ts-embed-border-radius);
 }
 
 .block-properties {
-    background-color: var(--ts-property-background-color);
-    font-weight: var(--ts-property-value-weight);
+    border: var(--ts-property-border);
+    border-radius: var(--ts-property-border-radius);
 }
 
-.font-medium {
-    font-weight: var(--ts-property-key-weight);
-    color: var(--ts-property-key-color);
-    text-transform: lowercase;
-}
-
-.ls-block:not(:focus-within) .bullet {
-    opacity: 0.3;
-    filter: saturate(0);
-}
-
-.block-children {
-    border-left: 2px solid var(--ls-guideline-color);
-}
-
-.block-children:not(:focus-within) {
-    border-left: 2px solid var(--cd-alternate-bg-color);
-}
-
-
-/* ==== Fonts ==== */
-
- :root {
-    --ls-main-content-max-width: 800px;
-    --ls-main-content-max-width-wide: 1000px;
-}
-
+/* == FIXES == */
 #main-container {
     padding: 2em;
 }
@@ -296,22 +455,46 @@ html[data-theme=light] {
     border: none !important;
 }
 
+/* == MARKDOWN FORMATTING == */
 
-/* === Links === */
+.editor-inner {
+    color: var(--ts-editor-block-text-color);
+}
 
-.page-ref {
-    font-weight: 600;
-    background: var(--ts-text-background);
-    border: var(--ts-text-border);
-    border-radius: var(--ts-text-border-radius);
-    padding: var(--ts-text-padding);
+li {
+    color: var(--cd-standby-color-1);
+}
+
+.ls-block :is(h1,
+h2,
+h3,
+h4,
+h5,
+h6) {
+    border-bottom: 0px solid red;
+    color: var(--ts-headline-color);
+    margin: 0;
+}
+
+.editor-inner .h1,
+.editor-inner .h2,
+.ls-block :is(h1,
+h2) {
+    border-bottom: 0px solid transparent;
 }
 
 mark {
-    background: var(--cd-active-color-3);
-    color: var(--cd-primary-bg-color);
+    background: var(--ts-highlight-background-color);
+    color: var(--ts-highlight-color);
+    text-decoration: var(--ts-highlight-decoration-style);
+    text-decoration-color: var(--ts-highlight-decoration-color);
+    text-decoration-thickness:  var(--ts-highlight-underline-thickness);
+    text-decoration-skip-ink: none;
+    border-radius: var(--ts-highlight-border-radius);
+    border: var(--ts-highlight-border);
 }
 
+/* Highlighter Plugin */
 mark.yellow {
     background: var(--cd-mark-yellow);
 }
@@ -344,74 +527,11 @@ mark.pink {
     background: var(--cd-mark-pink);
 }
 
-.opacity-50 {
-    opacity: 0.8;
-}
-
-a.priority[href="#/page/A"] {
-    color: var(--cd-active-color-1);
-    font-weight: 600;
-    font-size: 90%;
-}
-
-a.priority[href="#/page/B"] {
-    color: var(--cd-active-color-2);
-    font-weight: 600;
-    font-size: 90%;
-}
-
-a.priority[href="#/page/C"] {
-    color: var(--cd-active-color-3);
-    font-weight: 600;
-    font-size: 90%;
-}
-
-a.tag {
-    background: transparent;
-    color: var(--cd-active-color-2);
-    font-size: 80%;
-    font-weight: var(--ts-tag-weight);
-    padding: var(--ts-tag-padding);
-    border: var(--ts-border-settings);
-    border-radius: var(--ts-border-radius);
-    box-shadow: var(--ts-tag-box-shadow);
-}
-
-a.tag:hover {
-    color: var(--cd-active-color-2);
-    filter: brightness(120%);
-}
-
-.form-checkbox {
-    border: var(--ts-checkbox-border);
-    border-radius: var(--ts-checkbox-border-radius);
-    background: var(--ts-checkbox-background);
-}
-
-li {
-    color: var(--cd-standby-color-1);
-}
-
-.ls-block :is(h1,
-h2,
-h3,
-h4,
-h5,
-h6) {
-    border-bottom: 0px solid red;
-    color: var(--ts-headline-color);
-    margin: 0;
-}
-
-.editor-inner .h1,
-.editor-inner .h2,
-.ls-block :is(h1,
-h2) {
-    border-bottom: 0px solid transparent;
-}
-
-.whitespace-nowrap {
-    /*white-space: normal;*/
+:not(pre)>code {
+    background-color: var(--ts-inline-code-bg);
+    color: var(--ts-inline-code-color);
+    font-size: 75%;
+    font-family: var(--ts-monospace-font);
 }
 
 i {
@@ -422,59 +542,182 @@ b {
     color: var(--ts-text-bold-color);
 }
 
+/* === PDF Annotator === */
+
+.block-content[data-type=annotation] a.prefix-link:before {
+    content: "📗 ";
+}
+
+/* === Guidelines === */
+
+.block-children {
+    border-left: 2px solid var(--cd-active-color);
+}
+
+.block-children:not(:focus-within) {
+    border-left: 2px solid var(--cd-inactive-color);
+}
+
+/* ==== Fonts ==== */
+
+ :root {
+    --ls-main-content-max-width: 800px;
+    --ls-main-content-max-width-wide: 1000px;
+}
+
+
+/* === Links === */
+
+.external-link {
+    color: var(--ts-ext-link-color);
+    background: var(--ts-ext-link-bg-color);
+    border-bottom: var(--ts-ext-link-border-bottom);
+    font-weight: var(--ts-ext-link-weight);
+    font-style: var(--ts-ext-link-style)
+}
+
+.page-ref, .page-ref:hover {
+    color: var(--ts-page-ref-color);
+    font-weight: 600;
+    background: var(--ts-page-ref-background);
+    border: var(--ts-page-ref-border);
+    border-radius: var(--ts-page-ref-border-radius);
+    padding: var(--ts-page-ref-padding);
+}
+
+/* === TASKS === */
+
+.block-marker {
+    color: var(--ts-task-color);
+    opacity: var(--ts-task-opacity);
+}
+
+.form-checkbox {
+    border: var(--ts-checkbox-border);
+    border-radius: var(--ts-checkbox-border-radius);
+    background: var(--ts-checkbox-background);
+}
+
+.opacity-50 {
+    opacity: 0.8;
+}
+
+a.priority[href="#/page/A"] {
+    color: var(--ts-priority-a-color);
+    font-weight: 600;
+    font-size: 90%;
+}
+
+a.priority[href="#/page/B"] {
+    color: var(--ts-priority-b-color);
+    font-weight: 600;
+    font-size: 90%;
+}
+
+a.priority[href="#/page/C"] {
+    color: var(--ts-priority-c-color);
+    font-weight: 600;
+    font-size: 90%;
+}
+
+/* === TAGS === */
+
+a.tag {
+    background: var(--ts-tag-background-color);
+    color: var(--ts-tag-color);
+    font-size: 80%;
+    font-weight: var(--ts-tag-weight);
+    padding: var(--ts-tag-padding);
+    border: var(--ts-tag-border);
+    border-radius: var(--ts-tag-border-radius);
+    box-shadow: var(--ts-tag-box-shadow);
+    text-decoration: var(--ts-tag-text-decoration);
+    text-decoration-thickness: var(--ts-tag-text-decoration-thickness);
+    text-decoration-color: var(--ts-tag-text-decoration-color);
+    text-decoration-skip-ink: var(--ts-tag-text-decoration-skip);
+}
+
+a.tag:hover {
+    color: var(--ts-tag-color-hover);
+}
+
+.whitespace-nowrap {
+    /*white-space: normal;*/
+}
+
 .block-highlight,
 .content .selected {
-    background-color: var(--cd-highlight-bg-color);
+    background-color: var(--ts-selected-bg-color);
 }
 
-.bullet-container.bullet-closed {
-    background: var(--ts-bullet-closed-color);
-    border: 2px solid var(--cd-highlight-bg-color);
+/* === PAGE PROPERTIES === */
+
+.page-property-key.font-medium {
+    text-transform: var(--ts-property-key-transform);
+    color: var(--ts-property-key-color);
+    font-weight: var(--ts-property-key-weight);
 }
 
-.bullet-container.bullet-closed .bullet {
-    background: var(--cd-active-color-1);
+.mr-1 {
+    color: var(--ts-property-key-color);
+    font-weight: var(--ts-property-key-weight);
 }
+
+.inline.mr-1 {
+    color: var(--ts-property-value-color);
+    font-weight: var(--ts-property-value-weight);
+    text-transform: var(--ts-property-value-transform);
+}
+
+/* BLOCK REFERENCES */
 
 .block-ref {
     padding: 2px 5px 2px 5px;
-    border: 0px solid transparent;
-    background: var(--cd-highlight-bg-color);
+    border-bottom: 0px solid;
+    background: var(--cd-alternate-bg-color);
+    transition: 0.2s;
+    font-size: 85%;
 }
 
 .block-ref:hover {
-    background: var(--color-level-1);
-    border: 0px solid transparent;
+    color: var(--cd-standby-color-1);
+    transition: 0.2s;
 }
 
 .block-ref:before {
-    content: "#";
-    color: var(--ls-active-primary-color);
-    font-size: 0.8em;
-    padding: 0 4px 0 0;
+    content: "|";
+    color: var(--cd-standby-color-1);
+    font-size: 1em;
+    padding-right: 0.2em;
+    animation: pulse2 linear 2s infinite;
 }
 
-.block-ref .block-body {
-    display: inline-block;
+@keyframes pulse2 {
+    0% {
+        color: var(--cd-standby-color-1);
+	}
+
+	50% {
+        color: transparent;
+	}
+
+	100% {
+        color: var(--cd-standby-color-1);
+	}
 }
 
-.block-ref div {
-    display: inline;
-    padding: 0 0.2em;
-}
 
-.block-ref .block-ref {
-    padding: 0 0 0 0.2em;
-}
-
-
-/* ==== Tables ==== */
+/* ==== TABLES ==== */
 
 table {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
     margin: 1rem 0;
+}
+
+div.table-wrapper {
+    overflow: auto;
 }
 
 th {
@@ -548,6 +791,12 @@ figcaption {
     border-bottom: 2px solid var(--ls-border-color);
 }
 
+/* === CODE MIRROR === */
+
+.CodeMirror-lines {
+    font-family: var(--ts-monospace-font);
+}
+
 .CodeMirror-gutter,
 .CodeMirror-lines,
 .CodeMirror-scroll,
@@ -558,8 +807,4 @@ figcaption {
 .cm-s-solarized.cm-s-dark .CodeMirror-linenumber {
     color: var(--cd-primary-text-color);
     filter: opacity(0.3);
-}
-
-div.table-wrapper {
-    overflow: auto;
 }
