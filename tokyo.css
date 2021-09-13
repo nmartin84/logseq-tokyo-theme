@@ -17,6 +17,8 @@ html[data-theme=dark] {
     --ts-inline-code-bg: var(--cd-alternate-bg-color);
     --ts-inline-code-color: var(--cd-primary-text-color);
     /* == EXTRAS GO BELOW HERE == */
+    /* === LS Features === */
+    --ts-cloze-color: var(--cd-active-color-2);
     /* === SELECTIONS === */
     --ts-selected-bg-color: var(--cd-highlight-bg-color);
     /* === FONTS === */
@@ -44,17 +46,15 @@ html[data-theme=dark] {
     /* === PROPERTIES === */
     --ts-property-background-color: var(--cd-secondary-bg-color);
     --ts-property-value-weight: 800;
-    --ts-property-key-weight: 500;
+    --ts-property-key-weight: 400;
     --ts-property-key-color: var(--cd-primary-text-color);
     --ts-property-border: 0px;
     --ts-property-border-radius: 0px;
-    --ts-embed-border: 0px;
-    --ts-embed-border-radius: 0px;
-    --ts-property-key-transform: uppercase;
+    --ts-property-key-transform: lowercase;
     --ts-property-key-color: var(--cd-primary-text-color);
     --ts-property-value-color: var(--cd-primary-text-color);
     --ts-property-value-weight: 500;
-    --ts-property-value-transform: lowercase;
+    --ts-property-value-transform: uppercase;
     /* === TASKS === */
     --ts-checkbox-border: 0px solid var(--cd-standby-color-1);
     --ts-checkbox-border-radius: 0px;
@@ -71,6 +71,8 @@ html[data-theme=dark] {
     /* === BULLET === */
     --ts-bullet-closed-color: rgba(53, 42, 42, 0.3);
     /* === EMBEDS === */
+    --ts-embed-border: 0px;
+    --ts-embed-border-radius: 0px;
     /* === MARKDOWN === */
     /* === CODE BLOCKS === */
     /* === TABLES === */
@@ -131,6 +133,8 @@ html[data-theme=light] {
     --ts-inline-code-bg: var(--cd-alternate-bg-color);
     --ts-inline-code-color: var(--cd-primary-text-color);
     /* == EXTRAS GO BELOW HERE == */
+    /* === LS Features === */
+    --ts-cloze-color: var(--cd-active-color-1);
     /* === SELECTIONS === */
     --ts-selected-bg-color: var(--cd-highlight-bg-color);
     /* === FONTS === */
@@ -159,18 +163,15 @@ html[data-theme=light] {
     /* === PROPERTIES === */
     --ts-property-background-color: var(--cd-secondary-bg-color);
     --ts-property-value-weight: 800;
-    --ts-property-key-weight: 500;
+    --ts-property-key-weight: 400;
     --ts-property-key-color: var(--cd-primary-text-color);
     --ts-property-border: 0px;
     --ts-property-border-radius: 0px;
-    --ts-embed-border: 0px;
-    --ts-embed-border-radius: 0px;
-    --ts-property-key-transform: uppercase;
+    --ts-property-key-transform: lowercase;
     --ts-property-key-color: var(--cd-primary-text-color);
-    --ts-property-key-weight: 500;
     --ts-property-value-color: var(--cd-primary-text-color);
     --ts-property-value-weight: 600;
-    --ts-property-value-transform: lowercase;
+    --ts-property-value-transform: uppercase;
     /* === TASKS === */
     --ts-checkbox-border: 0px solid var(--cd-standby-color-1);
     --ts-checkbox-border-radius: 0px;
@@ -187,6 +188,8 @@ html[data-theme=light] {
     /* === BULLET === */
     --ts-bullet-closed-color: rgba(53, 42, 42, 0.3);
     /* === EMBEDS === */
+    --ts-embed-border: 0px;
+    --ts-embed-border-radius: 0px;
     /* === HIGHLIGHTER === */
     --ts-highlight-decoration-style: underline;
     --ts-highlight-underline-thickness: 4px;
@@ -457,6 +460,10 @@ html[data-theme=light] {
 
 /* == MARKDOWN FORMATTING == */
 
+.cloze {
+    color: var(--ts-cloze-color);
+}
+
 .editor-inner {
     color: var(--ts-editor-block-text-color);
 }
@@ -660,17 +667,20 @@ a.tag:hover {
     text-transform: var(--ts-property-key-transform);
     color: var(--ts-property-key-color);
     font-weight: var(--ts-property-key-weight);
+    font-size: 85%;
 }
 
 .mr-1 {
     color: var(--ts-property-key-color);
     font-weight: var(--ts-property-key-weight);
+    font-size: 85%;
 }
 
 .inline.mr-1 {
     color: var(--ts-property-value-color);
     font-weight: var(--ts-property-value-weight);
     text-transform: var(--ts-property-value-transform);
+    font-size: 85%;
 }
 
 /* BLOCK REFERENCES */
