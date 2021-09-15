@@ -358,6 +358,11 @@ html[data-theme=light] {
 
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+@font-face {
+    font-family: "Font Awesome 5";
+    src: url("https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/webfonts/fa-solid-900.ttf") format("truetype");
+}
+
 /*@font-face {
     font-family: "Basis Grotesque Pro";
     src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot");
@@ -395,11 +400,13 @@ html[data-theme=light] {
     right: -3px;
 }
 .ls-block .bullet-container.bullet-closed::before {
-    content: "+";
+    content: "\f621";
+    font-family: "Font Awesome 5";
     color: var(--cd-standby-color-1);
     visibility: visible;
-    font-weight: 600;
-    bottom: 1px;
+    font-size: 50%;
+    font-weight: 900;
+    bottom: 0px;
     position: relative;
     transition: 0.2s;
 }
@@ -414,11 +421,13 @@ html[data-theme=light] {
     right: -3px;
 }
 .ls-block:not(:focus-within) .bullet-container.bullet-closed::before {
-    content: "+";
+    content: "\f621";
+    font-family: "Font Awesome 5";
     color: var(--cd-active-color);
     visibility: visible;
-    font-weight: 600;
-    bottom: 1px;
+    font-size: 50%;
+    font-weight: 900;
+    bottom: 0px;
     position: relative;
     transition: 0.2s;
 }
