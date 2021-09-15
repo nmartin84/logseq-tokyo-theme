@@ -104,6 +104,7 @@ html[data-theme=dark] {
     --cd-active-color-10: ;
     --cd-active-color-11: ;
     --cd-standby-color-1: #2ac3de;
+    --cd-standby-color-1-light: #18a99961;
     /* Highlighter Plugin */
     --cd-mark-yellow: #e9c46a;
     --cd-mark-red: #DB3A34;
@@ -222,6 +223,7 @@ html[data-theme=light] {
     --cd-active-color-10: #34548a;
     --cd-active-color-11: #5a4a78;
     --cd-standby-color-1: #18a999;
+    --cd-standby-color-1-light: #18a99855;
     --cd-mark-yellow: #e9c46a;
     --cd-mark-red: #DB3A34;
     --cd-mark-purple: #5941a9;
@@ -561,19 +563,6 @@ mark.pink {
     font-family: var(--ts-monospace-font);
 }
 
-:not(pre)>code::after {
-    font-family: "Font Awesome 5";
-    font-weight: 900;
-    font-size: 100%;
-    content: "|";
-    position: relative;
-    top: -1px;
-    color: var(--cd-standby-color-1);
-    animation: pulse2 linear 1s infinite;
-    margin-right: 2px;
-    margin-left: 2px;
-}
-
 i {
     color: var(--ts-text-italic-color);
 }
@@ -719,23 +708,17 @@ a.tag:hover {
 /* BLOCK REFERENCES */
 
 .block-ref {
-    padding: 2px 5px 2px 5px;
-    border-bottom: 0px solid;
-    background: var(--cd-alternate-bg-color);
+    padding: 2.7px 5px 3px 5px;
+    border-bottom: 0px solid var(--cd-standby-color-1);
+    background: var(--cd-inactive-color);
     transition: 0.2s;
     font-size: 85%;
+    border-radius: 0px;
 }
 
 .block-ref:hover {
     color: var(--cd-standby-color-1);
     transition: 0.2s;
-}
-
-.block-ref:before {
-    content: "\f0da";
-    color: var(--cd-standby-color-1);
-    font-size: 80%;
-    padding-right: 0.2em;
 }
 
 @keyframes pulse2 {
