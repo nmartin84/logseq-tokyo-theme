@@ -386,7 +386,7 @@ html[data-theme=light] {
 }
 .ls-block .bullet-container.bullet-closed { /* bullet closed actively clicked on */
     background-color: transparent;
-    border: 1.5px solid var(--cd-standby-color-1);
+    border: 0px solid var(--cd-standby-color-1);
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -394,14 +394,33 @@ html[data-theme=light] {
     margin-right: 6px;
     right: -3px;
 }
+.ls-block .bullet-container.bullet-closed::before {
+    content: "+";
+    color: var(--cd-standby-color-1);
+    visibility: visible;
+    font-weight: 600;
+    bottom: 1px;
+    position: relative;
+    transition: 0.2s;
+}
+
 .ls-block:not(:focus-within) .bullet-container.bullet-closed { /* closed bullets not in focus */
     background: transparent;
-    border: 1.5px solid var(--cd-active-color);
+    border: 0px solid var(--cd-active-color);
     width: 6px;
     height: 6px;
     border-radius: 50%;
     position:relative;
     right: -3px;
+}
+.ls-block:not(:focus-within) .bullet-container.bullet-closed::before {
+    content: "+";
+    color: var(--cd-active-color);
+    visibility: visible;
+    font-weight: 600;
+    bottom: 1px;
+    position: relative;
+    transition: 0.2s;
 }
 .ls-block .bullet { /* active bullet when clicked inside child */
     background-color: var(--cd-standby-color-1);
