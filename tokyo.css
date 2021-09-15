@@ -732,11 +732,10 @@ a.tag:hover {
 }
 
 .block-ref:before {
-    content: "|";
+    content: "\f0da";
     color: var(--cd-standby-color-1);
-    font-size: 1em;
+    font-size: 80%;
     padding-right: 0.2em;
-    animation: pulse2 linear 2s infinite;
 }
 
 @keyframes pulse2 {
