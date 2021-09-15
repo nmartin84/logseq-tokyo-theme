@@ -561,6 +561,19 @@ mark.pink {
     font-family: var(--ts-monospace-font);
 }
 
+:not(pre)>code::after {
+    font-family: "Font Awesome 5";
+    font-weight: 900;
+    font-size: 100%;
+    content: "|";
+    position: relative;
+    top: -1px;
+    color: var(--cd-standby-color-1);
+    animation: pulse2 linear 1s infinite;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
 i {
     color: var(--ts-text-italic-color);
 }
