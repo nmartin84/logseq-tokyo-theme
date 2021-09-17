@@ -689,20 +689,20 @@ a.tag:hover {
     text-transform: var(--ts-property-key-transform);
     color: var(--ts-property-key-color);
     font-weight: var(--ts-property-key-weight);
-    font-size: 85%;
+    font-size: 100%;
 }
 
 .mr-1 {
     color: var(--ts-property-key-color);
     font-weight: var(--ts-property-key-weight);
-    font-size: 85%;
+    font-size: 100%;
 }
 
 .inline.mr-1 {
     color: var(--ts-property-value-color);
     font-weight: var(--ts-property-value-weight);
     text-transform: var(--ts-property-value-transform);
-    font-size: 85%;
+    font-size: 100%;
 }
 
 /* BLOCK REFERENCES */
