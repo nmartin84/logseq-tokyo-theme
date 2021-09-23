@@ -24,6 +24,87 @@ The idea is to promote a visually appealing experience, while building an enviro
 
 ![picture 7](images/79b880c3055cace72a5df1a5ae1843eb1551037dfde6be821845e7b1031e1b43.png)  
 
+# Swapping Color Palletes
+Drop any of the below code snippets to swap out your color theme to match the screenshot.
+
+## One Dark/Light
+![One Dark n Light](images/FVz7tzBC58.gif)
+```css
+/* ONE DARK/LIGHT */
+.theme-settings,
+html[data-theme=dark] {
+  --ts-ext-link-border-bottom: 2px solid var(--cd-active-color-1);
+    --cd-primary-bg-color: #282C34;
+    --cd-secondary-bg-color: #262A31;
+    --cd-alternate-bg-color: #24282F;
+    --cd-quaternary-bg-color: #22252C;
+    --cd-highlight-bg-color: #53565D;
+    --cd-inactive-color: #33373E;
+    --cd-active-color: #484C52;
+    --cd-primary-text-color: #ABB2BF;
+    --cd-alternate-text-color: #ABB2BF;
+    --cd-active-color-1: #56B6C2;
+    --cd-active-color-2: #50A274;
+    --cd-active-color-3: #D19A66;
+    --cd-active-color-4: #A878DD;
+    --cd-active-color-5: ;
+    --cd-active-color-6: ;
+    --cd-active-color-7: ;
+    --cd-active-color-8: ;
+    --cd-active-color-9: ;
+    --cd-active-color-10: ;
+    --cd-active-color-11: ;
+    --cd-standby-color-1: #E06C75;
+    --cd-mark-yellow: #e9c46a;
+    --cd-mark-red: #DB3A34;
+    --cd-mark-purple: #5941a9;
+    --cd-mark-orange: #f17300;
+    --cd-mark-grey: #94A89A;
+    --cd-mark-green: #9cb380;
+    --cd-mark-blue: #548687;
+    --cd-mark-pink: #fab2ea;
+    --ts-sidebar-contrast: 90%;
+    --ts-ext-link-color: var(--cd-standby-color-1);
+    --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-1);
+}
+
+.theme-settings,
+html[data-theme=light] {
+  --cd-primary-bg-color: #FAFAFA;
+  --cd-secondary-bg-color: #EEEEEE;
+  --cd-alternate-bg-color: #E1E1E1;
+  --cd-quaternary-bg-color: #D5D5D5;
+  --cd-highlight-bg-color: #8A8A8A;
+  --cd-inactive-color: #EEEEEE;
+  --cd-active-color: #E1E1E1;
+  --cd-primary-text-color: #383A42;
+  --cd-alternate-text-color: #383A42;
+  --cd-active-color-1: #E45649;
+  --cd-active-color-2: #3184BC;
+  --cd-active-color-3: #3184BC;
+  --cd-active-color-4: #3184BC;
+  --cd-active-color-5: #3184BC;
+  --cd-active-color-6: ;
+  --cd-active-color-7: ;
+  --cd-active-color-8: ;
+  --cd-active-color-9: ;
+  --cd-active-color-10: ;
+  --cd-active-color-11: ;
+  --cd-standby-color-1: #3184BC;
+  --cd-mark-yellow: #e9c46a;
+  --cd-mark-red: #DB3A34;
+  --cd-mark-purple: #5941a9;
+  --cd-mark-orange: #f17300;
+  --cd-mark-grey: #94A89A;
+  --cd-mark-green: #9cb380;
+  --cd-mark-blue: #548687;
+  --cd-mark-pink: #fab2ea;
+  --ts-sidebar-contrast: 90%;
+  --ts-ext-link-color: var(--cd-standby-color-1);
+  --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-1);
+}
+```
+
 # Settings
 You can pick and choose what pieces you want from this section, drop it into your `custom.css` and modify the theme settings from there.
 
