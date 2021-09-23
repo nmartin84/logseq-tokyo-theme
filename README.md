@@ -24,7 +24,7 @@ The idea is to promote a visually appealing experience, while building an enviro
 
 ![picture 7](images/79b880c3055cace72a5df1a5ae1843eb1551037dfde6be821845e7b1031e1b43.png)  
 
-# Swapping Color Palletes
+# Swapping Color Palettes
 Drop any of the below code snippets to swap out your color theme to match the screenshot.
 
 ## One Dark/Light
