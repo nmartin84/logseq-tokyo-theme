@@ -1,8 +1,8 @@
 .theme-settings,
 html[data-theme=dark] {
     /* === FONTS === */
-    --ts-monospace-font: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
-    --ts-serif-font: "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
+    --ts-monospace-font: "SF Mono", "Fira Code", "JetBrains Mono", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
+    --ts-serif-font: "SF Pro Text", "Avenir Next", system-ui,"Font Awesome 5",-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     /* === LS Features === */
     --ts-cloze-color: var(--cd-active-color-2);
     /* === SELECTIONS === */
@@ -38,7 +38,7 @@ html[data-theme=dark] {
     --ts-property-key-color: var(--cd-primary-text-color);
     --ts-property-value-color: var(--cd-primary-text-color);
     --ts-property-value-weight: 500;
-    --ts-property-value-transform: uppercase;
+    --ts-property-value-transform: lowercase;
     /* === TASKS === */
     --ts-checkbox-border: 0px solid var(--cd-standby-color-1);
     --ts-checkbox-border-radius: 0px;
@@ -81,7 +81,7 @@ html[data-theme=dark] {
     --ts-ext-link-bg-color: transparent;
     --ts-ext-link-border-bottom: 2px solid var(--cd-active-color-5);
     --ts-ext-link-weight: 300;
-    --ts-ext-link-style: italic;
+    --ts-ext-link-style: none;
     /* == COLORS == */
     --cd-primary-bg-color: #222436;
     --cd-secondary-bg-color: #1f2031;
@@ -119,8 +119,8 @@ html[data-theme=dark] {
 .theme-settings,
 html[data-theme=light] {
     /* === FONTS === */
-    --ts-monospace-font: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
-    --ts-serif-font: "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
+    --ts-monospace-font: "SF Mono", "Fira Code", "JetBrains Mono", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
+    --ts-serif-font: "SF Pro Text", "Avenir Next", system-ui,"Font Awesome 5",-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     /* === LS Features === */
     --ts-cloze-color: var(--cd-active-color-1);
     /* === SELECTIONS === */
@@ -157,7 +157,7 @@ html[data-theme=light] {
     --ts-property-key-color: var(--cd-primary-text-color);
     --ts-property-value-color: var(--cd-primary-text-color);
     --ts-property-value-weight: 600;
-    --ts-property-value-transform: uppercase;
+    --ts-property-value-transform: lowercase;
     /* === TASKS === */
     --ts-checkbox-border: 0px solid var(--cd-standby-color-1);
     --ts-checkbox-border-radius: 0px;
@@ -200,7 +200,7 @@ html[data-theme=light] {
     --ts-ext-link-bg-color: transparent;
     --ts-ext-link-border-bottom: 2px solid var(--cd-active-color-5);
     --ts-ext-link-weight: 300;
-    --ts-ext-link-style: italic;
+    --ts-ext-link-style: none;
     /* == COLORS == */
     --cd-primary-bg-color: #FCFFFC;
     --cd-secondary-bg-color: #EFF2EF;
@@ -474,6 +474,7 @@ html[data-theme=light] {
 
 /* === BLOCK PROPERTIES === */
 .block-properties {
+    display: table;
     border: var(--ts-property-border);
     border-radius: var(--ts-property-border-radius);
 }
