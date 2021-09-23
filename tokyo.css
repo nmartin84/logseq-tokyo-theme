@@ -5,6 +5,8 @@ html[data-theme=dark] {
     --ts-serif-font: "SF Pro Text", "Avenir Next", system-ui,"Font Awesome 5",-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     /* === LS Features === */
     --ts-cloze-color: var(--cd-active-color-2);
+    /* === BACKGROUND SETTINGS */
+    --ts-background-contrast-level: 90%;
     /* === SELECTIONS === */
     --ts-selected-bg-color: var(--cd-highlight-bg-color);
     /* === TAGS === */
@@ -28,12 +30,12 @@ html[data-theme=dark] {
     --ts-page-ref-background: transparent;
     --ts-page-ref-bracket-color: var(--cd-standby-color-1);
     /* === PROPERTIES === */
-    --ts-property-background-color: var(--cd-secondary-bg-color);
+    --ts-property-background-color: var(--cd-primary-bg-color);
     --ts-property-value-weight: 800;
     --ts-property-key-weight: 400;
     --ts-property-key-color: var(--cd-primary-text-color);
     --ts-property-border: 0px;
-    --ts-property-border-radius: 0px;
+    --ts-property-border-radius: .25rem;
     --ts-property-key-transform: lowercase;
     --ts-property-key-color: var(--cd-primary-text-color);
     --ts-property-value-color: var(--cd-primary-text-color);
@@ -72,7 +74,8 @@ html[data-theme=dark] {
     --ts-highlight-decoration-color: var(--cd-active-color-1);
     --ts-highlight-underline-thickness: 4px;
     /* === CODE BLOCKS === */
-    --ts-inline-code-bg: var(--cd-alternate-bg-color);
+    --ts-inline-code-bg: var(--cd-primary-bg-color);
+    --ts-inline-code-contrast: 85%;
     --ts-inline-code-color: var(--cd-primary-text-color);
     /* === TABLES === */
     --ts-table-rows: var(--cd-highlight-bg-color);
@@ -123,6 +126,8 @@ html[data-theme=light] {
     --ts-serif-font: "SF Pro Text", "Avenir Next", system-ui,"Font Awesome 5",-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     /* === LS Features === */
     --ts-cloze-color: var(--cd-active-color-1);
+    /* === BACKGROUND SETTINGS */
+    --ts-background-contrast-level: 90%;
     /* === SELECTIONS === */
     --ts-selected-bg-color: var(--cd-highlight-bg-color);
     /* === TAGS === */
@@ -147,12 +152,12 @@ html[data-theme=light] {
     --ts-page-ref-background: transparent;
     --ts-page-ref-bracket-color: var(--cd-standby-color-1);
     /* === PROPERTIES === */
-    --ts-property-background-color: var(--cd-secondary-bg-color);
+    --ts-property-background-color: var(--cd-primary-bg-color);
     --ts-property-value-weight: 800;
     --ts-property-key-weight: 400;
     --ts-property-key-color: var(--cd-primary-text-color);
     --ts-property-border: 0px;
-    --ts-property-border-radius: 0px;
+    --ts-property-border-radius: .25rem;
     --ts-property-key-transform: lowercase;
     --ts-property-key-color: var(--cd-primary-text-color);
     --ts-property-value-color: var(--cd-primary-text-color);
@@ -191,7 +196,8 @@ html[data-theme=light] {
     --ts-highlight-background-color: transparent;
     --ts-highlight-decoration-color: var(--cd-standby-color-1);
     /* === CODE BLOCKS === */
-    --ts-inline-code-bg: var(--cd-alternate-bg-color);
+    --ts-inline-code-bg: var(--cd-primary-bg-color);
+    --ts-inline-code-contrast: 85%;
     --ts-inline-code-color: var(--cd-primary-text-color);
     /* === TABLES === */
     --ts-table-rows: var(--cd-highlight-bg-color);
@@ -382,6 +388,22 @@ html[data-theme=light] {
     font-display: swap;
 }*/
 
+/* ==== SIDEBAR ==== */
+.color-level {
+    background-color: var(--cd-primary-bg-color);
+    filter: contrast(var(--ts-background-contrast-level,90%));
+  }
+  
+  .cp__right-sidebar-topbar {
+    background-color: var(--cd-primary-bg-color);
+    filter: contrast(var(--ts-background-contrast-level,90%));
+  }
+  
+  .cp__right-sidebar {
+    background-color: var(--cd-primary-bg-color);
+    filter: contrast(var(--ts-background-contrast-level,90%));
+  }
+
 /* ==== BULLETS ==== */
 
 .bullet-container.bullet-closed .bullet { background-color: transparent; }
@@ -475,8 +497,10 @@ html[data-theme=light] {
 /* === BLOCK PROPERTIES === */
 .block-properties {
     display: table;
+    background-color: var(--ts-property-background-color);
     border: var(--ts-property-border);
     border-radius: var(--ts-property-border-radius);
+    filter: contrast(var(--ts-background-contrast-level,90%));
 }
 
 /* == FIXES == */
@@ -560,6 +584,7 @@ mark.pink {
 :not(pre)>code {
     background-color: var(--ts-inline-code-bg);
     color: var(--ts-inline-code-color);
+    filter: contrast(var(--ts-inline-code-contrast,85%));
     font-size: 75%;
     font-family: var(--ts-monospace-font);
 }
@@ -711,7 +736,8 @@ a.tag:hover {
 .block-ref {
     padding: 2.7px 5px 3px 5px;
     border-bottom: 0px solid var(--cd-standby-color-1);
-    background: var(--cd-inactive-color);
+    background: var(--cd-primary-bg-color);
+    filter: contrast(90%);
     transition: 0.2s;
     font-size: 85%;
     border-radius: 0px;
