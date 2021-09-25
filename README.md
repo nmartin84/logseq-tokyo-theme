@@ -63,7 +63,7 @@ html[data-theme=dark] {
     --cd-mark-green: #9cb380;
     --cd-mark-blue: #548687;
     --cd-mark-pink: #fab2ea;
-    --ts-sidebar-contrast: 90%;
+    --ts-background-contrast-level: 90%;
     --ts-ext-link-color: var(--cd-standby-color-1);
     --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-1);
 }
@@ -99,7 +99,7 @@ html[data-theme=light] {
   --cd-mark-green: #9cb380;
   --cd-mark-blue: #548687;
   --cd-mark-pink: #fab2ea;
-  --ts-sidebar-contrast: 90%;
+  --ts-background-contrast-level: 90%;
   --ts-ext-link-color: var(--cd-standby-color-1);
   --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-1);
 }
