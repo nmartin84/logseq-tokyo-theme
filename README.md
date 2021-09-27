@@ -1,6 +1,7 @@
 
 # Tokyo Night
 Ported from Obsidian, all credits for the theme and its colors go to the original author [URL](https://github.com/RuslanGagushin/Tokyo-Night-Obsidian-Theme)... My focus was to make this theme module enough that you can adjust several aspects of the theme from inside your `custom.css` without breaking your other themes.
+![Tokyo Night/Day](images/TokyoNight_Day.png)
 
 ## Getting Started
 - Clone this repo to your computer.
@@ -13,16 +14,6 @@ Ported from Obsidian, all credits for the theme and its colors go to the origina
 The choice of colors that went into the various elements of LS actually have some thought and reasoning behind them that came from [site](https://www.shiftelearning.com/blog/how-do-colors-influence-learning). 
 
 The idea is to promote a visually appealing experience, while building an environment that's distraction free (flat style) with colors that promote capturing the user's attention and boosting mental productivity.
-
-## Dark Theme
-![picture 5](images/ca2ddbffca41de3c34daf18e18c5646f13df987dca4a88a475534d3375e5aacf.png)
-
-![picture 8](images/78a90c0158e29949d15eefa6728ed163ac1f623152dd10ffd9d12c2ff605f9ba.png)  
-
-## Light Theme
-![picture 6](images/a71b15abff8c1446d2a911bfb1b917e4316f62f0cf37f9f5aed84523749fefe4.png)  
-
-![picture 7](images/79b880c3055cace72a5df1a5ae1843eb1551037dfde6be821845e7b1031e1b43.png)  
 
 # Swapping Color Palettes
 Drop any of the below code snippets to swap out your color theme to match the screenshot.
