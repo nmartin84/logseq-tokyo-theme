@@ -28,7 +28,7 @@ The idea is to promote a visually appealing experience, while building an enviro
 Drop any of the below code snippets to swap out your color theme to match the screenshot.
 
 ## One Dark/Light
-![One Dark n Light](images/One Dark_Light.png)
+![One Dark n Light](images/One%20Dark_Light.png)
 ```css
 /* ONE DARK/LIGHT */
 .theme-settings,
