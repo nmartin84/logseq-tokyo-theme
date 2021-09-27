@@ -1,5 +1,23 @@
 .theme-settings,
 html[data-theme=dark] {
+    /* == COLORS == */
+    --cd-primary-bg-color: #222436;
+    --cd-codemirror-bg-color: #1f2031;
+    --cd-highlight-bg-color: #31344E;
+    --cd-inactive-color: #323347;
+    --cd-active-color: #41435e;
+    --cd-primary-text-color: #C0CDF3;
+    --cd-alternate-text-color: #adb9db;
+    --cd-active-color-1: #9ece6a;
+    --cd-active-color-2: #f7768e;
+    --cd-active-color-3: #ff9e64;
+    --cd-active-color-4: #e0af68;
+    --cd-active-color-5: #73daca;
+    --cd-active-color-6: #2ac3de;
+    --cd-active-color-7: #7dcfff;
+    --cd-active-color-8: #7aa2f7;
+    --cd-active-color-9: #bb9af7;
+    --cd-standby-color-1: #2ac3de;
     /* === FONTS === */
     --ts-monospace-font: "SF Mono", "Fira Code", "JetBrains Mono", Monaco, Menlo, Consolas, 'COURIER NEW', monospace;
     --ts-serif-font: "SF Pro Text", "Avenir Next", system-ui, "Font Awesome 5", -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
@@ -78,36 +96,14 @@ html[data-theme=dark] {
     --ts-inline-code-contrast: 85%;
     --ts-inline-code-color: var(--cd-primary-text-color);
     /* === TABLES === */
-    --ts-table-rows: var(--cd-highlight-bg-color);
+    --cd--table-rows-bg-color: var(--cd-active-color);
+    --cd--table-rows-text-color: var(--cd-primary-text-color);
     /* === EXT LINKS === */
     --ts-ext-link-color: var(--cd-active-color-5);
     --ts-ext-link-bg-color: transparent;
     --ts-ext-link-border-bottom: 2px solid var(--cd-active-color-5);
     --ts-ext-link-weight: 300;
     --ts-ext-link-style: none;
-    /* == COLORS == */
-    --cd-primary-bg-color: #222436;
-    --cd-secondary-bg-color: #1f2031;
-    --cd-alternate-bg-color: #1b1d2b;
-    --cd-quaternary-bg-color: #181926;
-    --cd-highlight-bg-color: #31344E;
-    --cd-inactive-color: #323347;
-    --cd-active-color: #41435e;
-    --cd-primary-text-color: #C0CDF3;
-    --cd-alternate-text-color: #adb9db;
-    --cd-active-color-1: #9ece6a;
-    --cd-active-color-2: #f7768e;
-    --cd-active-color-3: #ff9e64;
-    --cd-active-color-4: #e0af68;
-    --cd-active-color-5: #73daca;
-    --cd-active-color-6: #2ac3de;
-    --cd-active-color-7: #7dcfff;
-    --cd-active-color-8: #7aa2f7;
-    --cd-active-color-9: #bb9af7;
-    --cd-active-color-10: ;
-    --cd-active-color-11: ;
-    --cd-standby-color-1: #2ac3de;
-    --cd-standby-color-1-light: #18a99961;
     /* Highlighter Plugin */
     --cd-mark-yellow: #e9c46a;
     --cd-mark-red: #DB3A34;
@@ -121,6 +117,34 @@ html[data-theme=dark] {
 
 .theme-settings,
 html[data-theme=light] {
+    /* == COLORS == */
+    --cd-primary-bg-color: #FCFFFC;
+    --cd-codemirror-bg-color: #EFF2EF;
+    --cd-highlight-bg-color: #dddee2;
+    --cd-inactive-color: #ececec;
+    --cd-active-color: #dadada;
+    --cd-primary-text-color: #646564;
+    --cd-alternate-text-color: #313131;
+    --cd-active-color-1: #028090;
+    --cd-active-color-2: #565f89;
+    --cd-active-color-3: #2e5077;
+    --cd-active-color-4: #8c4351;
+    --cd-active-color-5: #965027;
+    --cd-active-color-6: #8f5e15;
+    --cd-active-color-7: #83ac57;
+    --cd-active-color-8: #33635c;
+    --cd-active-color-9: #166775;
+    --cd-active-color-10: #34548a;
+    --cd-active-color-11: #5a4a78;
+    --cd-standby-color-1: #18a999;
+    --cd-mark-yellow: #e9c46a;
+    --cd-mark-red: #DB3A34;
+    --cd-mark-purple: #5941a9;
+    --cd-mark-orange: #f17300;
+    --cd-mark-grey: #94A89A;
+    --cd-mark-green: #9cb380;
+    --cd-mark-blue: #548687;
+    --cd-mark-pink: #fab2ea;
     /* === FONTS === */
     --ts-monospace-font: "SF Mono", "Fira Code", "JetBrains Mono", Monaco, Menlo, Consolas, 'COURIER NEW', monospace;
     --ts-serif-font: "SF Pro Text", "Avenir Next", system-ui, "Font Awesome 5", -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
@@ -200,60 +224,23 @@ html[data-theme=light] {
     --ts-inline-code-contrast: 85%;
     --ts-inline-code-color: var(--cd-primary-text-color);
     /* === TABLES === */
-    --ts-table-rows: var(--cd-highlight-bg-color);
+    --cd--table-rows-bg-color: var(--cd-active-color);
+    --cd--table-rows-text-color: var(--cd-primary-text-color);
     /* === EXT LINKS === */
     --ts-ext-link-color: var(--cd-active-color-5);
     --ts-ext-link-bg-color: transparent;
     --ts-ext-link-border-bottom: 2px solid var(--cd-active-color-5);
     --ts-ext-link-weight: 300;
     --ts-ext-link-style: none;
-    /* == COLORS == */
-    --cd-primary-bg-color: #FCFFFC;
-    --cd-secondary-bg-color: #EFF2EF;
-    --cd-alternate-bg-color: #E3E6E3;
-    --cd-quaternary-bg-color: #D6D9D6;
-    --cd-highlight-bg-color: #dddee2;
-    --cd-inactive-color: #ececec;
-    --cd-active-color: #dadada;
-    --cd-primary-text-color: #646564;
-    --cd-alternate-text-color: #313131;
-    --cd-active-color-1: #028090;
-    --cd-active-color-2: #565f89;
-    --cd-active-color-3: #2e5077;
-    --cd-active-color-4: #8c4351;
-    --cd-active-color-5: #965027;
-    --cd-active-color-6: #8f5e15;
-    --cd-active-color-7: #83ac57;
-    --cd-active-color-8: #33635c;
-    --cd-active-color-9: #166775;
-    --cd-active-color-10: #34548a;
-    --cd-active-color-11: #5a4a78;
-    --cd-standby-color-1: #18a999;
-    --cd-standby-color-1-light: #18a99855;
-    --cd-mark-yellow: #e9c46a;
-    --cd-mark-red: #DB3A34;
-    --cd-mark-purple: #5941a9;
-    --cd-mark-orange: #f17300;
-    --cd-mark-grey: #94A89A;
-    --cd-mark-green: #9cb380;
-    --cd-mark-blue: #548687;
-    --cd-mark-pink: #fab2ea;
 }
 
 .dark-theme,
 html[data-theme=dark] {
     /* == Backgrounds == */
     --ls-primary-background-color: var(--cd-primary-bg-color);
-    --ls-secondary-background-color: var(--cd-secondary-bg-color);
-    --ls-tertiary-background-color: var(--cd-alternate-bg-color);
-    --ls-quaternary-background-color: var(--cd-highlight-bg-color);
-    --ls-table-tr-even-background-color: var(--ts-table-rows);
-    --ls-block-properties-background-color: var(--cd-alternate-bg-color);
-    --ls-page-properties-background-color: var(--cd-alternate-bg-color);
     --ls-slide-background-color: var(--cd-primary-bg-color);
     --ls-selection-background-color: var(--cd-highlight-bg-color);
-    --ls-page-blockquote-bg-color: var(--ls-secondary-background-color);
-    --ls-right-sidebar-code-bg-color: var(--cd-secondary-bg-color);
+    --ls-right-sidebar-code-bg-color: var(--cd-primary-bg-color);
     --ls-search-background-color: var(--cd-highlight-bg-color);
     );
     /* == Text == */
@@ -282,7 +269,7 @@ html[data-theme=dark] {
     --ls-scrollbar-background-color: var(--cd-highlight-bg-color);
     --ls-scrollbar-thumb-hover-color: var(--cd-active-color-1);
     /* == Misc == */
-    --ls-menu-hover-color: var(--ls-secondary-background-color);
+    --ls-menu-hover-color: var(--cd-standby-color-1);
     --ls-title-text-color: var(--ts-title-color);
     --ls-block-highlight-color: var(--cd-highlight-bg-color);
     --ls-head-text-color: var(--ls-link-text-color);
@@ -291,25 +278,18 @@ html[data-theme=dark] {
     --ls-a-chosen-bg: var(--cd-highlight-bg-color);
     --ls-block-bullet-border-color: var(--cd-standby-color-1);
     --ls-block-bullet-color: var(--cd-primary-text-color);
-    --color-level-1: var(--ls-secondary-background-color);
-    --color-level-2: var(--ls-tertiary-background-color);
-    --color-level-3: var(--ls-quaternary-background-color);
+    --color-level-1: var(--cd-primary-bg-color);
+    --color-level-2: var(--cd-primary-bg-color);
+    --color-level-3: var(--cd-primary-bg-color);
 }
 
 .white-theme,
 html[data-theme=light] {
     /* == Backgrounds == */
     --ls-primary-background-color: var(--cd-primary-bg-color);
-    --ls-secondary-background-color: var(--cd-secondary-bg-color);
-    --ls-tertiary-background-color: var(--cd-alternate-bg-color);
-    --ls-quaternary-background-color: var(--cd-highlight-bg-color);
-    --ls-table-tr-even-background-color: var(--cd-alternate-bg-color);
-    --ls-block-properties-background-color: var(--cd-alternate-bg-color);
-    --ls-page-properties-background-color: var(--cd-alternate-bg-color);
     --ls-slide-background-color: var(--cd-primary-bg-color);
     --ls-selection-background-color: var(--cd-highlight-bg-color);
-    --ls-page-blockquote-bg-color: var(--ls-secondary-background-color);
-    --ls-right-sidebar-code-bg-color: var(--cd-secondary-bg-color);
+    --ls-right-sidebar-code-bg-color: var(--cd-primary-bg-color);
     --ls-search-background-color: var(--cd-highlight-bg-color);
     );
     /* == Text == */
@@ -338,7 +318,7 @@ html[data-theme=light] {
     --ls-scrollbar-background-color: var(--cd-highlight-bg-color);
     --ls-scrollbar-thumb-hover-color: var(--cd-active-color-1);
     /* == Misc == */
-    --ls-menu-hover-color: var(--ls-secondary-background-color);
+    --ls-menu-hover-color: var(--cd-standby-color-1);
     --ls-title-text-color: var(--ts-title-color);
     --ls-block-highlight-color: var(--cd-highlight-bg-color);
     --ls-head-text-color: var(--ls-link-text-color);
@@ -347,9 +327,9 @@ html[data-theme=light] {
     --ls-a-chosen-bg: var(--cd-highlight-bg-color);
     --ls-block-bullet-border-color: var(--cd-standby-color-1);
     --ls-block-bullet-color: var(--cd-primary-text-color);
-    --color-level-1: var(--ls-secondary-background-color);
-    --color-level-2: var(--ls-tertiary-background-color);
-    --color-level-3: var(--ls-quaternary-background-color);
+    --color-level-1: var(--cd-primary-bg-color);
+    --color-level-2: var(--cd-primary-bg-color);
+    --color-level-3: var(--cd-primary-bg-color);
 }
 
 
@@ -403,6 +383,23 @@ html[data-theme=light] {
 .cp__right-sidebar {
     background-color: var(--cd-primary-bg-color);
     filter: contrast(var(--ts-background-contrast-level, 90%));
+}
+
+
+/* === Modal === */
+
+.ui__modal-overlay div {
+    background-color: var(--cd-primary-bg-color);
+    filter: brightness(0.6);
+}
+
+.ui__modal-panel {
+    background-color: var(--cd-codemirror-bg-color);
+}
+
+.cp__palette-main .chosen {
+    background-color: var(--cd-active-color);
+    filter: brightness(110%);
 }
 
 
@@ -557,6 +554,12 @@ h6) {
     border-bottom: 0px solid transparent;
 }
 
+blockquote {
+    border-left-color: var(--cd-active-color-1);
+    background-color: var(--cd-primary-bg-color);
+    filter: contrast(95%);
+}
+
 mark {
     background: var(--ts-highlight-background-color);
     color: var(--ts-highlight-color);
@@ -634,7 +637,7 @@ b {
 /* === Guidelines === */
 
 .block-children {
-    border-left: 2px solid var(--cd-active-color);
+    border-left: 2px solid var(--cd-standby-color-1);
 }
 
 .block-children:not(:focus-within) {
@@ -660,6 +663,10 @@ b {
     font-style: var(--ts-ext-link-style)
 }
 
+a {
+    color: var(--cd-active-color-1);
+}
+
 .page-ref,
 .page-ref:hover {
     color: var(--ts-page-ref-color);
@@ -668,6 +675,19 @@ b {
     border: var(--ts-page-ref-border);
     border-radius: var(--ts-page-ref-border-radius);
     padding: var(--ts-page-ref-padding);
+}
+
+.page-reference:hover {
+    background: var(--cd-inactive-color);
+}
+
+.tippy-tooltip,
+.tippy-wrapper {
+    background-color: var(--cd-codemirror-bg-color);
+}
+
+.arrow-regular {
+    color: var(--cd-standby-color-1);
 }
 
 
@@ -818,7 +838,7 @@ td {
 }
 
 tr:nth-child(even) {
-    background: var(--ls-table-tr-even-background-color);
+    background: var(--cd-primary-bg-color);
 }
 
 tr:nth-child(odd) {
@@ -858,8 +878,13 @@ figcaption {
 }
 
 .dark-theme tr:nth-child(even) {
-    background: var(--ls-table-tr-even-background-color);
-    color: var(--cd-primary-text-color);
+    background: var(--cd--table-rows-bg-color);
+    color: var(--cd--table-rows-text-color);
+}
+
+tr:nth-child(even) {
+    background: var(--cd--table-rows-bg-color);
+    color: var(--cd--table-rows-text-color);
 }
 
 .dark-theme tr:nth-child(odd) {
@@ -878,6 +903,10 @@ figcaption {
 
 /* === CODE MIRROR === */
 
+.extensions__code-lang {
+    background: var(--cd-codemirror-bg-color);
+}
+
 .CodeMirror-lines {
     font-family: var(--ts-monospace-font);
 }
@@ -886,7 +915,7 @@ figcaption {
 .CodeMirror-lines,
 .CodeMirror-scroll,
 .CodeMirror-sizer {
-    background: var(--ls-secondary-background-color);
+    background: var(--cd-codemirror-bg-color);
 }
 
 .cm-s-solarized.cm-s-dark .CodeMirror-linenumber {
