@@ -105,6 +105,83 @@ html[data-theme=light] {
 }
 ```
 
+## Ayu Dark/Light
+![Ayu Theme](images/AyuDark_Light.png)
+
+```css
+.theme-settings,
+html[data-theme=dark] {
+    --cd-codemirror-bg-color: hsl(222, 22%, 18%);
+    --cd-highlight-bg-color: hsl(222, 22%, 13%);
+    --ts-ext-link-border-bottom: 2px solid var(--cd-active-color-1);
+    --cd-inactive-color: hsl(222, 22%, 18%);
+    --cd-active-color: hsl(222, 22%, 20%);
+    --cd-primary-text-color: #C7C5BE;
+    --cd-alternate-text-color: #C7C5BE;
+    --cd-active-color-1: #D5FF80;
+    --cd-active-color-2: #F28779;
+    --cd-active-color-3: #F29E74;
+    --cd-active-color-4: #A878DD;
+    --cd-active-color-5: ;
+    --cd-active-color-6: ;
+    --cd-active-color-7: ;
+    --cd-active-color-8: ;
+    --cd-active-color-9: ;
+    --cd-active-color-10: ;
+    --cd-active-color-11: ;
+    --cd-standby-color-1: #FAC761;
+    --cd-mark-yellow: #e9c46a;
+    --cd-mark-red: #DB3A34;
+    --cd-mark-purple: #5941a9;
+    --cd-mark-orange: #f17300;
+    --cd-mark-grey: #94A89A;
+    --cd-mark-green: #9cb380;
+    --cd-mark-blue: #548687;
+    --cd-mark-pink: #fab2ea;
+    --ts-background-contrast-level: 92%;
+    --ts-ext-link-color: var(--cd-standby-color-1);
+    --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-1);
+    --primary-color-h: 222;
+    --primary-color-s: 22%;
+    --primary-color-l: 15%;
+    --cd-primary-bg-color: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l));
+}
+
+.theme-settings,
+html[data-theme=light] {
+    --cd-primary-bg-color: hsl(210, 17%, 95%);
+    --cd-codemirror-bg-color: hsl(210, 17%, 90%);
+    --cd-highlight-bg-color: hsl(210, 57%, 93%);
+    --cd-inactive-color: hsl(210, 17%, 92%);
+    --cd-active-color: hsl(210, 17%, 89%);
+    --cd-primary-text-color: #5C6166;
+    --cd-alternate-text-color: #5C6166;
+    --cd-active-color-1: #86B300;
+    --cd-active-color-2: #F17171;
+    --cd-active-color-3: #3184BC;
+    --cd-active-color-4: #3184BC;
+    --cd-active-color-5: #3184BC;
+    --cd-active-color-6: ;
+    --cd-active-color-7: ;
+    --cd-active-color-8: ;
+    --cd-active-color-9: ;
+    --cd-active-color-10: ;
+    --cd-active-color-11: ;
+    --cd-standby-color-1: #F9A52E;
+    --cd-mark-yellow: #e9c46a;
+    --cd-mark-red: #DB3A34;
+    --cd-mark-purple: #5941a9;
+    --cd-mark-orange: #f17300;
+    --cd-mark-grey: #94A89A;
+    --cd-mark-green: #9cb380;
+    --cd-mark-blue: #548687;
+    --cd-mark-pink: #fab2ea;
+    --ts-background-contrast-level: 92%;
+    --ts-ext-link-color: var(--cd-standby-color-1);
+    --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-1);
+}
+```
+
 # Settings
 You can pick and choose what pieces you want from this section, drop it into your `custom.css` and modify the theme settings from there.
 
