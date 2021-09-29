@@ -7,8 +7,8 @@ html[data-theme=dark] {
     --cd-quaternary-bg-color: hsl(234, 23%, 20%);
     --cd-codemirror-bg-color: #1f2031;
     --cd-highlight-bg-color: #31344E;
-    --cd-inactive-color: hsla(234, 23%, 20%, 10%);
-    --cd-active-color: hsla(234, 23%, 20%, 15%);
+    --cd-inactive-color: #323347;
+    --cd-active-color: #41435e;
     --cd-primary-text-color: #C0CDF3;
     --cd-alternate-text-color: #adb9db;
     --cd-active-color-1: #9ece6a;
@@ -429,7 +429,7 @@ html[data-theme=light] {
 .ls-block:not(:focus-within) .bullet-container.bullet-closed::before {
     content: "\f621";
     font-family: "Font Awesome 5";
-    color: var(--cd-active-color);
+    color: var(--cd-standby-color-1);
     visibility: visible;
     font-size: 50%;
     font-weight: 900;
