@@ -1,11 +1,14 @@
 .theme-settings,
 html[data-theme=dark] {
     /* == COLORS == */
-    --cd-primary-bg-color: #222436;
+    --cd-primary-bg-color: hsl(234, 23%, 17%);
+    --cd-secondary-bg-color: hsl(234, 23%, 18%);
+    --cd-alternate-bg-color: hsl(234, 23%, 19%);
+    --cd-quaternary-bg-color: hsl(234, 23%, 20%);
     --cd-codemirror-bg-color: #1f2031;
     --cd-highlight-bg-color: #31344E;
-    --cd-inactive-color: #323347;
-    --cd-active-color: #41435e;
+    --cd-inactive-color: hsla(234, 23%, 20%, 10%);
+    --cd-active-color: hsla(234, 23%, 20%, 15%);
     --cd-primary-text-color: #C0CDF3;
     --cd-alternate-text-color: #adb9db;
     --cd-active-color-1: #9ece6a;
@@ -119,7 +122,10 @@ html[data-theme=dark] {
 .theme-settings,
 html[data-theme=light] {
     /* == COLORS == */
-    --cd-primary-bg-color: #FCFFFC;
+    --cd-primary-bg-color: hsl(120, 10%, 96%);
+    --cd-secondary-bg-color: hsl(120, 10%, 95%);
+    --cd-alternate-bg-color: hsl(120, 10%, 94%);
+    --cd-quaternary-bg-color: hsl(120, 10%, 93%);
     --cd-codemirror-bg-color: #EFF2EF;
     --cd-highlight-bg-color: #dddee2;
     --cd-inactive-color: #ececec;
@@ -240,6 +246,9 @@ html[data-theme=light] {
 html[data-theme=dark] {
     /* == Backgrounds == */
     --ls-primary-background-color: var(--cd-primary-bg-color);
+    --ls-secondary-background-color: var(--cd-secondary-bg-color);
+    --ls-tertiary-background-color: var(--cd-alternate-bg-color);
+    --ls-quaternary-background-color: var(--cd-highlight-bg-color);
     --ls-slide-background-color: var(--cd-primary-bg-color);
     --ls-selection-background-color: var(--cd-highlight-bg-color);
     --ls-right-sidebar-code-bg-color: var(--cd-primary-bg-color);
@@ -271,7 +280,7 @@ html[data-theme=dark] {
     --ls-scrollbar-background-color: var(--cd-highlight-bg-color);
     --ls-scrollbar-thumb-hover-color: var(--cd-active-color-1);
     /* == Misc == */
-    --ls-menu-hover-color: var(--cd-standby-color-1);
+    --ls-menu-hover-color: var(--cd-active-color);
     --ls-title-text-color: var(--ts-title-color);
     --ls-block-highlight-color: var(--cd-highlight-bg-color);
     --ls-head-text-color: var(--ls-link-text-color);
@@ -289,6 +298,9 @@ html[data-theme=dark] {
 html[data-theme=light] {
     /* == Backgrounds == */
     --ls-primary-background-color: var(--cd-primary-bg-color);
+    --ls-secondary-background-color: var(--cd-secondary-bg-color);
+    --ls-tertiary-background-color: var(--cd-alternate-bg-color);
+    --ls-quaternary-background-color: var(--cd-highlight-bg-color);
     --ls-slide-background-color: var(--cd-primary-bg-color);
     --ls-selection-background-color: var(--cd-highlight-bg-color);
     --ls-right-sidebar-code-bg-color: var(--cd-primary-bg-color);
@@ -320,7 +332,7 @@ html[data-theme=light] {
     --ls-scrollbar-background-color: var(--cd-highlight-bg-color);
     --ls-scrollbar-thumb-hover-color: var(--cd-active-color-1);
     /* == Misc == */
-    --ls-menu-hover-color: var(--cd-standby-color-1);
+    --ls-menu-hover-color: var(--cd-active-color);
     --ls-title-text-color: var(--ts-title-color);
     --ls-block-highlight-color: var(--cd-highlight-bg-color);
     --ls-head-text-color: var(--ls-link-text-color);
@@ -334,9 +346,7 @@ html[data-theme=light] {
     --color-level-3: var(--cd-primary-bg-color);
 }
 
-
 /* == FONTS == */
-
 :root {
     --ls-font-family: var(--ts-serif-font);
 }
@@ -348,48 +358,16 @@ html[data-theme=light] {
 }
 
 
-/*@font-face {
-    font-family: "Basis Grotesque Pro";
-    src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot");
-    src: url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.eot?#iefix") format("embedded-opentype"),
-    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff2") format("woff2"),
-    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.woff") format("woff"), 
-    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.ttf") format("truetype"),
-    url("http://db.onlinewebfonts.com/t/3ddd0e3d1a076e112b27d8d9b7e20200.svg#Basis Grotesque Pro") format("svg");
-}
-@font-face {
-    font-family: 'Avenir Next';
-    src: url(public/fonts/94f2f163d4b698242fef.otf);
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}*/
-
-
 /* ==== SIDEBAR ==== */
-
-.color-level {
-    background-color: var(--cd-primary-bg-color);
-    filter: contrast(var(--ts-background-contrast-level, 90%));
-}
-
-.color-level .color-level {
-    background-color: var(--cd-primary-bg-color);
-}
-
-.cp__right-sidebar-topbar {
-    background-color: var(--cd-primary-bg-color);
-    filter: contrast(var(--ts-background-contrast-level, 90%));
-}
-
+.color-level,
+.color-level .color-level,
+.cp__right-sidebar-topbar,
 .cp__right-sidebar {
-    background-color: var(--cd-primary-bg-color);
-    filter: contrast(var(--ts-background-contrast-level, 90%));
+    background-color: var(--cd-secondary-bg-color);
+    filter: contrast(97%);
 }
-
 
 /* === Modal === */
-
 .ui__modal-overlay div {
     background-color: var(--cd-primary-bg-color);
     filter: brightness(0.6);
@@ -406,10 +384,7 @@ html[data-theme=light] {
 
 
 /* ==== BULLETS ==== */
-
-.bullet-container.bullet-closed .bullet {
-    background-color: transparent;
-}
+.bullet-container.bullet-closed .bullet { background-color: transparent; }
 
 .ls-block .bullet-container.bullet-closed .bullet {
     background: transparent;
@@ -496,7 +471,6 @@ html[data-theme=light] {
 
 
 /* === EMBEDS === */
-
 .color-level.embed.embed-page.bg-base-2,
 .px-3.pt-1.pb-2 {
     border: var(--ts-embed-border);
@@ -505,10 +479,9 @@ html[data-theme=light] {
 
 
 /* === BLOCK PROPERTIES === */
-
 .block-properties {
     display: table;
-    background-color: var(--ts-property-background-color);
+    background-color: var(--cd-primary-bg-color);
     border: var(--ts-property-border);
     border-radius: var(--ts-property-border-radius);
     filter: contrast(var(--ts-background-contrast-level, 90%));
@@ -516,7 +489,6 @@ html[data-theme=light] {
 
 
 /* == FIXES == */
-
 #main-container {
     padding: 2em;
 }
@@ -527,25 +499,13 @@ html[data-theme=light] {
 
 
 /* == MARKDOWN FORMATTING == */
+.cloze { color: var(--ts-cloze-color); }
 
-.cloze {
-    color: var(--ts-cloze-color);
-}
+.editor-inner { color: var(--ts-editor-block-text-color); }
 
-.editor-inner {
-    color: var(--ts-editor-block-text-color);
-}
+li { color: var(--cd-standby-color-1); }
 
-li {
-    color: var(--cd-standby-color-1);
-}
-
-.ls-block :is(h1,
-h2,
-h3,
-h4,
-h5,
-h6) {
+.ls-block :is(h1,h2,h3,h4,h5,h6) {
     border-bottom: 0px solid red;
     color: var(--ts-headline-color);
     margin: 0;
@@ -575,7 +535,6 @@ mark {
 
 
 /* Highlighter Plugin */
-
 mark.yellow {
     background: var(--cd-mark-yellow);
 }
