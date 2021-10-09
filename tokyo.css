@@ -6,7 +6,7 @@ html[data-theme=dark] {
     --cd-alternate-bg-color: hsl(234, 23%, 19%);
     --cd-quaternary-bg-color: hsl(234, 23%, 20%);
     --cd-codemirror-bg-color: #1f2031;
-    --cd-highlight-bg-color: #31344E;
+    --cd-highlight-bg-color: hsla(89, 51%, 61%, 40%);
     --cd-inactive-color: #323347;
     --cd-active-color: #41435e;
     --cd-primary-text-color: #C0CDF3;
@@ -26,6 +26,9 @@ html[data-theme=dark] {
     --ts-serif-font: "SF Pro Text", "Avenir Next", system-ui, "Font Awesome 5", -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
     /* === LS Features === */
     --ts-cloze-color: var(--cd-active-color-2);
+    /* === MAIN CONTAINER === */
+    --ts-container-bg-color: transparent;
+    --ts-container-border-radius: 4px;
     /* === BACKGROUND SETTINGS */
     --ts-background-contrast-level: 90%;
     /* === SELECTIONS === */
@@ -127,7 +130,7 @@ html[data-theme=light] {
     --cd-alternate-bg-color: hsl(120, 10%, 94%);
     --cd-quaternary-bg-color: hsl(120, 10%, 93%);
     --cd-codemirror-bg-color: #EFF2EF;
-    --cd-highlight-bg-color: #dddee2;
+    --cd-highlight-bg-color: hsla(173, 75%, 38%, 40%);
     --cd-inactive-color: #ececec;
     --cd-active-color: #dadada;
     --cd-primary-text-color: #646564;
@@ -157,6 +160,9 @@ html[data-theme=light] {
     --ts-serif-font: "SF Pro Text", "Avenir Next", system-ui, "Font Awesome 5", -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
     /* === LS Features === */
     --ts-cloze-color: var(--cd-active-color-1);
+    /* === MAIN CONTAINER === */
+    --ts-container-bg-color: transparent;
+    --ts-container-border-radius: 4px;
     /* === BACKGROUND SETTINGS */
     --ts-background-contrast-level: 90%;
     /* === SELECTIONS === */
@@ -357,6 +363,12 @@ html[data-theme=light] {
     src: url("https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/webfonts/fa-solid-900.ttf") format("truetype");
 }
 
+/* ==== MAIN CONTAINER ==== */
+.page-blocks-inner {
+    background-color: var(--ts-container-bg-color);
+    padding: 4px 6px 4px 6px;
+    border-radius: var(--ts-container-border-radius);
+  }
 
 /* ==== SIDEBAR ==== */
 .color-level,
@@ -378,8 +390,7 @@ html[data-theme=light] {
 }
 
 .cp__palette-main .chosen {
-    background-color: var(--cd-active-color);
-    filter: brightness(110%);
+    background-color: var(--cd-highlight-bg-color);
 }
 
 
