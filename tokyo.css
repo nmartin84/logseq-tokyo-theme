@@ -642,7 +642,7 @@ a {
 .page-ref,
 .page-ref:hover {
     color: var(--ts-page-ref-color);
-    font-weight: 600;
+    font-weight: 500;
     background: var(--ts-page-ref-background);
     border: var(--ts-page-ref-border);
     border-radius: var(--ts-page-ref-border-radius);
