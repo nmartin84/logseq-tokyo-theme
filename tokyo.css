@@ -22,6 +22,7 @@ html[data-theme=dark] {
     --cd-active-color-9: #bb9af7;
     --cd-standby-color-1: #2ac3de;
     /* === FONTS === */
+    --ts-font-size: 1em;
     --ts-monospace-font: "SF Mono", "Fira Code", "JetBrains Mono", Monaco, Menlo, Consolas, 'COURIER NEW', monospace;
     --ts-serif-font: "SF Pro Text", "Avenir Next", system-ui, "Font Awesome 5", -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
     /* === LS Features === */
@@ -156,6 +157,7 @@ html[data-theme=light] {
     --cd-mark-blue: #548687;
     --cd-mark-pink: #fab2ea;
     /* === FONTS === */
+    --ts-font-size: 1em;
     --ts-monospace-font: "SF Mono", "Fira Code", "JetBrains Mono", Monaco, Menlo, Consolas, 'COURIER NEW', monospace;
     --ts-serif-font: "SF Pro Text", "Avenir Next", system-ui, "Font Awesome 5", -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
     /* === LS Features === */
@@ -563,6 +565,7 @@ b {
  :root {
     --ls-main-content-max-width: 800px;
     --ls-main-content-max-width-wide: 1000px;
+    --ls-page-text-size: var(--ts-font-size);
 }
 
 
