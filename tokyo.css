@@ -397,89 +397,28 @@ html[data-theme=light] {
 /* ==== BULLETS ==== */
 .bullet-container.bullet-closed .bullet { background-color: transparent; }
 
-.ls-block .bullet-container.bullet-closed .bullet {
-    background: transparent;
-    border: 0px solid;
-    width: 6px;
-    height: 6px;
-}
-
 .ls-block .bullet-container.bullet-closed {
-    background-color: transparent;
-    border: 0px solid var(--cd-standby-color-1);
-    width: 6px;
-    height: 6px;
+    background: var(--cd-standby-color-1);
+    border: 2px solid var(--cd-standby-color-1);
     border-radius: 50%;
-    position: relative;
-    margin-right: 6px;
-    right: -3px;
-}
-
-.ls-block .bullet-container.bullet-closed::before {
-    content: "\f621";
-    font-family: "Font Awesome 5";
-    color: var(--cd-standby-color-1);
-    visibility: visible;
-    font-size: 50%;
-    font-weight: 900;
-    bottom: 0px;
-    position: relative;
-    transition: 0.2s;
 }
 
 .ls-block:not(:focus-within) .bullet-container.bullet-closed {
-    background: transparent;
-    border: 0px solid var(--cd-active-color);
-    width: 6px;
-    height: 6px;
+    background: var(--cd-standby-color-1);
+    border: 2px solid var(--cd-active-color);
     border-radius: 50%;
-    position: relative;
-    right: -3px;
-}
-
-.ls-block:not(:focus-within) .bullet-container.bullet-closed::before {
-    content: "\f621";
-    font-family: "Font Awesome 5";
-    color: var(--cd-standby-color-1);
-    visibility: visible;
-    font-size: 50%;
-    font-weight: 900;
-    bottom: 0px;
-    position: relative;
-    transition: 0.2s;
 }
 
 .ls-block .bullet {
     background-color: var(--cd-standby-color-1);
-    width: 6px;
-    height: 6px;
     border-radius: 50%;
 }
 
 .ls-block:not(:focus-within) .bullet {
     background-color: var(--cd-active-color);
     border: 2px solid var(--cd-active-color);
-    border-radius: 0;
-    width: 6px;
-    height: 6px;
     border-radius: 50%;
 }
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-    }
-    70% {
-        transform: scale(1);
-        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
-    }
-    100% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-}
-
 
 /* === EMBEDS === */
 .color-level.embed.embed-page.bg-base-2,
@@ -525,6 +464,7 @@ li { color: var(--cd-standby-color-1); }
 .editor-inner .h1,
 .editor-inner .h2 {
     border-bottom: 0px solid transparent;
+    margin: 0 0 0;
 }
 
 blockquote {
