@@ -522,9 +522,8 @@ mark.pink {
 }
 
 :not(pre)>code {
-    background-color: var(--cd-primary-text-color);
-    color: var(--cd-primary-bg-color);
-    filter: contrast(var(--ts-inline-code-contrast, 85%));
+    background-color: var(--cd-secondary-bg-color);
+    color: var(--cd-primary-text-color);
     font-size: 75%;
     font-family: var(--ts-monospace-font);
 }
