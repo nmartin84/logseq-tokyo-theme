@@ -1,7 +1,7 @@
 {
   "name": "Tokyo Night Theme",
   "author": "nmartin84",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Port of the Obsidian MD theme Tokyo Night",
   "logseq": {
     "themes": [
@@ -9,6 +9,12 @@
         "name": "Tokyo Night",
         "url": "./tokyo.css",
         "description": "Tokyo Night 🏙️",
+        "mode": "dark"
+      },
+      {
+        "name": "Solarized",
+        "url": "./solarized.css",
+        "description": "Solarized 🌞",
         "mode": "dark"
       }
     ],
