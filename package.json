@@ -1,5 +1,5 @@
 {
-  "name": "Tokyo Night Theme",
+  "name": "Tokyo Themes",
   "author": "nmartin84",
   "version": "0.0.4",
   "description": "Port of the Obsidian MD theme Tokyo Night",
@@ -21,6 +21,12 @@
         "name": "Ayu",
         "url": "./ayu.css",
         "description": "Ayu 😻",
+        "mode": "dark"
+      },
+      {
+        "name": "One",
+        "url": "./one.css",
+        "description": "One 🌑",
         "mode": "dark"
       }
     ],
