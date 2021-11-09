@@ -101,11 +101,7 @@ html[data-theme=dark] {
     --cd-active-color-5: #2aa198;
     --cd-active-color-6: #cb4b16;
     --cd-active-color-7: #b58900;
-    --cd-active-color-8: ;
-    --cd-active-color-9: ;
-    --cd-active-color-10: ;
-    --cd-active-color-11: ;
-    --cd-standby-color-1: #d33682;
+    --cd-standby-color-1: #859900;
     --cd-standby-color-1-light: #268ad246;
     /* Highlighter Plugin */
     --cd-mark-yellow: #e9c46a;
@@ -224,14 +220,6 @@ html[data-theme=light] {
     --cd-active-color-9: #;
     --cd-active-color-10: #;
     --cd-active-color-11: #;
-    --cd-standby-color-1: #d33682;
+    --cd-standby-color-1: #859900;
     --cd-standby-color-1-light: #85990033;
-    --cd-mark-yellow: #e9c46a;
-    --cd-mark-red: #DB3A34;
-    --cd-mark-purple: #5941a9;
-    --cd-mark-orange: #f17300;
-    --cd-mark-grey: #94A89A;
-    --cd-mark-green: #9cb380;
-    --cd-mark-blue: #548687;
-    --cd-mark-pink: #fab2ea;
 }
