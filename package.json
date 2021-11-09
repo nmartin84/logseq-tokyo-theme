@@ -16,6 +16,12 @@
         "url": "./solarized.css",
         "description": "Solarized 🌞",
         "mode": "dark"
+      },
+      {
+        "name": "Ayu",
+        "url": "./ayu.css",
+        "description": "Ayu 😻",
+        "mode": "dark"
       }
     ],
     "id": "tokyo-night"
