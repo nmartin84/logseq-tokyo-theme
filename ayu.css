@@ -1,0 +1,234 @@
+@import './core.css';
+
+.theme-settings,
+html[data-theme=dark] {
+    --cd-primary-bg-color: hsl(222, 22%, 15%);
+    --cd-secondary-bg-color: hsl(222, 22%, 18%);
+    --cd-alternate-bg-color: hsl(222, 22%, 21%);
+    --cd-quaternary-bg-color: hsl(222, 22%, 24%);
+    --cd-codemirror-bg-color: hsl(222, 22%, 21%);
+    --cd-highlight-bg-color: hsla(89, 51%, 61%, 40%);
+    --cd-inactive-color: hsl(222, 22%, 30%);
+    --cd-active-color: hsl(222, 22%, 38%);
+    --cd-primary-text-color: #C7C5BE;
+    --cd-alternate-text-color: #C7C5BE;
+    --cd-active-color-1: #D5FF80;
+    --cd-active-color-2: #F28779;
+    --cd-active-color-3: #F29E74;
+    --cd-active-color-4: #A878DD;
+    --cd-standby-color-1: #FAC761;
+    --cd-mark-yellow: #e9c46a;
+    --cd-mark-red: #DB3A34;
+    --cd-mark-purple: #5941a9;
+    --cd-mark-orange: #f17300;
+    --cd-mark-grey: #94A89A;
+    --cd-mark-green: #9cb380;
+    --cd-mark-blue: #548687;
+    --cd-mark-pink: #fab2ea;
+    --ts-ext-link-color: var(--cd-standby-color-1);
+    --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-1);
+    /*--cd-primary-bg-color: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l));*/
+    /* === FONTS === */
+    --ts-monospace-font: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
+    --ts-serif-font: "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
+    /* === LS Features === */
+    --ts-cloze-color: var(--cd-active-color-2);
+    /* === SELECTIONS === */
+    --ts-selected-bg-color: var(--cd-highlight-bg-color);
+    /* === TAGS === */
+    --ts-tag-color: var(--cd-primary-bg-color);
+    --ts-tag-background-color: var(--cd-standby-color-1);
+    --ts-tag-weight: 500;
+    --ts-tag-color-hover: var(--cd-primary-bg-color);
+    --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
+    --ts-tag-border: 0px solid var(--cd-active-color-1);
+    --ts-tag-border-radius: 2px;
+    --ts-tag-padding: 0px 4px 0px 4px;
+    --ts-tag-box-shadow: 0px 0px;
+    --ts-tag-text-decoration: none;
+    --ts-tag-text-decoration-thickness: 0px;
+    --ts-tag-text-decoration-color: var(--cd-active-color-3);
+    /* === PAGE REFERENCES === */
+    --ts-page-ref-color: var(--cd-active-color-1);
+    --ts-page-ref-padding: 0px 1px 0px 1px;
+    --ts-page-ref-border: 0px solid var(--ts-text-background);
+    --ts-page-ref-border-radius: 0px;
+    --ts-page-ref-background: transparent;
+    --ts-page-ref-bracket-color: var(--cd-standby-color-1);
+    /* === PROPERTIES === */
+    --ts-property-background-color: var(--cd-secondary-bg-color);
+    --ts-property-value-weight: 800;
+    --ts-property-key-weight: 400;
+    --ts-property-key-color: var(--cd-primary-text-color);
+    --ts-property-border: 0px;
+    --ts-property-border-radius: 2px;
+    --ts-property-key-transform: lowercase;
+    --ts-property-key-color: var(--cd-primary-text-color);
+    --ts-property-value-color: var(--cd-primary-text-color);
+    --ts-property-value-weight: 500;
+    --ts-property-value-transform: uppercase;
+    /* === TASKS === */
+    --ts-checkbox-border: 0px solid var(--cd-active-color-1);
+    --ts-checkbox-border-radius: 0px;
+    --ts-checkbox-background: var(--cd-active-color-1);
+    --ts-task-color: var(--cd-active-color-1);
+    --ts-task-opacity: 0.8;
+    /* === PRIORITY ITEMS === */
+    --ts-priority-a-color: var(--cd-active-color-2);
+    --ts-priority-b-color: var(--cd-active-color-4);
+    --ts-priority-c-color: var(--cd-active-color-1);
+    /* === GUIDELINE === */
+    --ts-guideline-inactive-color: var(--cd-inactive-color);
+    --ts-guideline-active-color: var(--cd-active-color);
+    /* === BULLET === */
+    --ts-bullet-closed-color: rgba(53, 42, 42, 0.3);
+    /* === EMBEDS === */
+    --ts-embed-border: 0px;
+    --ts-embed-border-radius: 0px;
+    /* === MARKDOWN === */
+    --ts-title-color: var(--cd-primary-text-color);
+    --ts-headline-color: var(--cd-primary-text-color);
+    --ts-text-bold-color: var(--cd-primary-text-color);
+    --ts-text-italic-color: var(--cd-primary-text-color);
+    --ts-editor-block-text-color: var(--cd-standby-color-1);
+    --ts-underline-color: var(--cd-standby-color-1);
+    --ts-strikethrough-color: var(--cd-primary-text-color);
+    /* === HIGHLIGHTER === */
+    --ts-highlight-color: var(--cd-primary-text-color);
+    --ts-highlight-background-color: transparent;
+    --ts-highlight-decoration-style: underline;
+    --ts-highlight-decoration-color: var(--cd-active-color-1);
+    --ts-highlight-underline-thickness: 4px;
+    /* === CODE BLOCKS === */
+    --ts-inline-code-bg: var(--cd-primary-text-color);
+    --ts-inline-code-color: var(--cd-primary-bg-color);
+    /* === TABLES === */
+    --ts-table-rows: var(--cd-highlight-bg-color);
+    /* === EXT LINKS === */
+    --ts-ext-link-color: var(--cd-standby-color-1);
+    --ts-ext-link-bg-color: transparent;
+    --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-5);
+    --ts-ext-link-weight: 300;
+    --ts-ext-link-style: normal;
+    /* Highlighter Plugin */
+    --cd-mark-yellow: #e9c46a;
+    --cd-mark-red: #DB3A34;
+    --cd-mark-purple: #5941a9;
+    --cd-mark-orange: #f17300;
+    --cd-mark-grey: #94A89A;
+    --cd-mark-green: #9cb380;
+    --cd-mark-blue: #548687;
+    --cd-mark-pink: #fab2ea;
+}
+
+.theme-settings,
+html[data-theme=light] {
+    --cd-primary-bg-color: hsl(210, 17%, 95%);
+    --cd-secondary-bg-color: hsl(210, 17%, 92%);
+    --cd-alternate-bg-color: hsl(210, 17%, 89%);
+    --cd-quaternary-bg-color: hsl(210, 17%, 86%);
+    --cd-codemirror-bg-color: hsl(210, 17%, 89%);
+    --cd-highlight-bg-color: hsla(89, 51%, 61%, 40%);
+    --cd-inactive-color: hsl(210, 17%, 80%);
+    --cd-active-color: hsl(210, 17%, 70%);
+    --cd-primary-text-color: #5C6166;
+    --cd-alternate-text-color: #5C6166;
+    --cd-active-color-1: #86B300;
+    --cd-active-color-2: #F17171;
+    --cd-active-color-3: #3184BC;
+    --cd-standby-color-1: #F9A52E;
+    --cd-mark-yellow: #e9c46a;
+    --cd-mark-red: #DB3A34;
+    --cd-mark-purple: #5941a9;
+    --cd-mark-orange: #f17300;
+    --cd-mark-grey: #94A89A;
+    --cd-mark-green: #9cb380;
+    --cd-mark-blue: #548687;
+    --cd-mark-pink: #fab2ea;
+    --ts-background-contrast-level: 92%;
+    --ts-ext-link-color: var(--cd-standby-color-1);
+    --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-1);
+    /* === FONTS === */
+    --ts-monospace-font: "SF Mono", "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
+    --ts-serif-font: "SF Pro Text", "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
+    /* === LS Features === */
+    --ts-cloze-color: var(--cd-active-color-1);
+    /* === SELECTIONS === */
+    --ts-selected-bg-color: var(--cd-highlight-bg-color);
+    /* === TAGS === */
+    --ts-tag-weight: 500;
+    --ts-tag-color: var(--cd-primary-bg-color);
+    --ts-tag-color-hover: var(--cd-primary-bg-color);
+    --ts-tag-background-color: var(--cd-standby-color-1);
+    --ts-tag-border: 0px solid var(--cd-active-color-4);
+    --ts-tag-border-radius: 2px;
+    --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
+    --ts-tag-padding: 0px 4px 0px 4px;
+    --ts-tag-box-shadow: 0px 0px;
+    --ts-tag-text-decoration: none;
+    --ts-tag-text-decoration-thickness: 0px;
+    --ts-tag-text-decoration-color: var(--cd-active-color-4);
+    --ts-tag-text-decoration-skip: none;
+    /* === PAGE REFERENCES === */
+    --ts-page-ref-color: var(--cd-active-color-1);
+    --ts-page-ref-padding: 0px 1px 0px 1px;
+    --ts-page-ref-border: 0px solid var(--ts-text-background);
+    --ts-page-ref-border-radius: 0px;
+    --ts-page-ref-background: transparent;
+    --ts-page-ref-bracket-color: var(--cd-standby-color-1);
+    /* === PROPERTIES === */
+    --ts-property-background-color: var(--cd-secondary-bg-color);
+    --ts-property-value-weight: 800;
+    --ts-property-key-weight: 400;
+    --ts-property-key-color: var(--cd-primary-text-color);
+    --ts-property-border: 0px;
+    --ts-property-border-radius: 2px;
+    --ts-property-key-transform: lowercase;
+    --ts-property-key-color: var(--cd-primary-text-color);
+    --ts-property-value-color: var(--cd-primary-text-color);
+    --ts-property-value-weight: 600;
+    --ts-property-value-transform: uppercase;
+    /* === TASKS === */
+    --ts-checkbox-border: 0px solid var(--cd-active-color-1);
+    --ts-checkbox-border-radius: 0px;
+    --ts-checkbox-background: var(--cd-active-color-1);
+    --ts-task-color: var(--cd-active-color-1);
+    --ts-task-opacity: 0.8;
+    /* === PRIORITY ITEMS === */
+    --ts-priority-a-color: var(--cd-active-color-4);
+    --ts-priority-b-color: var(--cd-active-color-6);
+    --ts-priority-c-color: var(--cd-active-color-8);
+    /* === GUIDELINE === */
+    --ts-guideline-inactive-color: var(--cd-inactive-color);
+    --ts-guideline-active-color: var(--cd-active-color);
+    /* === BULLET === */
+    --ts-bullet-closed-color: rgba(53, 42, 42, 0.3);
+    /* === EMBEDS === */
+    --ts-embed-border: 0px;
+    --ts-embed-border-radius: 0px;
+    /* === MARKDOWN === */
+    --ts-editor-block-text-color: var(--cd-active-color-1);
+    --ts-title-color: var(--cd-primary-text-color); /* PAGE TITLES */
+    --ts-headline-color: var(--cd-primary-text-color); /* H1, H2, H3, H4, H5, H6 {HEADERS} */
+    --ts-text-bold-color: var(--cd-primary-text-color);
+    --ts-text-italic-color: var(--cd-primary-text-color);
+    --ts-underline-color: var(--cd-standby-color-1);
+    --ts-strikethrough-color: var(--cd-alternate-text-color);
+    /* === HIGHLIGHTER === */
+    --ts-highlight-decoration-style: underline;
+    --ts-highlight-underline-thickness: 4px;
+    --ts-highlight-color: var(--cd-primary-text-color);
+    --ts-highlight-background-color: transparent;
+    --ts-highlight-decoration-color: var(--cd-standby-color-1);
+    /* === CODE BLOCKS === */
+    --ts-inline-code-bg: var(--cd-primary-text-color);
+    --ts-inline-code-color: var(--cd-primary-bg-color);
+    /* === TABLES === */
+    --ts-table-rows: var(--cd-highlight-bg-color);
+    /* === EXT LINKS === */
+    --ts-ext-link-color: var(--cd-standby-color-1);
+    --ts-ext-link-bg-color: transparent;
+    --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-4);
+    --ts-ext-link-weight: 300;
+    --ts-ext-link-style: normal;
+}
