@@ -12,11 +12,11 @@ html[data-theme=dark] {
     --cd-active-color: hsl(222, 22%, 38%);
     --cd-primary-text-color: #C7C5BE;
     --cd-alternate-text-color: #C7C5BE;
-    --cd-active-color-1: #D5FF80;
+    --cd-active-color-1: #FAC761;
     --cd-active-color-2: #F28779;
     --cd-active-color-3: #F29E74;
     --cd-active-color-4: #A878DD;
-    --cd-standby-color-1: #FAC761;
+    --cd-standby-color-1: #D5FF80;
     --cd-mark-yellow: #e9c46a;
     --cd-mark-red: #DB3A34;
     --cd-mark-purple: #5941a9;
@@ -133,21 +133,10 @@ html[data-theme=light] {
     --cd-active-color: hsl(210, 17%, 70%);
     --cd-primary-text-color: #5C6166;
     --cd-alternate-text-color: #5C6166;
-    --cd-active-color-1: #86B300;
+    --cd-active-color-1: #F9A52E;
     --cd-active-color-2: #F17171;
     --cd-active-color-3: #3184BC;
-    --cd-standby-color-1: #F9A52E;
-    --cd-mark-yellow: #e9c46a;
-    --cd-mark-red: #DB3A34;
-    --cd-mark-purple: #5941a9;
-    --cd-mark-orange: #f17300;
-    --cd-mark-grey: #94A89A;
-    --cd-mark-green: #9cb380;
-    --cd-mark-blue: #548687;
-    --cd-mark-pink: #fab2ea;
-    --ts-background-contrast-level: 92%;
-    --ts-ext-link-color: var(--cd-standby-color-1);
-    --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-1);
+    --cd-standby-color-1: #86B300;
     /* === FONTS === */
     --ts-monospace-font: "SF Mono", "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
     --ts-serif-font: "SF Pro Text", "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
