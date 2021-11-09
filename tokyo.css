@@ -24,8 +24,8 @@ html[data-theme=dark] {
     --cd-active-color-9: #bb9af7;
     --cd-standby-color-1: #9ece6a;
     /* === FONTS === */
-    --ts-monospace-font: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
-    --ts-serif-font: "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
+    --ts-monospace-font: "SF Mono", "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
+    --ts-serif-font: "SF Pro Text", "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     /* === LS Features === */
     --ts-cloze-color: var(--cd-active-color-2);
     /* === SELECTIONS === */
@@ -95,8 +95,8 @@ html[data-theme=dark] {
     --ts-highlight-decoration-color: var(--cd-active-color-1);
     --ts-highlight-underline-thickness: 4px;
     /* === CODE BLOCKS === */
-    --ts-inline-code-bg: var(--cd-primary-text-color);
-    --ts-inline-code-color: var(--cd-primary-bg-color);
+    --ts-inline-code-bg: var(--cd-alternate-bg-color);
+    --ts-inline-code-color: var(--cd-standby-color-1);
     /* === TABLES === */
     --ts-table-rows: var(--cd-highlight-bg-color);
     /* === EXT LINKS === */
@@ -222,8 +222,8 @@ html[data-theme=light] {
     --ts-highlight-background-color: transparent;
     --ts-highlight-decoration-color: var(--cd-standby-color-1);
     /* === CODE BLOCKS === */
-    --ts-inline-code-bg: var(--cd-primary-text-color);
-    --ts-inline-code-color: var(--cd-primary-bg-color);
+    --ts-inline-code-bg: var(--cd-alternate-bg-color);
+    --ts-inline-code-color: var(--cd-standby-color-1);
     /* === TABLES === */
     --ts-table-rows: var(--cd-highlight-bg-color);
     /* === EXT LINKS === */
