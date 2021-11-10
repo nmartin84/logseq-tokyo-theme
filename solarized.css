@@ -10,18 +10,18 @@ html[data-theme=dark] {
     /* === SELECTIONS === */
     --ts-selected-bg-color: var(--cd-highlight-bg-color);
     /* === TAGS === */
-    --ts-tag-color: var(--cd-primary-bg-color);
-    --ts-tag-background-color: var(--cd-standby-color-1);
+    --ts-tag-color: var(--cd-standby-color-1);
+    --ts-tag-background-color: transparent;
     --ts-tag-weight: 500;
-    --ts-tag-color-hover: var(--cd-primary-bg-color);
+    --ts-tag-color-hover: var(--cd-standby-color-1);
     --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
     --ts-tag-border: 0px solid var(--cd-active-color-1);
-    --ts-tag-border-radius: 2px;
+    --ts-tag-border-radius: 0px;
     --ts-tag-padding: 0px 4px 0px 4px;
     --ts-tag-box-shadow: 0px 0px;
     --ts-tag-text-decoration: none;
     --ts-tag-text-decoration-thickness: 0px;
-    --ts-tag-text-decoration-color: var(--cd-active-color-1);
+    --ts-tag-text-decoration-color: var(--cd-active-color-3);
     /* === PAGE REFERENCES === */
     --ts-page-ref-color: var(--cd-active-color-1);
     --ts-page-ref-padding: 0px 1px 0px 1px;
@@ -124,19 +124,18 @@ html[data-theme=light] {
     /* === SELECTIONS === */
     --ts-selected-bg-color: var(--cd-highlight-bg-color);
     /* === TAGS === */
+    --ts-tag-color: var(--cd-standby-color-1);
+    --ts-tag-background-color: transparent;
     --ts-tag-weight: 500;
-    --ts-tag-color: var(--cd-primary-bg-color);
-    --ts-tag-color-hover: var(--cd-primary-bg-color);
-    --ts-tag-background-color: var(--cd-standby-color-1);
-    --ts-tag-border: 0px solid var(--cd-active-color-4);
-    --ts-tag-border-radius: 2px;
+    --ts-tag-color-hover: var(--cd-standby-color-1);
     --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
+    --ts-tag-border: 0px solid var(--cd-active-color-1);
+    --ts-tag-border-radius: 0px;
     --ts-tag-padding: 0px 4px 0px 4px;
     --ts-tag-box-shadow: 0px 0px;
     --ts-tag-text-decoration: none;
     --ts-tag-text-decoration-thickness: 0px;
-    --ts-tag-text-decoration-color: var(--cd-active-color-4);
-    --ts-tag-text-decoration-skip: none;
+    --ts-tag-text-decoration-color: var(--cd-active-color-3);
     /* === PAGE REFERENCES === */
     --ts-page-ref-color: var(--cd-active-color-1);
     --ts-page-ref-padding: 0px 1px 0px 1px;
