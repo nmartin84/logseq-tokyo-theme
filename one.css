@@ -91,7 +91,7 @@ html[data-theme=dark] {
     --ts-inline-code-bg: var(--cd-alternate-bg-color);
     --ts-inline-code-color: var(--cd-standby-color-1);
     /* === TABLES === */
-    --ts-table-rows: var(--cd-highlight-bg-color);
+    --ts-table-rows: var(--cd-inactive-color);
     /* === EXT LINKS === */
     --ts-ext-link-color: var(--cd-active-color-2);
     --ts-ext-link-bg-color: transparent;
@@ -198,7 +198,7 @@ html[data-theme=light] {
     --ts-inline-code-bg: var(--cd-alternate-bg-color);
     --ts-inline-code-color: var(--cd-standby-color-1);
     /* === TABLES === */
-    --ts-table-rows: var(--cd-highlight-bg-color);
+    --ts-table-rows: var(--cd-inactive-color);
     /* === EXT LINKS === */
     --ts-ext-link-color: var(--cd-standby-color-1);
     --ts-ext-link-bg-color: transparent;
