@@ -1,7 +1,7 @@
 {
   "name": "Tokyo Themes",
   "author": "nmartin84",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Port of the Obsidian MD theme Tokyo Night",
   "logseq": {
     "themes": [
@@ -27,6 +27,12 @@
         "name": "One",
         "url": "./one.css",
         "description": "One 🌑",
+        "mode": "dark"
+      },
+      {
+        "name": "Gruvbox",
+        "url": "./gruvbox.css",
+        "description": "Gruvbox 🔥",
         "mode": "dark"
       }
     ],
