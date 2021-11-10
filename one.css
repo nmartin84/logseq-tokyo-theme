@@ -11,11 +11,10 @@ html[data-theme=dark] {
     --cd-active-color: hsl(220, 13%, 45%);
     --cd-primary-text-color: #ABB2BF;
     --cd-alternate-text-color: #ABB2BF;
-    --cd-active-color-1: #56B6C2;
-    --cd-active-color-2: #50A274;
-    --cd-active-color-3: #D19A66;
-    --cd-active-color-4: #A878DD;
-    --cd-standby-color-1: #E06C75;
+    --cd-active-color-1: #E06C75;
+    --cd-active-color-2: #C678DD;
+    --cd-active-color-3: #69B779;
+    --cd-standby-color-1: #4FAFEF;
     /*--cd-primary-bg-color: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l));*/
     /* === FONTS === */
     --ts-monospace-font: "SF Mono", "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
@@ -94,7 +93,7 @@ html[data-theme=dark] {
     /* === TABLES === */
     --ts-table-rows: var(--cd-highlight-bg-color);
     /* === EXT LINKS === */
-    --ts-ext-link-color: var(--cd-standby-color-1);
+    --ts-ext-link-color: var(--cd-active-color-2);
     --ts-ext-link-bg-color: transparent;
     --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-5);
     --ts-ext-link-weight: 300;
