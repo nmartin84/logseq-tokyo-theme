@@ -29,6 +29,7 @@ html[data-theme=dark] {
     --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-1);
     /*--cd-primary-bg-color: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l));*/
     /* === FONTS === */
+    --ts-font-size: 1em;
     --ts-monospace-font: "SF Mono", "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
     --ts-serif-font: "SF Pro Text", "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     /* === LS Features === */
@@ -138,6 +139,7 @@ html[data-theme=light] {
     --cd-active-color-3: #3184BC;
     --cd-standby-color-1: #86B300;
     /* === FONTS === */
+    --ts-font-size: 1em;
     --ts-monospace-font: "SF Mono", "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
     --ts-serif-font: "SF Pro Text", "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     /* === LS Features === */
