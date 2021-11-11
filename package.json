@@ -34,6 +34,12 @@
         "url": "./gruvbox.css",
         "description": "Gruvbox 🔥",
         "mode": "dark"
+      },
+      {
+        "name": "Night Owl",
+        "url": "./nightowl.css",
+        "description": "Nightowl 🦉",
+        "mode": "dark"
       }
     ],
     "id": "tokyo-night"
