@@ -91,7 +91,7 @@ html[data-theme=dark] {
     --ts-headline-color: var(--cd-primary-text-color);
     --ts-text-bold-color: var(--cd-primary-text-color);
     --ts-text-italic-color: var(--cd-primary-text-color);
-    --ts-editor-block-text-color: var(--cd-standby-color-1);
+    --ts-editor-block-text-color: var(--cd-active-color-1);
     --ts-underline-color: var(--cd-standby-color-1);
     --ts-strikethrough-color: var(--cd-primary-text-color);
     /* === HIGHLIGHTER === */
