@@ -469,10 +469,13 @@ a.tag:hover {
 .block-ref {
     padding: 2.7px 5px 3px 5px;
     border-bottom: 0px solid var(--cd-standby-color-1);
-    background: var(--cd-inactive-color);
-    transition: 0.2s;
+    background: transparent;
     font-size: 85%;
     border-radius: 0px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-skip-ink: none;
+    text-decoration-color: var(--cd-standby-color-1);
 }
 
 .block-ref:hover {
