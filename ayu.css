@@ -44,7 +44,7 @@ html[data-theme=dark] {
     --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
     --ts-tag-border: 0px solid var(--cd-active-color-1);
     --ts-tag-border-radius: 0px;
-    --ts-tag-padding: 0px 4px 0px 4px;
+    --ts-tag-padding: 0px 0px 0px 1px;
     --ts-tag-box-shadow: 0px 0px;
     --ts-tag-text-decoration: none;
     --ts-tag-text-decoration-thickness: 0px;
@@ -154,7 +154,7 @@ html[data-theme=light] {
     --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
     --ts-tag-border: 0px solid var(--cd-active-color-1);
     --ts-tag-border-radius: 0px;
-    --ts-tag-padding: 0px 4px 0px 4px;
+    --ts-tag-padding: 0px 0px 0px 1px;
     --ts-tag-box-shadow: 0px 0px;
     --ts-tag-text-decoration: none;
     --ts-tag-text-decoration-thickness: 0px;
