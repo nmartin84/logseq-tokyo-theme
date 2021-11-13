@@ -1,7 +1,7 @@
 {
   "name": "Tokyo Themes",
   "author": "nmartin84",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Port of the Obsidian MD theme Tokyo Night",
   "logseq": {
     "themes": [
@@ -39,6 +39,12 @@
         "name": "Night Owl",
         "url": "./nightowl.css",
         "description": "Nightowl 🦉",
+        "mode": "dark"
+      },
+      {
+        "name": "Nord",
+        "url": "./nord.css",
+        "description": "Nord 🧔",
         "mode": "dark"
       }
     ],
