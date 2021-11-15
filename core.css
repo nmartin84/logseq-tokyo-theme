@@ -267,10 +267,9 @@ a:hover>.bullet-container {
 
 .cp__sidebar-left-layout {
     background-color: var(--ts-sidebar-bg-color, --ls-secondary-background-color);
-
-  &:before {
+}
+.cp__sidebar-left-layout::before {
     background-color: var(--ts-sidebar-bg-color, --ls-secondary-background-color);
-  }
 }
 
 /* == MARKDOWN FORMATTING == */
