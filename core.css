@@ -468,7 +468,7 @@ a.tag:hover {
 /* BLOCK REFERENCES */
 
 .block-ref {
-    padding: 2.7px 5px 3px 5px;
+    padding: 0px 0px 0px 0px;
     border-bottom: 0px solid var(--cd-standby-color-1);
     background: transparent;
     font-size: 85%;
