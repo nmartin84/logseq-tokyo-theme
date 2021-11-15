@@ -489,7 +489,7 @@ a.tag:hover {
     padding: 0px 0px 0px 0px;
     border-bottom: 0px solid var(--cd-standby-color-1);
     background: transparent;
-    font-size: 85%;
+    font-size: 100%;
     border-radius: 0px;
     text-decoration: underline;
     text-decoration-thickness: 2px;
