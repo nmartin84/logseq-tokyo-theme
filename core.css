@@ -270,8 +270,9 @@ a:hover>.bullet-container {
     color: var(--ts-editor-block-text-color);
 }
 
-li {
-    color: var(--cd-standby-color-1);
+.ls-block li {
+    color: var(--ts-list-bullet-color);
+    list-style: disc;
 }
 
 .ls-block :is(h1, h2, h3, h4, h5, h6) {
