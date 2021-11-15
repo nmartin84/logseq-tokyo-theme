@@ -260,6 +260,19 @@ a:hover>.bullet-container {
     border: none !important;
 }
 
+/* ========= LEFT SIDEBAR ========= */
+#sidebar-nav-wrapper a {
+    color: var(--ts-sidebar-text-color);
+}
+
+.cp__sidebar-left-layout {
+    background-color: var(--ts-sidebar-bg-color, --ls-secondary-background-color);
+
+  &:before {
+    background-color: var(--ts-sidebar-bg-color, --ls-secondary-background-color);
+  }
+}
+
 /* == MARKDOWN FORMATTING == */
 
 .cloze {
