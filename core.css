@@ -18,7 +18,7 @@ html[data-theme=dark] {
 	
     /* == Text == */
     --ts-monospace-font: "Fira Code", "SF Mono", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
-    --ts-serif-font: "Quicksand", "Inter", "SF Pro Text", "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
+    --ts-serif-font: "Inter", "SF Pro Text", "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     --ls-primary-text-color: var(--cd-primary-text-color);
     --ls-secondary-text-color: var(--cd-alternate-text-color);
     --ls-active-primary-color: var(--ls-primary-text-color);
@@ -79,7 +79,7 @@ html[data-theme=light] {
 
     /* == Text == */
     --ts-monospace-font: "Fira Code", "SF Mono", Monaco, Menlo, Consolas, 'COURIER NEW', monospace; /* Primarily for inline code and code blocks */
-    --ts-serif-font: "Quicksand", "Inter", "SF Pro Text", "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
+    --ts-serif-font: "Inter", "SF Pro Text", "Airbnb Cereal App", system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; /* Used for 90% of all blocks */
     --ls-primary-text-color: var(--cd-primary-text-color);
     --ls-secondary-text-color: var(--cd-alternate-text-color);
     --ls-active-primary-color: var(--ls-primary-text-color);
