@@ -222,7 +222,7 @@ html[data-theme=light] {
     --ts-highlight-underline-thickness: 4px;
     --ts-highlight-color: var(--cd-primary-text-color);
     --ts-highlight-background-color: transparent;
-    --ts-highlight-decoration-color: var(--cd-active-color-5);
+    --ts-highlight-decoration-color: var(--cd-active-color-2);
     /* === CODE BLOCKS === */
     --ts-inline-code-bg: var(--cd-alternate-bg-color);
     --ts-inline-code-color: var(--cd-active-color-5);
