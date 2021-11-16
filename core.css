@@ -38,8 +38,8 @@ html[data-theme=dark] {
     --ls-secondary-border-color: var(--cd-standby-color-1);
     --ls-guideline-color: var(--ts-guideline-inactive-color);
     /* == Scrollbars == */
-    --ls-scrollbar-foreground-color: var(--cd-standby-color-1);
-    --ls-scrollbar-background-color: var(--cd-highlight-bg-color);
+    --ls-scrollbar-foreground-color: var(--ts-scrollbar-fg-color);
+    --ls-scrollbar-background-color: var(--ts-scrollbar-bg-color);
     --ls-scrollbar-thumb-hover-color: var(--cd-active-color-1);
     /* == Misc == */
     --ls-menu-hover-color: var(--ls-secondary-background-color);
@@ -99,8 +99,8 @@ html[data-theme=light] {
     --ls-secondary-border-color: var(--cd-standby-color-1);
     --ls-guideline-color: var(--ts-guideline-inactive-color);
     /* == Scrollbars == */
-    --ls-scrollbar-foreground-color: var(--cd-standby-color-1);
-    --ls-scrollbar-background-color: var(--cd-highlight-bg-color);
+    --ls-scrollbar-foreground-color: var(--ts-scrollbar-fg-color);
+    --ls-scrollbar-background-color: var(--ts-scrollbar-bg-color);
     --ls-scrollbar-thumb-hover-color: var(--cd-active-color-1);
     /* == Misc == */
     --ls-menu-hover-color: var(--ls-secondary-background-color);
@@ -277,6 +277,10 @@ a:hover>.bullet-container {
     background-color: var(--ts-sidebar-bg-color, --ls-secondary-background-color);
 }
 
+.left-sidebar-inner a.item {
+    color: var(--ts-sidebar-navigation-colors) !important;
+}
+
 /* == MARKDOWN FORMATTING == */
 
 .cloze {
@@ -416,11 +420,18 @@ b {
     color: var(--ts-task-color);
     opacity: var(--ts-task-opacity);
 }
+.block-marker:hover {
+    color: var(--ts-task-color-hover);
+}
 
 .form-checkbox {
     border: var(--ts-checkbox-border);
     border-radius: var(--ts-checkbox-border-radius);
     background: var(--ts-checkbox-background);
+}
+
+.form-checkbox:hover {
+    background: var(--ts-checkbox-background-hover);
 }
 
 .form-checkbox:checked {
