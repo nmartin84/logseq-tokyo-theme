@@ -516,7 +516,7 @@ a.tag:hover {
     font-size: 100%;
     border-radius: 0px;
     text-decoration: underline;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 1px;
     text-decoration-skip-ink: none;
     text-decoration-color: var(--cd-standby-color-1);
 }
