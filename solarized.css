@@ -205,7 +205,7 @@ html[data-theme=light] {
     --cd-secondary-bg-color: #F0EAD8;
     --cd-alternate-bg-color: #E4DDCC;
     --cd-quaternary-bg-color: #D7D1C1;
-    --cd-highlight-bg-color: var(--cd-standby-color-1-light);
+    --cd-highlight-bg-color: var(--cd-alternate-bg-color);
     --cd-inactive-color: #D7D1C1;
     --cd-active-color: #BEB9AA;
     --cd-primary-text-color: #556B72;
@@ -222,5 +222,4 @@ html[data-theme=light] {
     --cd-active-color-10: #;
     --cd-active-color-11: #;
     --cd-standby-color-1: #859900;
-    --cd-standby-color-1-light: #85990033;
 }
