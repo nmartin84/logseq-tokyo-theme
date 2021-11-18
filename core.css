@@ -156,7 +156,7 @@ html[data-theme=light] {
 
 /* ==== Tipper Wrapper ==== */
 .tippy-wrapper {
-  background: var(--cd-alternate-bg-color);
+  background-color: var(--cd-alternate-bg-color);
 }
 
 /* ==== BULLETS ==== */
