@@ -7,7 +7,7 @@ html[data-theme=dark] {
     --cd-alternate-bg-color: hsl(220, 16%, 18%);
     --cd-quaternary-bg-color: hsl(220, 16%, 16%);
     --cd-codemirror-bg-color: hsl(220, 16%, 18%);
-    --cd-highlight-bg-color: hsla(210, 34%, 63%, 40%);
+    --cd-highlight-bg-color: var(--cd-alternate-bg-color);
     --cd-inactive-color: hsl(220, 16%, 30%);
     --cd-active-color: hsl(220, 16%, 35%);
     --cd-primary-text-color: #ECEFF4;
@@ -126,7 +126,7 @@ html[data-theme=light] {
     --cd-alternate-bg-color: hsl(218, 27%, 88%);
     --cd-quaternary-bg-color: hsl(218, 27%, 86%);
     --cd-codemirror-bg-color: hsl(218, 27%, 88%);
-    --cd-highlight-bg-color: hsla(212, 48%, 45%, 40%);
+    --cd-highlight-bg-color: var(--cd-alternate-bg-color);
     --cd-inactive-color: hsl(218, 27%, 80%);
     --cd-active-color: hsl(218, 27%, 75%);
     --cd-primary-text-color: #3B4252;
