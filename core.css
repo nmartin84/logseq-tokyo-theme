@@ -483,7 +483,7 @@ a.priority[href="#/page/C"] {
 a.tag {
     background: var(--ts-tag-background-color);
     color: var(--ts-tag-color);
-    font-size: 80%;
+    font-size: 100%;
     font-weight: var(--ts-tag-weight);
     padding: var(--ts-tag-padding);
     border: var(--ts-tag-border);
@@ -493,7 +493,7 @@ a.tag {
     text-decoration-thickness: var(--ts-tag-text-decoration-thickness);
     text-decoration-color: var(--ts-tag-text-decoration-color);
     text-decoration-skip-ink: var(--ts-tag-text-decoration-skip);
-    opacity: 50%;
+    opacity: 100%;
 }
 
 a.tag:hover {
