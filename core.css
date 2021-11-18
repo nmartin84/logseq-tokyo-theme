@@ -497,7 +497,7 @@ a.tag {
 }
 
 a.tag:hover {
-    color: var(--ts-tag-color-hover);
+    color: var(--cd-active-color);
     opacity: 100%;
 }
 
