@@ -154,6 +154,11 @@ html[data-theme=light] {
     font-display: swap;
 }*/
 
+/* ==== Tipper Wrapper ==== */
+.tippy-wrapper {
+  background: var(--cd-alternate-bg-color);
+}
+
 /* ==== BULLETS ==== */
 
 .bullet-container.bullet-closed .bullet { background-color: transparent; }
