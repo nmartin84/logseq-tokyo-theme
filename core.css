@@ -155,7 +155,7 @@ html[data-theme=light] {
 }*/
 
 /* ==== Tipper Wrapper ==== */
-.tippy-wrapper {
+.tippy-wrapper, .tippy-tooltip {
   background-color: var(--cd-alternate-bg-color);
 }
 
