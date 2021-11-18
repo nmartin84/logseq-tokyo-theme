@@ -267,8 +267,15 @@ a:hover>.bullet-container {
     border: none !important;
 }
 
+/* == Fix box shadow elements and padding on card blocks == */
 .shadow-xl {
   --tw-shadow: none;
+}
+div[data-refs-self*='"card"'] {
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 0px;
 }
 
 /* ========= LEFT SIDEBAR ========= */
