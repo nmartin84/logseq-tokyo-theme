@@ -267,6 +267,10 @@ a:hover>.bullet-container {
     border: none !important;
 }
 
+.shadow-xl {
+  --tw-shadow: none;
+}
+
 /* ========= LEFT SIDEBAR ========= */
 #sidebar-nav-wrapper a {
     color: var(--ts-sidebar-text-color);
