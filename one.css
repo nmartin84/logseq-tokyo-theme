@@ -6,7 +6,7 @@ html[data-theme=dark] {
     --cd-secondary-bg-color: hsl(220, 13%, 21%);
     --cd-alternate-bg-color: hsl(220, 13%, 24%);
     --cd-quaternary-bg-color: hsl(220, 13%, 27%);
-    --cd-highlight-bg-color: hsla(355, 65%, 65%, 40%);
+    --cd-highlight-bg-color: var(--cd-alternate-bg-color);
     --cd-inactive-color: hsl(220, 13%, 35%);
     --cd-active-color: hsl(220, 13%, 45%);
     --cd-primary-text-color: #ABB2BF;
@@ -57,10 +57,14 @@ html[data-theme=dark] {
     --ts-property-value-weight: 500;
     --ts-property-value-transform: uppercase;
     /* === TASKS === */
-    --ts-checkbox-border: 0px solid var(--cd-active-color-1);
-    --ts-checkbox-border-radius: 0px;
-    --ts-checkbox-background: var(--cd-active-color-1);
-    --ts-task-color: var(--cd-active-color-1);
+    --ts-checkbox-border: 2px solid var(--cd-active-color);
+    --ts-checkbox-border-radius: 4px;
+    --ts-checkbox-background: var(--cd-primary-bg-color);
+    --ts-checkbox-background-hover: var(--cd-primary-bg-color);
+    --ts-checkbox-checked-background: var(--cd-active-color-1);
+    --ts-checkbox-checked-border: 2px solid var(--cd-active-color-1);
+    --ts-task-color: var(--cd-active-color-9);
+    --ts-task-color-hover: var(--cd-active-color-9);
     --ts-task-opacity: 0.8;
     /* === PRIORITY ITEMS === */
     --ts-priority-a-color: var(--cd-active-color-2);
@@ -116,7 +120,7 @@ html[data-theme=light] {
     --cd-secondary-bg-color: hsl(0, 0%, 95%);
     --cd-alternate-bg-color: hsl(0, 0%, 92%);
     --cd-quaternary-bg-color: hsl(0, 0%, 89%);
-    --cd-highlight-bg-color: hsla(204, 59%, 46%, 40%);
+    --cd-highlight-bg-color: var(--cd-alternate-bg-color);
     --cd-inactive-color: hsl(0, 0%, 80%);
     --cd-active-color: hsl(0, 0%, 75%);
     --cd-primary-text-color: #383A42;
@@ -164,10 +168,14 @@ html[data-theme=light] {
     --ts-property-value-weight: 600;
     --ts-property-value-transform: uppercase;
     /* === TASKS === */
-    --ts-checkbox-border: 0px solid var(--cd-active-color-1);
-    --ts-checkbox-border-radius: 0px;
-    --ts-checkbox-background: var(--cd-active-color-1);
-    --ts-task-color: var(--cd-active-color-1);
+    --ts-checkbox-border: 2px solid var(--cd-active-color);
+    --ts-checkbox-border-radius: 4px;
+    --ts-checkbox-background: var(--cd-primary-bg-color);
+    --ts-checkbox-background-hover: var(--cd-primary-bg-color);
+    --ts-checkbox-checked-background: var(--cd-active-color-1);
+    --ts-checkbox-checked-border: 2px solid var(--cd-active-color-1);
+    --ts-task-color: var(--cd-active-color-9);
+    --ts-task-color-hover: var(--cd-active-color-9);
     --ts-task-opacity: 0.8;
     /* === PRIORITY ITEMS === */
     --ts-priority-a-color: var(--cd-active-color-4);

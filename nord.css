@@ -8,7 +8,7 @@ html[data-theme=dark] {
     --cd-quaternary-bg-color: hsl(220, 16%, 16%);
     --cd-codemirror-bg-color: hsl(220, 16%, 18%);
     --cd-highlight-bg-color: var(--cd-alternate-bg-color);
-    --cd-inactive-color: hsl(220, 16%, 30%);
+    --cd-inactive-color: hsl(220, 16%, 27%);
     --cd-active-color: hsl(220, 16%, 35%);
     --cd-primary-text-color: #ECEFF4;
     --cd-alternate-text-color: #ECEFF4;
@@ -41,10 +41,10 @@ html[data-theme=dark] {
     /* === SELECTIONS === */
     --ts-selected-bg-color: var(--cd-highlight-bg-color);
     /* === TAGS === */
-    --ts-tag-color: var(--cd-active-color-8);
+    --ts-tag-color: var(--cd-active-color);
     --ts-tag-background-color: transparent;
     --ts-tag-weight: 500;
-    --ts-tag-color-hover: var(--cd-active-color-8);
+    --ts-tag-color-hover: var(--cd-active-color-7);
     --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
     --ts-tag-border: 0px solid var(--cd-active-color-4);
     --ts-tag-border-radius: 0px;
@@ -73,10 +73,11 @@ html[data-theme=dark] {
     --ts-property-value-weight: 500;
     --ts-property-value-transform: uppercase;
     /* === TASKS === */
-    --ts-checkbox-border: 0px solid var(--cd-active-color-4);
-    --ts-checkbox-border-radius: 0px;
-    --ts-checkbox-background: var(--cd-active-color-9);
-    --ts-checkbox-background-hover: var(--cd-active-color-9);
+    --ts-checkbox-border: 2px solid var(--cd-active-color);
+    --ts-checkbox-border-radius: 4px;
+    --ts-checkbox-background: var(--cd-primary-bg-color);
+    --ts-checkbox-background-hover: var(--cd-primary-bg-color);
+    --ts-checkbox-checked-background: var(--cd-active-color-2);
     --ts-task-color: var(--cd-active-color-9);
     --ts-task-color-hover: var(--cd-active-color-9);
     --ts-task-opacity: 0.8;
@@ -101,11 +102,12 @@ html[data-theme=dark] {
     --ts-underline-color: var(--cd-active-color-1);
     --ts-strikethrough-color: var(--cd-primary-text-color);
     /* === HIGHLIGHTER === */
-    --ts-highlight-color: var(--cd-primary-text-color);
-    --ts-highlight-background-color: transparent;
-    --ts-highlight-decoration-style: underline;
-    --ts-highlight-decoration-color: var(--cd-active-color-2);
+    --ts-highlight-decoration-style: none;
     --ts-highlight-underline-thickness: 4px;
+    --ts-highlight-color: #3B4252;
+    --ts-highlight-background-color: var(--cd-active-color-7);
+    --ts-highlight-decoration-color: var(--cd-active-color-2);
+    --ts-highlight-border-radius: 2px;
     /* === CODE BLOCKS === */
     --ts-inline-code-bg: var(--cd-alternate-bg-color);
     --ts-inline-code-color: var(--cd-active-color-2);
@@ -127,7 +129,7 @@ html[data-theme=light] {
     --cd-quaternary-bg-color: hsl(218, 27%, 86%);
     --cd-codemirror-bg-color: hsl(218, 27%, 88%);
     --cd-highlight-bg-color: var(--cd-alternate-bg-color);
-    --cd-inactive-color: hsl(218, 27%, 80%);
+    --cd-inactive-color: hsl(218, 27%, 84%);
     --cd-active-color: hsl(218, 27%, 75%);
     --cd-primary-text-color: #3B4252;
     --cd-alternate-text-color: #3B4252;
@@ -158,10 +160,10 @@ html[data-theme=light] {
     /* === SELECTIONS === */
     --ts-selected-bg-color: var(--cd-highlight-bg-color);
     /* === TAGS === */
-    --ts-tag-color: var(--cd-active-color-8);
+    --ts-tag-color: var(--cd-active-color);
     --ts-tag-background-color: transparent;
     --ts-tag-weight: 500;
-    --ts-tag-color-hover: var(--cd-active-color-8);
+    --ts-tag-color-hover: var(--cd-active-color-7);
     --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
     --ts-tag-border: 0px solid var(--cd-active-color-1);
     --ts-tag-border-radius: 0px;
@@ -190,10 +192,11 @@ html[data-theme=light] {
     --ts-property-value-weight: 600;
     --ts-property-value-transform: uppercase;
     /* === TASKS === */
-    --ts-checkbox-border: 0px solid var(--cd-active-color-1);
-    --ts-checkbox-border-radius: 0px;
-    --ts-checkbox-background: var(--cd-active-color-9);
-    --ts-checkbox-background-hover: var(--cd-active-color-9);
+    --ts-checkbox-border: 2px solid var(--cd-active-color);
+    --ts-checkbox-border-radius: 4px;
+    --ts-checkbox-background: var(--cd-primary-bg-color);
+    --ts-checkbox-background-hover: var(--cd-primary-bg-color);
+    --ts-checkbox-checked-background: var(--cd-active-color-2);
     --ts-task-color: var(--cd-active-color-9);
     --ts-task-color-hover: var(--cd-active-color-9);
     --ts-task-opacity: 0.8;
@@ -218,11 +221,12 @@ html[data-theme=light] {
     --ts-underline-color: var(--cd-active-color-5);
     --ts-strikethrough-color: var(--cd-alternate-text-color);
     /* === HIGHLIGHTER === */
-    --ts-highlight-decoration-style: underline;
+    --ts-highlight-decoration-style: none;
     --ts-highlight-underline-thickness: 4px;
-    --ts-highlight-color: var(--cd-primary-text-color);
-    --ts-highlight-background-color: transparent;
+    --ts-highlight-color: #3B4252;
+    --ts-highlight-background-color: var(--cd-active-color-7);
     --ts-highlight-decoration-color: var(--cd-active-color-2);
+    --ts-highlight-border-radius: 2px;
     /* === CODE BLOCKS === */
     --ts-inline-code-bg: var(--cd-alternate-bg-color);
     --ts-inline-code-color: var(--cd-active-color-5);

@@ -7,7 +7,7 @@ html[data-theme=dark] {
     --cd-alternate-bg-color: hsl(222, 22%, 21%);
     --cd-quaternary-bg-color: hsl(222, 22%, 24%);
     --cd-codemirror-bg-color: hsl(222, 22%, 21%);
-    --cd-highlight-bg-color: hsla(89, 51%, 61%, 40%);
+    --cd-highlight-bg-color: var(--cd-alternate-bg-color);
     --cd-inactive-color: hsl(222, 22%, 30%);
     --cd-active-color: hsl(222, 22%, 38%);
     --cd-primary-text-color: #C7C5BE;
@@ -17,17 +17,6 @@ html[data-theme=dark] {
     --cd-active-color-3: #F29E74;
     --cd-active-color-4: #A878DD;
     --cd-standby-color-1: #D5FF80;
-    --cd-mark-yellow: #e9c46a;
-    --cd-mark-red: #DB3A34;
-    --cd-mark-purple: #5941a9;
-    --cd-mark-orange: #f17300;
-    --cd-mark-grey: #94A89A;
-    --cd-mark-green: #9cb380;
-    --cd-mark-blue: #548687;
-    --cd-mark-pink: #fab2ea;
-    --ts-ext-link-color: var(--cd-standby-color-1);
-    --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-1);
-    /*--cd-primary-bg-color: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l));*/
     /* === FONTS === */
     --ts-font-size: 1em;
     /* === LS Features === */
@@ -37,7 +26,7 @@ html[data-theme=dark] {
     /* === SELECTIONS === */
     --ts-selected-bg-color: var(--cd-highlight-bg-color);
     /* === TAGS === */
-    --ts-tag-color: var(--cd-standby-color-1);
+    --ts-tag-color: var(--cd-active-color);
     --ts-tag-background-color: transparent;
     --ts-tag-weight: 500;
     --ts-tag-color-hover: var(--cd-standby-color-1);
@@ -69,10 +58,14 @@ html[data-theme=dark] {
     --ts-property-value-weight: 500;
     --ts-property-value-transform: uppercase;
     /* === TASKS === */
-    --ts-checkbox-border: 0px solid var(--cd-active-color-1);
-    --ts-checkbox-border-radius: 0px;
-    --ts-checkbox-background: var(--cd-active-color-1);
-    --ts-task-color: var(--cd-active-color-1);
+    --ts-checkbox-border: 2px solid var(--cd-active-color);
+    --ts-checkbox-border-radius: 4px;
+    --ts-checkbox-background: var(--cd-primary-bg-color);
+    --ts-checkbox-background-hover: var(--cd-primary-bg-color);
+    --ts-checkbox-checked-background: var(--cd-active-color-1);
+    --ts-checkbox-checked-border: 2px solid var(--cd-active-color-1);
+    --ts-task-color: var(--cd-active-color-9);
+    --ts-task-color-hover: var(--cd-active-color-9);
     --ts-task-opacity: 0.8;
     /* === PRIORITY ITEMS === */
     --ts-priority-a-color: var(--cd-active-color-2);
@@ -129,7 +122,7 @@ html[data-theme=light] {
     --cd-alternate-bg-color: hsl(210, 17%, 89%);
     --cd-quaternary-bg-color: hsl(210, 17%, 86%);
     --cd-codemirror-bg-color: hsl(210, 17%, 89%);
-    --cd-highlight-bg-color: hsla(89, 51%, 61%, 40%);
+    --cd-highlight-bg-color: var(--cd-alternate-bg-color);
     --cd-inactive-color: hsl(210, 17%, 80%);
     --cd-active-color: hsl(210, 17%, 70%);
     --cd-primary-text-color: #5C6166;
@@ -147,7 +140,7 @@ html[data-theme=light] {
     /* === SELECTIONS === */
     --ts-selected-bg-color: var(--cd-highlight-bg-color);
     /* === TAGS === */
-    --ts-tag-color: var(--cd-standby-color-1);
+    --ts-tag-color: var(--cd-active-color);
     --ts-tag-background-color: transparent;
     --ts-tag-weight: 500;
     --ts-tag-color-hover: var(--cd-standby-color-1);
@@ -179,10 +172,14 @@ html[data-theme=light] {
     --ts-property-value-weight: 600;
     --ts-property-value-transform: uppercase;
     /* === TASKS === */
-    --ts-checkbox-border: 0px solid var(--cd-active-color-1);
-    --ts-checkbox-border-radius: 0px;
-    --ts-checkbox-background: var(--cd-active-color-1);
-    --ts-task-color: var(--cd-active-color-1);
+    --ts-checkbox-border: 2px solid var(--cd-active-color);
+    --ts-checkbox-border-radius: 4px;
+    --ts-checkbox-background: var(--cd-primary-bg-color);
+    --ts-checkbox-background-hover: var(--cd-primary-bg-color);
+    --ts-checkbox-checked-background: var(--cd-active-color-1);
+    --ts-checkbox-checked-border: 2px solid var(--cd-active-color-1);
+    --ts-task-color: var(--cd-active-color-9);
+    --ts-task-color-hover: var(--cd-active-color-9);
     --ts-task-opacity: 0.8;
     /* === PRIORITY ITEMS === */
     --ts-priority-a-color: var(--cd-active-color-4);
