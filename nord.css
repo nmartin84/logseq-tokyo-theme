@@ -95,7 +95,7 @@ html[data-theme=dark] {
     --ts-embed-border-radius: 0px;
     /* === MARKDOWN === */
     --ts-title-color: var(--cd-active-color-3);
-    --ts-headline-color: var(--cd-primary-text-color);
+    --ts-headline-color: var(--cd-active-color-3);
     --ts-text-bold-color: var(--cd-primary-text-color);
     --ts-text-italic-color: var(--cd-primary-text-color);
     --ts-editor-block-text-color: var(--cd-active-color-4);
@@ -114,7 +114,7 @@ html[data-theme=dark] {
     /* === TABLES === */
     --ts-table-rows: var(--cd-inactive-color);
     /* === EXT LINKS === */
-    --ts-ext-link-color: var(--cd-active-color-4);
+    --ts-ext-link-color: var(--cd-active-color-9);
     --ts-ext-link-bg-color: transparent;
     --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-1);
     --ts-ext-link-weight: 300;
@@ -215,7 +215,7 @@ html[data-theme=light] {
     /* === MARKDOWN === */
     --ts-editor-block-text-color: var(--cd-active-color-1);
     --ts-title-color: var(--cd-active-color-3); /* PAGE TITLES */
-    --ts-headline-color: var(--cd-primary-text-color); /* H1, H2, H3, H4, H5, H6 {HEADERS} */
+    --ts-headline-color: var(--cd-active-color-3); /* H1, H2, H3, H4, H5, H6 {HEADERS} */
     --ts-text-bold-color: var(--cd-primary-text-color);
     --ts-text-italic-color: var(--cd-primary-text-color);
     --ts-underline-color: var(--cd-active-color-5);
@@ -233,7 +233,7 @@ html[data-theme=light] {
     /* === TABLES === */
     --ts-table-rows: var(--cd-inactive-color);
     /* === EXT LINKS === */
-    --ts-ext-link-color: var(--cd-active-color-4);
+    --ts-ext-link-color: var(--cd-active-color-9);
     --ts-ext-link-bg-color: transparent;
     --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-4);
     --ts-ext-link-weight: 300;
