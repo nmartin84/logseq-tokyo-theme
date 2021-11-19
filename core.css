@@ -332,6 +332,10 @@ div[data-refs-self*='"card"'] {
     margin: 0;
 }
 
+.ls-block :is(h1, h2, h3, h4, h5, h6) b {
+    color: currentColor !important;
+}
+
 .editor-inner .h1,
 .editor-inner .h2 {
     border-bottom: 0px solid transparent;
