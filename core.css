@@ -437,11 +437,11 @@ b {
 /* === Guidelines === */
 
 .block-children {
-    border-left: 1px solid var(--cd-active-color-1);
+    border-left: 1px solid var(--cd-active-color);
 }
 
 .block-children:not(:focus-within) {
-    border-left: 1px solid var(--cd-inactive-color);
+    border-left: 1px solid var(--cd-active-color);
 }
 
 /* ==== Fonts ==== */
