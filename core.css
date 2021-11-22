@@ -261,10 +261,6 @@ a:hover>.bullet-container {
     border-radius: var(--ts-embed-border-radius);
 }
 
-.color-level {
-  border: 2px solid var(--cd-inactive-color);
-}
-
 /* === BLOCK PROPERTIES === */
 .block-properties {
     border: var(--ts-property-border);
