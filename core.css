@@ -508,6 +508,10 @@ html[data-theme=light] .form-checkbox:focus, html[data-theme=dark] .form-checkbo
     border: var(--ts-checkbox-checked-border) !important;
 }
 
+.inline.done a.tag {
+  text-decoration: line-through;
+}
+
 a.priority[href="#/page/A"] {
     color: var(--ts-priority-a-color);
     font-weight: 600;
