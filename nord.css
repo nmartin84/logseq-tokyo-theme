@@ -73,7 +73,7 @@ html[data-theme=dark] {
     --ts-property-value-weight: 500;
     --ts-property-value-transform: uppercase;
     /* === TASKS === */
-    --ts-checkbox-border: 2px solid var(--cd-active-color);
+    --ts-checkbox-border: 1.5px solid var(--cd-active-color);
     --ts-checkbox-border-radius: 4px;
     --ts-checkbox-background: var(--cd-primary-bg-color);
     --ts-checkbox-background-hover: var(--cd-primary-bg-color);
@@ -192,7 +192,7 @@ html[data-theme=light] {
     --ts-property-value-weight: 600;
     --ts-property-value-transform: uppercase;
     /* === TASKS === */
-    --ts-checkbox-border: 2px solid var(--cd-active-color);
+    --ts-checkbox-border: 1.5px solid var(--cd-active-color);
     --ts-checkbox-border-radius: 4px;
     --ts-checkbox-background: var(--cd-primary-bg-color);
     --ts-checkbox-background-hover: var(--cd-primary-bg-color);
