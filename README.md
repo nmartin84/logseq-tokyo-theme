@@ -1,6 +1,6 @@
-Tokyo Themes originally started out as a conversion of the Tokyo Night theme from VSCode, and since then has converted a number of popular themes found from other popular text editors to Logseq. To get started you'll want to install the theme from the Marketplace.
+Tokyo Themes originally started out as a conversion of the Tokyo Night theme from VSCode, and since then has converted a number of popular themes to Logseq. Each color theme has been customized to suit the style of the theme.
 
-# Available Themes 
+# Available Color Themes
 **Nord Theme**
 ![Nord](images/Nord.jpg)
 
