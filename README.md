@@ -1,16 +1,6 @@
-# Tokyo Night
-Ported from Obsidian, all credits for the theme and its colors go to the original author [URL](https://github.com/RuslanGagushin/Tokyo-Night-Obsidian-Theme)... My focus was to make this theme module enough that you can adjust several aspects of the theme from inside your `custom.css` without breaking your other themes.
-![Tokyo Night/Day](images/TokyoNight_Day.png)
+Tokyo Themes originally started out as a conversion of the Tokyo Night theme from VSCode, and since then has converted a number of popular themes found from other popular text editors to Logseq. To get started you'll want to install the theme from the Marketplace.
 
-## Getting Started
-- From Logseq, open the plugins panel, navigate to marketplace, and select install on the Tokyo Theme.
-- (Optional)
-  - Clone this repo to your computer.
-  - Install the theme as a Plugin inside LS and you're set to go.
-
-## Additioanl color themes
-Tokyo themes now comes with other popular themes from VSCode and DOOM Emacs. You can find a selection of color themes when you open the Themes panel in Logseq.
-
+# Available Themes 
 **Nord Theme**
 ![Nord](images/Nord.jpg)
 
