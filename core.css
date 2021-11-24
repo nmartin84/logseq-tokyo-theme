@@ -594,6 +594,11 @@ a.tag:hover {
     color: var(--cd-active-color-2);
 }
 
+.open-block-ref-link {
+  background-color: var(--cd-quaternary-bg-color);
+  color: var(--cd-active-color-5);
+}
+
 @keyframes pulse2 {
     0% {
         color: var(--cd-standby-color-1);
