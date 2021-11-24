@@ -44,7 +44,7 @@ html[data-theme=dark] {
     --ts-tag-color: var(--cd-active-color);
     --ts-tag-background-color: transparent;
     --ts-tag-weight: 500;
-    --ts-tag-color-hover: var(--cd-active-color-7);
+    --ts-tag-color-hover: var(--cd-active-color);
     --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
     --ts-tag-border: 0px solid var(--cd-active-color-4);
     --ts-tag-border-radius: 0px;
@@ -163,7 +163,7 @@ html[data-theme=light] {
     --ts-tag-color: var(--cd-active-color);
     --ts-tag-background-color: transparent;
     --ts-tag-weight: 500;
-    --ts-tag-color-hover: var(--cd-active-color-7);
+    --ts-tag-color-hover: var(--cd-active-color);
     --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
     --ts-tag-border: 0px solid var(--cd-active-color-1);
     --ts-tag-border-radius: 0px;
