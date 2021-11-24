@@ -570,21 +570,27 @@ a.tag:hover {
 
 /* BLOCK REFERENCES */
 
+.block-ref::before { content: "(("; margin-right: 1px; }
+.block-ref::after { content: "))"; margin-left: 1px; }
+.block-ref::before, .block-ref::after {
+  color: #737373;
+  opacity: 0.3;
+
 .block-ref {
     padding: 0px 0px 0px 0px;
     border-bottom: 0px solid var(--cd-standby-color-1);
     background: transparent;
     font-size: 100%;
     border-radius: 0px;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
+    text-decoration: none;
+    text-decoration-thickness: 0px;
     text-decoration-skip-ink: none;
     text-decoration-color: var(--cd-standby-color-1);
+    color: var(--cd-active-color-2);
 }
 
 .block-ref:hover {
-    color: var(--cd-standby-color-1);
-    transition: 0.2s;
+    color: var(--cd-active-color-2);
 }
 
 @keyframes pulse2 {
