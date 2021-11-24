@@ -110,7 +110,7 @@ html[data-theme=dark] {
     --ts-highlight-border-radius: 2px;
     /* === CODE BLOCKS === */
     --ts-inline-code-bg: var(--cd-alternate-bg-color);
-    --ts-inline-code-color: var(--cd-active-color-2);
+    --ts-inline-code-color: var(--cd-active-color-3);
     /* === TABLES === */
     --ts-table-rows: var(--cd-inactive-color);
     /* === EXT LINKS === */
@@ -229,7 +229,7 @@ html[data-theme=light] {
     --ts-highlight-border-radius: 2px;
     /* === CODE BLOCKS === */
     --ts-inline-code-bg: var(--cd-alternate-bg-color);
-    --ts-inline-code-color: var(--cd-active-color-5);
+    --ts-inline-code-color: var(--cd-active-color-3);
     /* === TABLES === */
     --ts-table-rows: var(--cd-inactive-color);
     /* === EXT LINKS === */
