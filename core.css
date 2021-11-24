@@ -555,6 +555,7 @@ a.tag {
 a.tag:hover {
     color: var(--ts-tag-color-hover);
     text-decoration: underline;
+    transition: 0.0s;
 }
 
 .whitespace-nowrap {
