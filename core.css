@@ -554,7 +554,7 @@ a.tag {
 
 a.tag:hover {
     color: var(--ts-tag-color-hover);
-    opacity: 100%;
+    text-decoration: underline;
 }
 
 .whitespace-nowrap {
