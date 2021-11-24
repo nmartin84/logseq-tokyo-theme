@@ -575,6 +575,7 @@ a.tag:hover {
 .block-ref::before, .block-ref::after {
   color: #737373;
   opacity: 0.3;
+}
 
 .block-ref {
     padding: 0px 0px 0px 0px;
