@@ -566,7 +566,10 @@ a.tag:hover {
     background-color: var(--ts-selected-bg-color);
 }
 
-/* === PAGE PROPERTIES === */
+/* === Block Parents === */
+.block-parents .page-ref {
+  color: var(--ts-page-ref-color);
+}
 
 /* BLOCK REFERENCES */
 
