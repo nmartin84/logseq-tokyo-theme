@@ -550,6 +550,7 @@ a.tag {
     text-decoration-color: var(--ts-tag-text-decoration-color);
     text-decoration-skip-ink: var(--ts-tag-text-decoration-skip);
     opacity: 100%;
+    text-transform: lowercase;
 }
 
 a.tag:hover {
