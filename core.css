@@ -520,6 +520,10 @@ html[data-theme=light] .form-checkbox:focus, html[data-theme=dark] .form-checkbo
   border: var(--ts-checkbox-later-border);
 }
 
+.inline.doing .form-checkbox, .inline.now .form-checkbox {
+  border: var(--ts-checkbox-doing-border);
+}
+
 a.priority[href="#/page/A"] {
     color: var(--ts-priority-a-color);
     font-weight: 600;
