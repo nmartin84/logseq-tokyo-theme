@@ -223,7 +223,7 @@ html[data-theme=light] {
     --ts-headline-color: var(--cd-primary-text-color);
     --ts-headline-weight: 700;
     --ts-text-bold-color: var(--cd-active-color-2);
-    --ts-text-italic-color: var(--cd-active-color-1);
+    --ts-text-italic-color: var(--cd-active-color-2);
     --ts-editor-block-text-color: var(--cd-active-color-2);
     --ts-underline-color: var(--cd-active-color-1);
     --ts-strikethrough-color: var(--cd-primary-text-color);
