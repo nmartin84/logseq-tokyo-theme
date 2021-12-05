@@ -5,6 +5,7 @@ Tokyo Themes originally started out as a conversion of the Tokyo Night theme fro
 ![Nord](images/Nord.jpg)
 
 **Yin and Yang**
+link to original author's theme = [github link](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme)
 ![Yin and Yang](images/yinyang.jpg)
 
 **Night Owl**
