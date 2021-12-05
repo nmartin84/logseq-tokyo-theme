@@ -4,5 +4,14 @@ Tokyo Themes originally started out as a conversion of the Tokyo Night theme fro
 **Nord Theme**
 ![Nord](images/Nord.jpg)
 
+**Yin and Yang**
+![Yin and Yang](images/yinyang.jpg)
+
+**Night Owl**
+![Night Owl](images/nightowl.jpg)
+
+**Gruvbox**
+![Gruvbox](images/gruvbox.jpg)
+
 ## Feedback
 Feedback is welcome! If you have suggestions feel free to submit a PR.

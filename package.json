@@ -1,7 +1,7 @@
 {
   "name": "Tokyo Themes",
   "author": "nmartin84",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Port of the Obsidian MD theme Tokyo Night",
   "logseq": {
     "themes": [
@@ -45,6 +45,12 @@
         "name": "Nord",
         "url": "./nord.css",
         "description": "Nord 🧔",
+        "mode": "dark"
+      },
+      {
+        "name": "Yin and Yang",
+        "url": "./yin-and-yang.css",
+        "description": "Yin and Yang ☯",
         "mode": "dark"
       }
     ],
