@@ -255,7 +255,6 @@ html[data-theme=light] {
     --ts-table-rows: var(--cd-inactive-color);
     /* === EXT LINKS === */
     --ts-ext-link-color: var(--cd-active-color);
-
     --ts-ext-link-bg-color: transparent;
     --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-1);
     --ts-ext-link-weight: 300;

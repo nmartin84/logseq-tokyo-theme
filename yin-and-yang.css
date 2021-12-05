@@ -4,8 +4,8 @@
 html[data-theme=dark] {
     --cd-primary-bg-color: hsl(210, 23%, 5%);
     --cd-secondary-bg-color: hsl(202, 22%, 7%);
-    --cd-alternate-bg-color: hsl(202, 22%, 9%);
-    --cd-quaternary-bg-color: hsl(202, 22%, 11%);
+    --cd-alternate-bg-color: hsl(202, 22%, 10%);
+    --cd-quaternary-bg-color: hsl(202, 22%, 13%);
     --cd-codemirror-bg-color: hsl(202, 22%, 9%);
     --cd-highlight-bg-color: var(--cd-alternate-bg-color);
     --cd-inactive-color: hsl(202, 22%, 15%);
@@ -121,6 +121,7 @@ html[data-theme=dark] {
     --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-1);
     --ts-ext-link-weight: 300;
     --ts-ext-link-style: normal;
+    --ts-ext-link-decoration: underline;
 }
 
 .theme-settings,
@@ -244,4 +245,5 @@ html[data-theme=light] {
     --ts-ext-link-border-bottom: 0px solid var(--cd-active-color-1);
     --ts-ext-link-weight: 300;
     --ts-ext-link-style: normal;
+    --ts-ext-link-decoration: underline;
 }
