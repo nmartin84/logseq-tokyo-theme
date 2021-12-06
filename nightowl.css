@@ -50,9 +50,9 @@ html[data-theme=dark] {
     --ts-tag-text-decoration-thickness: 0px;
     --ts-tag-text-decoration-color: var(--cd-active-color-3);
     /* === BLOCK REFS === */
-    --ts-block-ref-border: 1px dashed var(--cd-active-color-2);
+    --ts-block-ref-border: 1px dashed var(--cd-active-color-3);
     /* === PAGE REFERENCES === */
-    --ts-page-ref-color: var(--cd-active-color-3);
+    --ts-page-ref-color: var(--cd-active-color-1);
     --ts-page-ref-padding: 0px 1px 0px 1px;
     --ts-page-ref-border: 0px solid var(--ts-text-background);
     --ts-page-ref-border-radius: 0px;
@@ -77,7 +77,7 @@ html[data-theme=dark] {
     --ts-checkbox-border-radius: 1px;
     --ts-checkbox-background: var(--cd-primary-bg-color);
     --ts-checkbox-background-hover: var(--cd-primary-bg-color);
-    --ts-checkbox-checked-background: var(--cd-active-color-2);
+    --ts-checkbox-checked-background: var(--cd-active-color-3);
     --ts-task-color: var(--cd-active-color);
     --ts-task-color-hover: var(--cd-active-color-9);
     --ts-task-opacity: 0.8;
@@ -98,8 +98,8 @@ html[data-theme=dark] {
     --ts-title-color: var(--cd-primary-text-color);
     --ts-headline-color: var(--cd-primary-text-color);
     --ts-headline-weight: 700;
-    --ts-text-bold-color: var(--cd-active-color-3);
-    --ts-text-italic-color: var(--cd-active-color-2);
+    --ts-text-bold-color: var(--cd-active-color-1);
+    --ts-text-italic-color: var(--cd-active-color-1);
     --ts-editor-block-text-color: var(--cd-active-color-3);
     --ts-underline-color: var(--cd-active-color-3);
     --ts-strikethrough-color: var(--cd-primary-text-color);
