@@ -25,7 +25,7 @@ html[data-theme=dark] {
     /* === LS Features === */
     --ts-sidebar-text-color: var(--cd-primary-text-color);
     --ts-sidebar-bg-color: var(--cd-quaternary-bg-color);
-    --ts-sidebar-navigation-colors: var(--cd-active-color);
+    --ts-sidebar-navigation-colors: var(--cd-primary-text-color);
     --ts-cloze-color: var(--cd-active-color-2);
     /* === Menu === */
     --ts-menu-bg-color: var(--cd-secondary-bg-color);
@@ -145,7 +145,7 @@ html[data-theme=light] {
     /* === LS Features === */
     --ts-sidebar-text-color: var(--cd-primary-text-color);
     --ts-sidebar-bg-color: var(--cd-quaternary-bg-color);
-    --ts-sidebar-navigation-colors: var(--cd-active-color);
+    --ts-sidebar-navigation-colors: var(--cd-primary-text-color);
     --ts-cloze-color: var(--cd-active-color-2);
     /* === Menu === */
     --ts-menu-bg-color: var(--cd-secondary-bg-color);
