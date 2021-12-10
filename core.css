@@ -623,7 +623,7 @@ a.tag:hover {
 .ls-block .block-ref :not(pre)>code {
     padding: 0px 1px 0px 1px !important;
 }
-
+/*
 .ls-block .block-ref .page-ref {
     color: var(--ts-block-ref-page-ref-color);
 }
@@ -639,7 +639,7 @@ a.tag:hover {
 
 .ls-block .block-ref .tag {
     color: var(--ts-block-ref-tag-color);
-}
+}*/
 
 .open-block-ref-link {
   background-color: var(--cd-quaternary-bg-color);
