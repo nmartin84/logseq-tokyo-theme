@@ -351,7 +351,7 @@ div[data-refs-self*='"card"'] {
     border-bottom: 0px solid red;
     color: var(--ts-headline-color);
     font-weight: var(--ts-headline-weight);
-    font-family: var(--ts-sans-font);
+/*    font-family: var(--ts-sans-font);*/
     margin: 0;
 }
 
@@ -360,14 +360,14 @@ div[data-refs-self*='"card"'] {
 }
 
 h1.title {
-    font-family: var(--ts-sans-font);
+/*    font-family: var(--ts-sans-font);*/
 }
 
 .editor-inner .h1,
 .editor-inner .h2 {
     border-bottom: 0px solid transparent;
     margin: 0 0 0;
-    font-family: var(--ts-sans-font);
+/*    font-family: var(--ts-sans-font);*/
 }
 
 /* ========= Headline fixes =========== */
@@ -603,7 +603,7 @@ a.tag:hover {
 
 /* BLOCK REFERENCES */
 
-.block-ref {
+.ls-block .block-ref {
     padding: 0px 0px 0px 0px;
     border-bottom: var(--ts-block-ref-border);
     background: transparent;
@@ -616,12 +616,29 @@ a.tag:hover {
     color: currentColor;
 }
 
-.block-ref:hover {
+.ls-block .block-ref:hover {
     color: currentColor;
 }
 
-.block-ref :not(pre)>code {
+.ls-block .block-ref :not(pre)>code {
     padding: 0px 1px 0px 1px !important;
+}
+
+.ls-block .block-ref .page-ref {
+    color: var(--ts-block-ref-page-ref-color);
+}
+
+.ls-block .block-ref .page-ref:hover {
+    background: transparent;
+}
+
+.ls-block .block-ref .form-checkbox {
+    background: var(--ts-block-ref-checkbox-bg);
+    border: var(--ts-block-ref-checkbox-border);
+}
+
+.ls-block .block-ref .tag {
+    color: var(--ts-block-ref-tag-color);
 }
 
 .open-block-ref-link {
