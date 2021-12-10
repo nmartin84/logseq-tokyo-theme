@@ -49,7 +49,7 @@ html[data-theme=dark] {
     --ts-tag-text-decoration-thickness: 0px;
     --ts-tag-text-decoration-color: var(--cd-active-color-3);
     /* === BLOCK REFS === */
-    --ts-block-ref-border: 1px dashed var(--cd-active-color-3);
+    --ts-block-ref-border: 1px solid var(--cd-primary-text-color);
     /* === PAGE REFERENCES === */
     --ts-page-ref-color: var(--cd-active-color-1);
     --ts-page-ref-padding: 0px 1px 0px 1px;
@@ -172,7 +172,7 @@ html[data-theme=light] {
     --ts-tag-text-decoration-thickness: 0px;
     --ts-tag-text-decoration-color: var(--cd-active-color-3);
     /* === BLOCK REFS === */
-    --ts-block-ref-border: 1px dashed var(--cd-active-color-1);
+    --ts-block-ref-border: 1px solid var(--cd-primary-text-color);
     /* === PAGE REFERENCES === */
     --ts-page-ref-color: var(--cd-active-color-2);
     --ts-page-ref-padding: 0px 1px 0px 1px;

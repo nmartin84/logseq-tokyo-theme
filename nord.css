@@ -44,7 +44,7 @@ html[data-theme=dark] {
     /* === TAGS === */
     --ts-tag-color: var(--cd-active-color);
     --ts-tag-background-color: transparent;
-    --ts-tag-weight: 300;
+    --ts-tag-weight: 500;
     --ts-tag-color-hover: var(--cd-active-color);
     --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
     --ts-tag-border: 0px solid var(--cd-active-color-4);
@@ -55,7 +55,12 @@ html[data-theme=dark] {
     --ts-tag-text-decoration-thickness: 0px;
     --ts-tag-text-decoration-color: var(--cd-active-color-3);
     /* === BLOCK REFS === */
-    --ts-block-ref-border: 1px dashed var(--cd-active-color-1);
+    --ts-block-ref-border: 1px solid var(--cd-primary-text-color);
+    --ts-block-ref-bg-color: #8fbcbb40;
+    --ts-block-ref-page-ref-color: hsl(179, 54%, 70%);
+    --ts-block-ref-checkbox-bg: transparent;
+    --ts-block-ref-checkbox-border: 1.5px solid hsl(179, 54%, 70%);
+    --ts-block-ref-tag-color: hsl(179, 54%, 70%);
     /* === PAGE REFERENCES === */
     --ts-page-ref-color: var(--cd-active-color-1);
     --ts-page-ref-padding: 0px 1px 0px 1px;
@@ -183,7 +188,12 @@ html[data-theme=light] {
     --ts-tag-text-decoration-thickness: 0px;
     --ts-tag-text-decoration-color: var(--cd-active-color-3);
     /* === BLOCK REFS === */
-    --ts-block-ref-border: 1px dashed var(--cd-active-color-3);
+    --ts-block-ref-border: 1px solid var(--cd-primary-text-color);
+    --ts-block-ref-bg-color: hsla(311, 30%, 57%, 38%);
+    --ts-block-ref-page-ref-color: hsl(311, 51%, 50%);
+    --ts-block-ref-checkbox-bg: transparent;
+    --ts-block-ref-checkbox-border: 1.5px solid hsl(311, 51%, 50%);
+    --ts-block-ref-tag-color: hsl(311, 51%, 50%);
     /* === PAGE REFERENCES === */
     --ts-page-ref-color: var(--cd-active-color-3);
     --ts-page-ref-padding: 0px 1px 0px 1px;
