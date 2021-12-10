@@ -160,7 +160,9 @@ html[data-theme=light] {
 }
 
 /* ==== MENU ==== */
-.cp__palette-main .chosen {
+ // TODO: Clean up this section and build out some proper variables.
+/*
+.cp__palette-main .chosen, .chosen {
     background: var(--ts-chosen-color);
 }
 
@@ -174,7 +176,7 @@ button.menu:focus {
 .menu-link {
     background-color: var(--ts-menu-bg-color);
     color: var(--cd-primary-text-color);
-}
+}*/
 
 .search-results-wrap mark {
     color: var(--ts-menu-matched-color);
