@@ -318,6 +318,7 @@ div[data-refs-self*='"card"'] {
 }
 
 /* ========= LEFT SIDEBAR ========= */
+
 #sidebar-nav-wrapper a {
     color: var(--ts-sidebar-text-color);
 }
@@ -325,8 +326,9 @@ div[data-refs-self*='"card"'] {
 .cp__sidebar-left-layout {
     background-color: var(--ts-sidebar-bg-color, --ls-secondary-background-color);
 }
+
 .cp__sidebar-left-layout::before {
-    background-color: var(--ts-sidebar-bg-color, --ls-secondary-background-color);
+    background-color: transparent !important;
 }
 
 .left-sidebar-inner a.item {
