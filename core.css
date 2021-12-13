@@ -323,12 +323,12 @@ div[data-refs-self*='"card"'] {
     color: var(--ts-sidebar-text-color);
 }
 
-.cp__sidebar-left-layout {
-    background-color: var(--ts-sidebar-bg-color, --ls-secondary-background-color);
+.cp__sidebar-left-layout:before {
+    background-color: var(--cd-quaternary-bg-color);
 }
 
-.cp__sidebar-left-layout::before {
-    background-color: transparent !important;
+.left-sidebar-inner {
+    background-color: var(--ts-sidebar-bg-color, --ls-secondary-background-color);
 }
 
 .left-sidebar-inner a.item {
@@ -759,10 +759,20 @@ figcaption {
 .CodeMirror-lines,
 .CodeMirror-scroll,
 .CodeMirror-sizer {
-    background: var(--ls-secondary-background-color);
+    background: var(--cd-codemirror-bg-color);
 }
 
 .cm-s-solarized.cm-s-dark .CodeMirror-linenumber {
     color: var(--cd-primary-text-color);
     filter: opacity(0.3);
+}
+
+.extensions__code-lang {
+    background: transparent;
+    color: transparent;
+}
+
+.extensions__code-lang:hover {
+    color: var(--cd-primary-text-color);
+    background: var(--cd-codemirror-bg-color);
 }
