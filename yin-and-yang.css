@@ -58,6 +58,11 @@
     --tn-shade-3: #A2B2BE;
     --tn-shade-4: #8FA2B1;
     --tn-shade-5: #7C92A4;
+    --tn-shade-6: #698397;
+    --tn-shade-7: #5C7284;
+    --tn-shade-8: #4F6271;
+    --tn-shade-9: #42525F;
+    --tn-shade-10: #35414C;
     --tn-blue: #74B6FF;
     --tn-red: #FF6363;
     --tn-yellow: #ECC48D;
@@ -397,8 +402,17 @@
     background-color: var(--tn-bg-color-dk-shade-3);
     color: var(--tn-text-color);
   }
-  *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) button {
-    background-color: var(--tn-shade-5);
+  
+  /* ==== BUTTONS ==== */
+  
+  .dark-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) :not(.search-wrap) button.ui__button {
+    background-color: var(--tn-shade-8);
+  }
+  .dark-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) :not(.search-wrap) button.ui__button.active {
+    background-color: var(--tn-shade-10);
+  }
+  .dark-theme .search-wrap button.ui__button {
+    background-color: transparent !important;
   }
   
   /* ==== MENUS ==== */
