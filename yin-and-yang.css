@@ -64,16 +64,25 @@
   :is(.asset-ref.is-pdf) {
     color: var(--tn-blue);
   }
-  :is(#main-content-container, #right-sidebar, .tippy-tooltip) .page-ref {
-    color: var(--tn-accent-color-dk-3);
-  }
-  :is(#main-content-container, #right-sidebar, .tippy-tooltip) .page-ref:hover {
-    color: var(--tn-accent-color-dk-1);
-    background-color: transparent !important;
-    opacity: 100%;
-  }
+  // FIXME: Page references are missing dark vs white colors
+  // TODO: Should we adjust page-ref color for dark theme to a lighter color? YES
   .page-ref:hover {
     background-color: transparent !important;
+  }
+  .page-ref {
+    color: transparent;
+  }
+  :is(#main-content-container, #right-sidebar, .tippy-tooltip) .page-ref {
+    color: var(--tn-accent-color-dk-1) !important;
+  }
+  :is(#main-content-container, #right-sidebar, .tippy-tooltip) .page-ref:hover {
+    color: var(--tn-accent-color-dk-3) !important;
+  }
+  :is(#main-content-container, #right-sidebar, .tippy-tooltip) .color-level .page-ref {
+    color: var(--tn-accent-color-dk-1) !important;
+  }
+  :is(#main-content-container, #right-sidebar, .tippy-tooltip) .color-level .page-ref:hover {
+    color: var(--tn-accent-color-dk-3) !important;
   }
   :is(#main-content-container, #right-sidebar, .tippy-tooltip) .block-ref {
     color: var(--tn-accent-color-dk-3);
@@ -102,8 +111,7 @@
   
   
   /* === MARKDOWN === */
-  // TODO: Add color definitions for block-ref indicator
-  // TODO: Add CodeMirror color definitions for white theme
+  // TODO: CodeMirror needs colors defined for white theme
   
   .CodeMirror-lines {
     font-family: var(--ts-monospace-font);
@@ -118,15 +126,19 @@
     color: var(--tn-blue);
   }
   
-  // FIXME: Add color definitions for all 3 areas
+  // FIXME: inline code needs better definitions for block-references and right sidebar
   .dark-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip-content) :not(pre)>code {
     background: var(--tn-bg-color-lg-shade-2);
     color: var(--tn-blue);
   }
-  // TODO: Add inline-code section for white theme
-  .ls-block:hover b, .ls-block:hover i {
+  // TODO: inline code is missing white theme settings
+  
+  .ls-block:hover b {
     color: var(--tn-accent-color-dk-1);
   }
+
+  // FIXME: inline code inside a block reference is using the solarized BG color...
+
   :is(#main-content-container, #right-sidebar, .tippy-tooltip-content) .block-ref {
     color: var(--tn-blue);
     border-bottom: 0px solid;
@@ -140,10 +152,11 @@
     color: var(--tn-text-color);
   }
   .dark-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip) .external-link {
-    color: var(--tn-accent-color-lg-1);
+    color: var(--tn-blue);
+    border-bottom: 0px solid;
   }
   .dark-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip) .external-link:hover {
-    color: var(--tn-accent-color-dk-1);
+    color: var(--tn-blue);
   }
   .dark-theme .external-link:after {
     font-family: 'tabler-icons';
@@ -153,10 +166,11 @@
     font-size: 80%;
   }
   .white-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip) .external-link {
-    color: var(--tn-accent-color-dk-1);
+    color: var(--tn-blue);
+    border-bottom: 0px solid;
   }
   .white-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip) .external-link:hover {
-    color: var(--tn-accent-color);
+    color: var(--tn-blue);
   }
   .white-theme .external-link:after {
     font-family: 'tabler-icons';
@@ -309,6 +323,7 @@
   }
   
   /* ==== TIPPY ==== */
+  // FIXME: Tippy Previews for block references has the solarized BG Color that we need to fix or remove.
   .dark-theme .tippy-tooltip, .tippy-wrapper {
     background-color: var(--tn-bg-color-lg-shade-2);
   }
@@ -348,6 +363,7 @@
   }
   
   /* ==== MENUS ==== */
+  // FIXME: White theme is missing some menu color definitions
   .relative .dropdown-wrapper, .relative .dropdown-wrapper .menu-link {
     background-color: var(--tn-text-color);
     color: var(--tn-bg-color);
