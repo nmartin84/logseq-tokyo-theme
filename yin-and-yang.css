@@ -306,7 +306,7 @@
     background-color: var(--tn-bg-color-dk-shade-1);
   }
   .cp__sidebar-help-btn {
-    background: var(--tn-accent-color-dk-2);
+    background: var(--tn-blue);
     color: var(--tn-bg-color)
   }
   .white-theme #main-content-container .selected {
