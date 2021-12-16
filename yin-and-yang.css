@@ -102,6 +102,8 @@
   
   
   /* === MARKDOWN === */
+  // TODO: Add color definitions for block-ref indicator
+  // TODO: Add CodeMirror color definitions for white theme
   
   .CodeMirror-lines {
     font-family: var(--ts-monospace-font);
@@ -116,10 +118,12 @@
     color: var(--tn-blue);
   }
   
+  // FIXME: Add color definitions for all 3 areas
   .dark-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip-content) :not(pre)>code {
     background: var(--tn-bg-color-lg-shade-2);
     color: var(--tn-blue);
   }
+  // TODO: Add inline-code section for white theme
   .ls-block:hover b, .ls-block:hover i {
     color: var(--tn-accent-color-dk-1);
   }
@@ -209,7 +213,7 @@
   }
   
   
-  /* ==== Bullets & Outlines ==== */
+  /* ==== Outlines ==== */
   
   .dark-theme #main-content-container .block-children {
     border-left: 2px solid var(--tn-bg-color-lg-shade-1);
@@ -229,7 +233,9 @@
   .white-theme #main-content-container .color-level .block-children {
     border-left: 2px solid var(--tn-bg-color-dk-shade-4) !important;
   }
-  
+
+  /* ==== BULLETS ==== */
+  // TODO: Add different colors for all 3 areas (block-refs, right-sidebar, and right-sidebar block refs)
   .dark-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip) .bullet-container .bullet {
     background-color: var(--tn-shade-5);
   }
