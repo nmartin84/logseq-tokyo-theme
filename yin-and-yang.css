@@ -259,7 +259,10 @@
     background: var(--tn-accent-color-dk-2);
     color: var(--tn-bg-color)
   }
-  .block-highlight, .content .selected {
+  .white-theme #main-content-container .selected {
+    background-color: var(--tn-bg-color-dk-shade-2) !important;
+  }
+  .dark-theme #main-content-container .selected {
     background-color: var(--tn-bg-color-lg-shade-2);
   }
   .dark-theme .page-properties {
