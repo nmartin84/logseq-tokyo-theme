@@ -378,8 +378,12 @@
     display: none;  
   }
   
-  .tippy-tooltip-content .block-children {
-    border-left: 2px solid var(--tn-accent-color-dk-1) !important;
+  html[data-theme=light] .tippy-tooltip-content .block-children {
+    border-left: 2px solid var(--tn-bg-color-dk-shade-4) !important;
+  }
+
+  html[data-theme=dark] .tippy-tooltip-content .block-children {
+    border-left: 2px solid var(--tn-bg-color-lg-shade-2) !important;
   }
   
   .tippy-tooltip-content .inline {
