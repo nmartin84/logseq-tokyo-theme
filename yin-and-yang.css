@@ -488,7 +488,7 @@
   
   /* ==== SCROLLBARS ==== */
   html ::-webkit-scrollbar-thumb {
-    background-color: var(--tn-accent-color-dk-1);
+    background-color: var(--tn-shade-5);
   }
   html ::-webkit-scrollbar {
     background-color: var(--tn-bg-color-lg-shade-4);
