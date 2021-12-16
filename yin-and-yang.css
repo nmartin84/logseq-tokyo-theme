@@ -138,7 +138,10 @@
   }
 
   // FIXME: inline code inside a block reference is using the solarized BG color...
-
+  .block-ref {
+    color: currentColor;
+    border-bottom: 0px solid;
+  }
   :is(#main-content-container, #right-sidebar, .tippy-tooltip-content) .block-ref {
     color: var(--tn-blue);
     border-bottom: 0px solid;
@@ -147,6 +150,9 @@
     text-decoration-style: dashed;
     text-underline-offset: 4px;
     text-decoration-color: var(--tn-text-color);
+  }
+  :is(#main-content-container, #right-sidebar, .tippy-tooltip-content) .block-ref:hover {
+    color: var(--tn-blue);
   }
   #main-content-container h1.title {
     color: var(--tn-text-color);
@@ -220,12 +226,7 @@
     transition: 0.2s;
     opacity: 1.0;
     background-color: var(--tn-accent-color-dk-1);
-  }
-  
-  :is(#main-content-container, #right-sidebar, .tippy-tooltip) .page-property-key.font-medium {
-    color: var(--tn-accent-color-dk-1);
-  }
-  
+  }   
   
   /* ==== Outlines ==== */
   
@@ -269,6 +270,9 @@
   .white-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip) .bullet-container.bullet-closed {
     background-color: var(--tn-bg-color-dk-shade-3);
   }
+  .white-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip) .color-level .bullet-container.bullet-closed {
+    background-color: var(--tn-bg-color-dk-shade-4);
+  }
   .white-theme a:hover>.bullet-container {
     background-color: var(--tn-bg-color-dk-shade-2);
   }
@@ -307,6 +311,18 @@
   }
   .white-theme .page-properties {
     background-color: var(--tn-bg-color-dk-shade-1);
+  }
+  .dark-theme .block-properties {
+    background-color: var(--tn-bg-color-lg-shade-1);
+  }
+  .white-theme .block-properties {
+    background-color: var(--tn-bg-color-dk-shade-1);
+  }
+  .dark-theme .color-level .block-properties {
+    background-color: var(--tn-bg-color-lg-shade-2);
+  }
+  .white-theme .color-level .block-properties {
+    background-color: var(--tn-bg-color-dk-shade-3);
   }
   .dark-theme .ti-circle-plus {
     color: var(--tn-blue);
@@ -427,14 +443,14 @@
     color: var(--tn-bg-color);
   }
   .dark-theme :is(#left-sidebar) div.relative a:hover {
-    background-color: var(--tn-accent-color-dk-3);
+    background-color: var(--tn-accent-color-dk-1);
     color: var(--tn-text-color);
   }
   .dark-theme :is(.left-sidebar-inner) {
     background-color: var(--tn-bg-color-lg-shade-2);
   }
   .dark-theme :is(.left-sidebar-inner) a.item:hover {
-    background-color: var(--tn-accent-color-dk-3);
+    background-color: var(--tn-accent-color-dk-1);
   }
   .dark-theme #left-sidebar :is(.favorites, .recent) ul :is(.favorite-item, .recent-item) a:hover {
     color: var(--tn-text-color);
@@ -442,7 +458,7 @@
     border-right: transparent;
     border-bottom: transparent;
     border-left: transparent;
-    background-color: var(--tn-accent-color-dk-3);
+    background-color: var(--tn-accent-color-dk-1);
   }
   .dark-theme .left-sidebar-inner .favorites .page-icon, .left-sidebar-inner .recent .page-icon {
     color: var(--tn-text-color);
@@ -455,14 +471,14 @@
     color: var(--tn-bg-color);
   }
   .dark-theme :is(#left-sidebar) div.relative a:hover {
-    background-color: var(--tn-accent-color-dk-3);
+    background-color: var(--tn-accent-color-dk-1);
     color: var(--tn-text-color);
   }
   .dark-theme :is(.left-sidebar-inner) {
     background-color: var(--tn-bg-color-lg-shade-2);
   }
   .dark-theme :is(.left-sidebar-inner) a.item:hover {
-    background-color: var(--tn-accent-color-dk-3);
+    background-color: var(--tn-accent-color-dk-1);
   }
   .dark-theme #left-sidebar :is(.favorites, .recent) ul :is(.favorite-item, .recent-item) a:hover {
     color: var(--tn-text-color);
@@ -470,7 +486,7 @@
     border-right: transparent;
     border-bottom: transparent;
     border-left: transparent;
-    background-color: var(--tn-accent-color-dk-3);
+    background-color: var(--tn-accent-color-dk-1);
   }
   .dark-theme .left-sidebar-inner .favorites .page-icon, .left-sidebar-inner .recent .page-icon {
     color: var(--tn-text-color);
@@ -483,14 +499,14 @@
     color: var(--tn-bg-color);
   }
   .white-theme :is(#left-sidebar) div.relative a:hover {
-    background-color: var(--tn-accent-color-dk-3);
+    background-color: var(--tn-accent-color-dk-1);
     color: var(--tn-text-color);
   }
   .white-theme :is(.left-sidebar-inner) {
     background-color: var(--tn-bg-color-dk-shade-2);
   }
   .white-theme :is(.left-sidebar-inner) a.item:hover {
-    background-color: var(--tn-accent-color-dk-3);
+    background-color: var(--tn-accent-color-dk-1);
   }
   .white-theme #left-sidebar :is(.favorites, .recent) ul :is(.favorite-item, .recent-item) a:hover {
     color: var(--tn-text-color);
@@ -498,7 +514,7 @@
     border-right: transparent;
     border-bottom: transparent;
     border-left: transparent;
-    background-color: var(--tn-accent-color-dk-3);
+    background-color: var(--tn-accent-color-dk-1);
   }
   .white-theme .left-sidebar-inner .favorites .page-icon, .left-sidebar-inner .recent .page-icon {
     color: var(--tn-text-color);
