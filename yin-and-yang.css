@@ -439,7 +439,7 @@
   
   /* ==== LEFT SIDEBAR ==== */
   .dark-theme :is(#left-sidebar) :is(.menu-link, .dropdown-wrapper) {
-    background-color: var(--tn-text-color);
+    background-color: var(--tn-text-color) !important;
     color: var(--tn-bg-color);
   }
   .dark-theme :is(#left-sidebar) div.relative a:hover {
@@ -450,43 +450,16 @@
     background-color: var(--tn-bg-color-lg-shade-2);
   }
   .dark-theme :is(.left-sidebar-inner) a.item:hover {
-    background-color: var(--tn-accent-color-dk-1);
+    background-color: var(--tn-bg-color-lg-shade-1);
+    color: var(--tn-accent-color-dk-1);
   }
   .dark-theme #left-sidebar :is(.favorites, .recent) ul :is(.favorite-item, .recent-item) a:hover {
-    color: var(--tn-text-color);
+    color: var(--tn-accent-color-dk-1);
     border-top: transparent;
     border-right: transparent;
     border-bottom: transparent;
     border-left: transparent;
-    background-color: var(--tn-accent-color-dk-1);
-  }
-  .dark-theme .left-sidebar-inner .favorites .page-icon, .left-sidebar-inner .recent .page-icon {
-    color: var(--tn-text-color);
-  }
-  .dark-theme :is(.left-sidebar-inner) .nav-content-item>.header:hover {
-    background-color: transparent;
-  }
-    .dark-theme :is(#left-sidebar) :is(.menu-link, .dropdown-wrapper) {
-    background-color: var(--tn-text-color);
-    color: var(--tn-bg-color);
-  }
-  .dark-theme :is(#left-sidebar) div.relative a:hover {
-    background-color: var(--tn-accent-color-dk-1);
-    color: var(--tn-text-color);
-  }
-  .dark-theme :is(.left-sidebar-inner) {
-    background-color: var(--tn-bg-color-lg-shade-2);
-  }
-  .dark-theme :is(.left-sidebar-inner) a.item:hover {
-    background-color: var(--tn-accent-color-dk-1);
-  }
-  .dark-theme #left-sidebar :is(.favorites, .recent) ul :is(.favorite-item, .recent-item) a:hover {
-    color: var(--tn-text-color);
-    border-top: transparent;
-    border-right: transparent;
-    border-bottom: transparent;
-    border-left: transparent;
-    background-color: var(--tn-accent-color-dk-1);
+    background-color: var(--tn-bg-color-lg-shade-1);
   }
   .dark-theme .left-sidebar-inner .favorites .page-icon, .left-sidebar-inner .recent .page-icon {
     color: var(--tn-text-color);
@@ -495,7 +468,7 @@
     background-color: transparent;
   }
   .white-theme :is(#left-sidebar) :is(.menu-link, .dropdown-wrapper) {
-    background-color: var(--tn-text-color);
+    background-color: var(--tn-text-color) !important;
     color: var(--tn-bg-color);
   }
   .white-theme :is(#left-sidebar) div.relative a:hover {
