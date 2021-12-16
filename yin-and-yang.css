@@ -1,4 +1,8 @@
 /*@import './core.css';*/
+:root {
+  --ls-main-content-max-width: 1000px;
+  --ts-mono-font: "SF Mono",MonoLisa,'Fira Code',Monaco,Menlo,Consolas,'COURIER NEW',monospace;
+}
 
 .white-theme, html[data-theme=light] {
     --tn-bg-color: #fcfdfd;
@@ -64,8 +68,8 @@
   :is(.asset-ref.is-pdf) {
     color: var(--tn-blue);
   }
-  // FIXME: Page references are missing dark vs white colors
-  // TODO: Should we adjust page-ref color for dark theme to a lighter color? YES
+  /* // FIXME: Page references are missing dark vs white colors */
+  /* // TODO: Should we adjust page-ref color for dark theme to a lighter color? YES */
   .page-ref:hover {
     background-color: transparent !important;
   }
@@ -78,17 +82,27 @@
   :is(#main-content-container, #right-sidebar, .tippy-tooltip) .page-ref:hover {
     color: var(--tn-accent-color-dk-3) !important;
   }
+  .block-ref {
+    color: currentColor;
+    border-bottom: 0px solid;
+  }
+  :is(#main-content-container, #right-sidebar, .tippy-tooltip-content) .block-ref {
+    color: var(--tn-text-color);
+    border-bottom: 0px solid;
+    text-decoration: underline;
+    text-decoration-thickness: 0px;
+    text-decoration-style: dashed;
+    text-underline-offset: 4px;
+    text-decoration-color: var(--tn-text-color);
+  }
+  :is(#main-content-container, #right-sidebar, .tippy-tooltip-content) .block-ref:hover {
+    color: var(--tn-blue);
+  }
   :is(#main-content-container, #right-sidebar, .tippy-tooltip) .color-level .page-ref {
     color: var(--tn-accent-color-dk-1) !important;
   }
   :is(#main-content-container, #right-sidebar, .tippy-tooltip) .color-level .page-ref:hover {
     color: var(--tn-accent-color-dk-3) !important;
-  }
-  :is(#main-content-container, #right-sidebar, .tippy-tooltip) .block-ref {
-    color: var(--tn-accent-color-dk-3);
-  }
-  :is(#main-content-container, #right-sidebar, .tippy-tooltip) .block-ref:hover {
-    color: var(--tn-accent-color);
   }
   :is(#main-content-container, #right-sidebar, .tippy-tooltip) .tag {
     color: var(--tn-accent-color-lg-3);
@@ -111,7 +125,7 @@
   
   
   /* === MARKDOWN === */
-  // TODO: CodeMirror needs colors defined for white theme
+  /* // TODO: CodeMirror needs colors defined for white theme */
   
   .CodeMirror-lines {
     font-family: var(--ts-monospace-font);
@@ -135,34 +149,32 @@
     color: var(--tn-bg-color);
     border-left-color: var(--tn-shade-3);
   }
-  // FIXME: inline code needs better definitions for block-references and right sidebar
-  .dark-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip-content) :not(pre)>code {
-    background: var(--tn-bg-color-lg-shade-2);
-    color: var(--tn-blue);
-  }
-  // TODO: inline code is missing white theme settings
-  
   .ls-block:hover b {
     color: var(--tn-accent-color-dk-1);
   }
 
-  // FIXME: inline code inside a block reference is using the solarized BG color...
-  .block-ref {
-    color: currentColor;
-    border-bottom: 0px solid;
-  }
-  :is(#main-content-container, #right-sidebar, .tippy-tooltip-content) .block-ref {
+  html[data-theme=light] #right-sidebar :not(pre)>code {
+    background: var(--tn-bg-color-lg-shade-3);
     color: var(--tn-blue);
-    border-bottom: 0px solid;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-decoration-style: dashed;
-    text-underline-offset: 4px;
-    text-decoration-color: var(--tn-text-color);
+    font-family: var(--ts-mono-font);
   }
-  :is(#main-content-container, #right-sidebar, .tippy-tooltip-content) .block-ref:hover {
+
+  html[data-theme=light] :is(#main-content-container, .tippy-tooltip) :not(pre)>code {
     color: var(--tn-blue);
+    font-family: var(--ts-mono-font);
   }
+  html[data-theme=dark] #right-sidebar :not(pre)>code {
+    background: var(--tn-bg-color-lg-shade-3);
+    color: var(--tn-blue);
+    font-family: var(--ts-mono-font);
+  }
+  html[data-theme=dark] :is(#main-content-container, .tippy-tooltip) :not(pre)>code {
+    color: var(--tn-blue);
+    font-family: var(--ts-mono-font);
+  }
+
+  /* // FIXME: inline code inside a block reference is using the solarized BG color... */
+
   #main-content-container h1.title {
     color: var(--tn-text-color);
   }
@@ -259,7 +271,8 @@
   }
 
   /* ==== BULLETS ==== */
-  // TODO: Add different colors for all 3 areas (block-refs, right-sidebar, and right-sidebar block refs)
+  /* // TODO: Add different colors for all 3 areas (block-refs, right-sidebar, and right-sidebar block refs) */
+
   .dark-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip) .bullet-container .bullet {
     background-color: var(--tn-shade-5);
   }
@@ -348,7 +361,8 @@
   }
   
   /* ==== TIPPY ==== */
-  // FIXME: Tippy Previews for block references has the solarized BG Color that we need to fix or remove.
+  /* // FIXME: Tippy Previews for block references has the solarized BG Color that we need to fix or remove. */
+
   .dark-theme .tippy-tooltip, .tippy-wrapper {
     background-color: var(--tn-bg-color-lg-shade-2);
   }
@@ -388,7 +402,8 @@
   }
   
   /* ==== MENUS ==== */
-  // FIXME: White theme is missing some menu color definitions
+  /* // FIXME: White theme is missing some menu color definitions */
+  
   .relative .dropdown-wrapper, .relative .dropdown-wrapper .menu-link {
     background-color: var(--tn-text-color);
     color: var(--tn-bg-color);
@@ -522,7 +537,6 @@
   .white-theme :is(#right-sidebar) .color-level .color-level {
     background-color: var(--tn-bg-color-dk-shade-2);
   }
-  
   
   /* ==== SCROLLBARS ==== */
   html ::-webkit-scrollbar-thumb {
