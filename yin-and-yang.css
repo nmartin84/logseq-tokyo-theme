@@ -398,12 +398,12 @@
     color: var(--tn-text-color);
   }
   *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) button {
-    background-color: var(--tn-accent-color-dk-2);
+    background-color: var(--tn-shade-5);
   }
   
   /* ==== MENUS ==== */
   /* // FIXME: White theme is missing some menu color definitions */
-  
+
   .relative .dropdown-wrapper, .relative .dropdown-wrapper .menu-link {
     background-color: var(--tn-text-color);
     color: var(--tn-bg-color);
