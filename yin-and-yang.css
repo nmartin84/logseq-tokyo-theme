@@ -443,8 +443,8 @@
     color: var(--tn-bg-color);
   }
   .dark-theme :is(#left-sidebar) div.relative a:hover {
-    background-color: var(--tn-accent-color-dk-1);
-    color: var(--tn-text-color);
+    background-color: var(--tn-bg-color-lg-shade-1);
+    color: var(--tn-accent-color-dk-1);
   }
   .dark-theme :is(.left-sidebar-inner) {
     background-color: var(--tn-bg-color-lg-shade-2);
@@ -472,22 +472,23 @@
     color: var(--tn-bg-color);
   }
   .white-theme :is(#left-sidebar) div.relative a:hover {
-    background-color: var(--tn-accent-color-dk-1);
-    color: var(--tn-text-color);
+    background-color: var(--tn-bg-color-dk-shade-4);
+    color: var(--tn-accent-color-dk-1);
   }
   .white-theme :is(.left-sidebar-inner) {
     background-color: var(--tn-bg-color-dk-shade-2);
   }
   .white-theme :is(.left-sidebar-inner) a.item:hover {
-    background-color: var(--tn-accent-color-dk-1);
+    background-color: var(--tn-bg-color-dk-shade-4);
+    color: var(--tn-accent-color-dk-1) !important;
   }
   .white-theme #left-sidebar :is(.favorites, .recent) ul :is(.favorite-item, .recent-item) a:hover {
-    color: var(--tn-text-color);
+    background-color: var(--tn-bg-color-dk-shade-4);
     border-top: transparent;
     border-right: transparent;
     border-bottom: transparent;
     border-left: transparent;
-    background-color: var(--tn-accent-color-dk-1);
+    color: var(--tn-accent-color-dk-1) !important;
   }
   .white-theme .left-sidebar-inner .favorites .page-icon, .left-sidebar-inner .recent .page-icon {
     color: var(--tn-text-color);
