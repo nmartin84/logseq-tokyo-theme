@@ -120,6 +120,9 @@
     background: var(--tn-bg-color-lg-shade-2);
     color: var(--tn-blue);
   }
+  .ls-block:hover b, .ls-block:hover i {
+    color: var(--tn-accent-color-dk-1);
+  }
   :is(#main-content-container, #right-sidebar, .tippy-tooltip-content) .block-ref {
     color: var(--tn-blue);
     border-bottom: 0px solid;
@@ -129,7 +132,7 @@
     text-underline-offset: 4px;
     text-decoration-color: var(--tn-text-color);
   }
-  :is(#main-content-container) h1.title {
+  #main-content-container h1.title {
     color: var(--tn-text-color);
   }
   .dark-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip) .external-link {
@@ -138,11 +141,25 @@
   .dark-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip) .external-link:hover {
     color: var(--tn-accent-color-dk-1);
   }
+  .dark-theme .external-link:after {
+    font-family: 'tabler-icons';
+    content: "\ea99";
+    padding-left: 3px;
+    color: white;
+    font-size: 80%;
+  }
   .white-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip) .external-link {
     color: var(--tn-accent-color-dk-1);
   }
   .white-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip) .external-link:hover {
     color: var(--tn-accent-color);
+  }
+  .white-theme .external-link:after {
+    font-family: 'tabler-icons';
+    content: "\ea99";
+    padding-left: 3px;
+    color: black;
+    font-size: 80%;
   }
   .dark-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip) .form-checkbox {
     background-color: var(--tn-accent-color);
