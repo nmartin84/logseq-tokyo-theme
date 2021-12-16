@@ -543,7 +543,7 @@
   .dark-theme .color-level, .dark-theme .cp__right-sidebar-topbar {
     background-color: var(--tn-bg-color-lg-shade-1);
   }
-  .dark-theme #right-sidebar .references .content .color-level {
+  .dark-theme #right-sidebar .color-level .color-level {
     background-color: var(--tn-bg-color-lg-shade-2);
   }
   .white-theme .color-level, .white-theme .cp__right-sidebar-topbar {
@@ -553,7 +553,7 @@
     background-color: var(--tn-bg-color-dk-shade-1);
   }
   .white-theme :is(#right-sidebar) .color-level .color-level {
-    background-color: var(--tn-bg-color-dk-shade-2);
+    background-color: var(--tn-bg-color-dk-shade-3);
   }
   
   /* ==== SCROLLBARS ==== */
