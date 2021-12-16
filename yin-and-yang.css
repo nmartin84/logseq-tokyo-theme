@@ -125,7 +125,16 @@
   .cm-s-solarized.cm-s-dark .CodeMirror-linenumber {
     color: var(--tn-blue);
   }
-  
+  .dark-theme blockquote {
+    background-color: var(--tn-shade-5);
+    color: var(--tn-bg-color);
+    border-left-color: var(--tn-shade-3);
+  }
+  .white-theme blockquote {
+    background-color: var(--tn-shade-5);
+    color: var(--tn-bg-color);
+    border-left-color: var(--tn-shade-3);
+  }
   // FIXME: inline code needs better definitions for block-references and right sidebar
   .dark-theme :is(#main-content-container, #right-sidebar, .tippy-tooltip-content) :not(pre)>code {
     background: var(--tn-bg-color-lg-shade-2);
