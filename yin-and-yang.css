@@ -88,7 +88,7 @@
     border-bottom: 0px solid;
     text-decoration: underline;
     text-decoration-thickness: 0px;
-    text-decoration-style: dashed;
+    text-decoration-style: solid;
     text-underline-offset: 4px;
     text-decoration-color: var(--tn-text-color);
   }
@@ -630,4 +630,7 @@
   }
   .page-reference:hover {
     background: transparent !important;
+  }
+  .block-marker {
+    display: none;
   }
