@@ -157,29 +157,26 @@
     color: var(--tn-bg-color);
     border-left-color: var(--tn-shade-3);
   }
-  .ls-block:hover b {
-    color: var(--tn-accent-color-dk-1);
-  }
 
   html[data-theme=light] #right-sidebar :not(pre)>code {
-    background: var(--tn-bg-color-shade-3);
-    color: var(--tn-shade-5);
+    background: transparent;
+    color: var(--tn-blue);
     font-family: var(--ts-mono-font);
   }
 
   html[data-theme=light] :is(#main-content-container, .tippy-tooltip) :not(pre)>code {
-    background: var(--tn-bg-color-shade-1);
-    color: var(--tn-shade-3);
+    background: transparent;
+    color: var(--tn-blue);
     font-family: var(--ts-mono-font);
   }
   html[data-theme=dark] #right-sidebar :not(pre)>code {
-    background: var(--tn-bg-color-shade-3);
-    color: var(--tn-shade-5);
+    background: transparent;
+    color: var(--tn-blue);
     font-family: var(--ts-mono-font);
   }
   html[data-theme=dark] :is(#main-content-container, .tippy-tooltip) :not(pre)>code {
-    background: var(--tn-bg-color-shade-3);
-    color: var(--tn-shade-3);
+    background: transparent;
+    color: var(--tn-blue);
     font-family: var(--ts-mono-font);
   }
 
