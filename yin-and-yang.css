@@ -472,6 +472,10 @@
   :is(#main-content-container) .absolute-modal p {
     color: var(--tn-bg-color);
   }
+  #ui__ac.black {
+    background-color: var(--tn-text-color);
+    color: var(--tn-bg-color);
+  }
   
   /* ==== Modal Panel ==== */
   
@@ -553,13 +557,13 @@
   }
   
   /* ==== RIGHT SIDEBAR ==== */
-  .dark-theme .color-level, .dark-theme .cp__right-sidebar-topbar {
+  .dark-theme .color-level, .dark-theme .cp__right-sidebar-topbar, .dark-theme div#right-sidebar {
     background-color: var(--tn-bg-color-shade-1);
   }
   .dark-theme #right-sidebar .color-level .color-level {
     background-color: var(--tn-bg-color-shade-2);
   }
-  .white-theme .color-level, .white-theme .cp__right-sidebar-topbar {
+  .white-theme .color-level, .white-theme .cp__right-sidebar-topbar, .white-theme div#right-sidebar {
     background-color: var(--tn-bg-color-shade-1);
   }
   .white-theme :is(#right-sidebar) .color-level {
