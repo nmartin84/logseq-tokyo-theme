@@ -182,9 +182,13 @@
   mark {
     background-color: #feace5;
   }
-  .dark-theme .block-body {
-    background-color: var(--tn-accent-color-lg-1);
-    color: var(--tn-bg-color);
+  .dark-theme .pre-wrap-white-space {
+    background-color: var(--tn-shade-8);
+    color: var(--tn-text-color);
+  }
+  .white-theme .pre-wrap-white-space {
+    background-color: var(--tn-shade-8);
+    color: var(--tn-text-color);
   }
 
   /* // FIXME: inline code inside a block reference is using the solarized BG color... */
