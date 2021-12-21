@@ -347,22 +347,44 @@
     background-color: var(--tn-bg-color-shade-2);
   }
   .dark-theme .page-properties {
-    background-color: var(--tn-bg-color-shade-1);
+    background-color: var(--tn-shade-1) !important;
+    color: var(--tn-bg-color);
+    border-radius: 4px;
+    display: block !important;
   }
   .white-theme .page-properties {
-    background-color: var(--tn-bg-color-shade-1);
+    background-color: var(--tn-shade-1) !important;
+    color: var(--tn-bg-color);
+    border-radius: 4px;
+    display: block !important;
   }
   .dark-theme .block-properties {
-    background-color: var(--tn-bg-color-shade-1);
+    background-color: var(--tn-shade-1);
+    color: var(--tn-bg-color);
+    border-radius: 4px;
+    display: inline-block;
   }
   .white-theme .block-properties {
-    background-color: var(--tn-bg-color-shade-1);
+    background-color: var(--tn-shade-1);
+    color: var(--tn-bg-color);
+    border-radius: 4px;
+    display: inline-block;
   }
   .dark-theme .color-level .block-properties {
-    background-color: var(--tn-bg-color-shade-2);
+    background-color: var(--tn-shade-1);
+    color: var(--tn-bg-color);
   }
   .white-theme .color-level .block-properties {
-    background-color: var(--tn-bg-color-shade-3);
+    background-color: var(--tn-shade-1);
+    color: var(--tn-bg-color);
+  }
+  .dark-theme .page-property-key {
+    color: var(--tn-bg-color);
+    font-weight: 700 !important;
+  }
+  .white-theme .page-property-key {
+    color: var(--tn-bg-color);
+    font-weight: 700 !important;
   }
   .dark-theme .ti-circle-plus {
     color: var(--tn-blue);
