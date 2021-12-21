@@ -386,6 +386,9 @@
     color: var(--tn-bg-color);
     font-weight: 700 !important;
   }
+  .page-properties a {
+    color: var(--tn-blue);
+  }
   .dark-theme .ti-circle-plus {
     color: var(--tn-blue);
     font-weight: 500;
