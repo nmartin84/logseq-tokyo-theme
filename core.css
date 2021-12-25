@@ -469,11 +469,7 @@ mark.pink {
 /* === Guidelines === */
 
 .block-children {
-    border-left: 1px solid var(--cd-active-color);
-}
-
-.block-children:not(:focus-within) {
-    border-left: 1px solid var(--cd-active-color);
+    border-left: 2px solid var(--ts-guideline-color);
 }
 
 /* ==== Fonts ==== */
@@ -750,6 +746,10 @@ figcaption {
 }
 
 /* === CODE MIRROR === */
+
+.CodeMirror.cm-s-solarized.cm-s-white, .CodeMirror.cm-s-solarized.cm-s-dark {
+    background-color: var(--cd-codemirror-bg-color);
+}
 
 .CodeMirror-lines {
     font-family: var(--ts-monospace-font);
