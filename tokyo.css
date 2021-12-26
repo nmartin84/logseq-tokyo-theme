@@ -49,7 +49,7 @@ html[data-theme='dark'] {
   --ls-tag-text-hover-color: var(--cd-blue-4);
   --ls-slide-background-color: var(--ls-primary-background-color);
   --ls-block-bullet-border-color: var(--bg-lg-2);
-  --ls-block-bullet-color: var(--ls-primary-text-color);
+  --ls-block-bullet-color: var(--cd-orange-1);
   --ls-block-highlight-color: var(--bg-lg-3);
   --ls-selection-background-color: var(--cd-blue-4);
   --ls-page-checkbox-color: var(--cd-green-2);
@@ -127,7 +127,7 @@ html[data-theme='light'] {
   --ls-tag-text-hover-color: var(--cd-blue-4);
   --ls-slide-background-color: var(--ls-primary-background-color);
   --ls-block-bullet-border-color: var(--bg-dk-3);
-  --ls-block-bullet-color: var(--ls-primary-text-color);
+  --ls-block-bullet-color: var(--cd-orange-1);
   --ls-block-highlight-color: var(--bg-lg-3);
   --ls-selection-background-color: var(--cd-blue-4);
   --ls-page-checkbox-color: var(--cd-green-1);
