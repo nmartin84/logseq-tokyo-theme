@@ -63,7 +63,7 @@ html[data-theme='dark'] {
   --ls-page-blockquote-color: var(--ls-primary-text-color);
   --ls-page-blockquote-bg-color: var(--ls-secondary-background-color);
   --ls-page-blockquote-border-color: var(--ls-border-color);
-  --ls-page-inline-code-color: var(--cd-dark-sea-green);
+  --ls-page-inline-code-color: var(--cd-dark-sky-blue);
   --ls-page-inline-code-bg-color: var(--bg-dk-3);
   --ls-scrollbar-foreground-color: var(--cd-opal);
   --ls-scrollbar-background-color: var(--bg-dk-3);
@@ -213,4 +213,10 @@ mark {
 
 html[data-theme=light] .cp__right-sidebar :not(pre)>code, html[data-theme=dark] .cp__right-sidebar :not(pre)>code {
   background-color: var(--ls-right-sidebar-code-bg-color);
+}
+
+.block-ref {
+  border-bottom: 0px solid;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
