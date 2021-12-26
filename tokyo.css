@@ -155,7 +155,7 @@ html[data-theme='light'] {
 }
 
 .bg-indigo-600 {
-  background-color: var(--cd-blue-3);
+  background-color: var(--cd-blue-2);
 }
 
 .dark-theme .CodeMirror.cm-s-solarized.cm-s-dark {
