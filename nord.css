@@ -42,7 +42,7 @@ html[data-theme='dark'] {
   --ls-mark-color: var(--bg-color);
   --ls-border-color: var(--cd-blue-2);
   --ls-secondary-border-color: #126277;
-  --ls-guideline-color: var(--cd-blue-1-4);
+  --ls-guideline-color: var(--cd-blue-2);
   --ls-menu-hover-color: var(--ls-secondary-background-color);
   --ls-primary-text-color: #ECEFF4;
   --ls-secondary-text-color: #ECEFF4;
@@ -58,7 +58,7 @@ html[data-theme='dark'] {
   --ls-block-bullet-color: var(--cd-blue-1-4);
   --ls-block-highlight-color: var(--bg-lg-3);
   --ls-selection-background-color: var(--cd-pink-1);
-  --ls-page-checkbox-color: var(--cd-blue-3);
+  --ls-page-checkbox-color: var(--cd-blue-2);
   --ls-page-checkbox-border-color: var(--ls-primary-background-color);
   --ls-page-blockquote-color: var(--ls-primary-text-color);
   --ls-page-blockquote-bg-color: var(--ls-secondary-background-color);
@@ -126,7 +126,7 @@ html[data-theme='light'] {
   --ls-mark-color: var(--bg-color);
   --ls-border-color: var(--cd-blue-2);
   --ls-secondary-border-color: #126277;
-  --ls-guideline-color: var(--cd-blue-3);
+  --ls-guideline-color: var(--cd-blue-2);
   --ls-menu-hover-color: var(--ls-secondary-background-color);
   --ls-primary-text-color: #3B4252;
   --ls-secondary-text-color: #3B4252;
