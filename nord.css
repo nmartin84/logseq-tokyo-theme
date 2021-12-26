@@ -58,7 +58,7 @@ html[data-theme='dark'] {
   --ls-block-bullet-color: hsl(220, 16%, 36%);
   --ls-block-highlight-color: var(--bg-lg-3);
   --ls-selection-background-color: var(--cd-opera-mauve);
-  --ls-page-checkbox-color: var(--cd-opera-mauve);
+  --ls-page-checkbox-color: var(--cd-dark-sky-blue);
   --ls-page-checkbox-border-color: var(--ls-primary-background-color);
   --ls-page-blockquote-color: var(--ls-primary-text-color);
   --ls-page-blockquote-bg-color: var(--ls-secondary-background-color);
@@ -219,4 +219,13 @@ html[data-theme=light] .cp__right-sidebar :not(pre)>code, html[data-theme=dark] 
   border-bottom: 0px solid;
   text-decoration: underline;
   text-underline-offset: 4px;
+  text-decoration-thickness: 0.5px;
+}
+
+.editor-inner .uniline-block:is(.h1,.h2), .ls-block :is(h1,h2) {
+  border-bottom: 0px solid !important;
+}
+
+.block-marker {
+  color: var(--ls-page-checkbox-color);
 }
