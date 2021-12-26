@@ -122,7 +122,7 @@ html[data-theme='light'] {
   --ls-link-text-color: var(--cd-green-2);
   --ls-link-text-hover-color: var(--cd-green-1);
   --ls-link-ref-text-color: var(--cd-blue-2);
-  --ls-link-ref-text-hover-color: var(--cd-blue-4);
+  --ls-link-ref-text-hover-color: var(--cd-green-1);
   --ls-tag-text-color: var(--cd-blue-2);
   --ls-tag-text-hover-color: var(--cd-blue-4);
   --ls-slide-background-color: var(--ls-primary-background-color);
