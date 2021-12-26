@@ -233,3 +233,7 @@ html[data-theme=light] .cp__right-sidebar :not(pre)>code, html[data-theme=dark] 
   color: var(--ls-primary-text-color);
   font-size: 80%;
 }
+
+.block-children {
+    border-left: 1.4px solid;
+  }
