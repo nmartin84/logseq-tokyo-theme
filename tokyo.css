@@ -135,7 +135,7 @@ html[data-theme='light'] {
   --ls-page-blockquote-color: var(--ls-primary-text-color);
   --ls-page-blockquote-bg-color: var(--ls-secondary-background-color);
   --ls-page-blockquote-border-color: var(--ls-border-color);
-  --ls-page-inline-code-color: var(--cd-green-1);
+  --ls-page-inline-code-color: var(--cd-blue-2);
   --ls-page-inline-code-bg-color: var(--bg-dk-2);
   --ls-scrollbar-foreground-color: var(--cd-blue-2);
   --ls-scrollbar-background-color: var(--bg-dk-3);
