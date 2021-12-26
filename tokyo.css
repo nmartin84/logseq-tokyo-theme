@@ -51,7 +51,7 @@ html[data-theme='dark'] {
   --ls-block-bullet-border-color: var(--bg-lg-2);
   --ls-block-bullet-color: var(--cd-orange-1);
   --ls-block-highlight-color: var(--bg-lg-3);
-  --ls-selection-background-color: var(--cd-blue-4);
+  --ls-selection-background-color: var(--cd-orange-1);
   --ls-page-checkbox-color: var(--cd-green-2);
   --ls-page-checkbox-border-color: var(--ls-primary-background-color);
   --ls-page-blockquote-color: var(--ls-primary-text-color);
@@ -129,7 +129,7 @@ html[data-theme='light'] {
   --ls-block-bullet-border-color: var(--bg-dk-3);
   --ls-block-bullet-color: var(--cd-orange-1);
   --ls-block-highlight-color: var(--bg-lg-3);
-  --ls-selection-background-color: var(--cd-blue-4);
+  --ls-selection-background-color: var(--cd-orange-1);
   --ls-page-checkbox-color: var(--cd-green-1);
   --ls-page-checkbox-border-color: var(--ls-primary-background-color);
   --ls-page-blockquote-color: var(--ls-primary-text-color);
