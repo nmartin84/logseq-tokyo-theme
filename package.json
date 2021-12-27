@@ -12,12 +12,6 @@
         "mode": "dark"
       },
       {
-        "name": "Solarized",
-        "url": "./solarized.css",
-        "description": "Solarized 🌞",
-        "mode": "dark"
-      },
-      {
         "name": "Ayu",
         "url": "./ayu.css",
         "description": "Ayu 😻",
@@ -39,12 +33,6 @@
         "name": "Night Owl",
         "url": "./nightowl.css",
         "description": "Nightowl 🦉",
-        "mode": "dark"
-      },
-      {
-        "name": "Nord",
-        "url": "./nord.css",
-        "description": "Nord 🧔",
         "mode": "dark"
       },
       {
