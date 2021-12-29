@@ -234,9 +234,6 @@ html[data-theme=light] .cp__right-sidebar :not(pre)>code, html[data-theme=dark] 
   font-size: 80%;
 }
 
-.block-children {
-    border-left: 1.4px solid;
-    border-left-color: var(--ls-guideline-color);
-    position: relative;
-    right: -0.4px;
+.block-children-left-border:hover {
+  background-color: var(--ls-guideline-color);
 }
