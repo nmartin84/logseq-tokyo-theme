@@ -1,16 +1,16 @@
 .dark-theme,
 html[data-theme='dark'] {
-  --bg-color: #282c34;
-  --bg-color-1: #2f333d;
-  --bg-color-2: #353b45;
-  --bg-color-3: #3c424e;
-  --bg-color-4: #434956;;
-  --bg-color-5: #49515f;;
-  --bg-color-6: #505868;;
-  --cd-inactive-color: #646d82;
-  --cd-active-color: #E06C75;
-  --cd-accent-color: #4FAFEF;
-  --cd-alternate-color: #C678DD;
+  --bg-color: hsl(193, 100%, 7%);
+  --bg-color-1: hsl(193, 100%, 10%);
+  --bg-color-2: hsl(193, 100%, 13%);
+  --bg-color-3: hsl(193, 100%, 16%);
+  --bg-color-4: hsl(193, 100%, 19%);
+  --bg-color-5: hsl(193, 100%, 22%);
+  --bg-color-6: hsl(193, 100%, 25%);
+  --cd-inactive-color: hsl(193, 100%, 35%);
+  --cd-active-color: #268BD2;
+  --cd-accent-color: #859900;
+  --cd-alternate-color: #2aa198;
   --ls-primary-background-color: var(--bg-color);
   --ls-secondary-background-color: var(--bg-color-1);
   --ls-tertiary-background-color: var(--bg-color-2);
@@ -26,10 +26,10 @@ html[data-theme='dark'] {
   --ls-mark-color: var(--cd-active-color);
   --ls-border-color: var(--cd-accent-color);
   --ls-secondary-border-color: var(--cd-alternate-color);
-  --ls-guideline-color: var(--cd-inactive-color);
+  --ls-guideline-color: var(--ls-secondary-text-color);
   --ls-menu-hover-color: var(--ls-secondary-background-color);
-  --ls-primary-text-color: #ABB2BF;
-  --ls-secondary-text-color: #979da8;
+  --ls-primary-text-color: #839496;
+  --ls-secondary-text-color: #30555c;
   --ls-title-text-color: var(--ls-primary-text-color);
   --ls-link-text-color: var(--ls-secondary-text-color);
   --ls-link-text-hover-color: var(--cd-alternate-color);
@@ -68,17 +68,17 @@ html[data-theme='dark'] {
 
 .white-theme,
 html[data-theme='light'] {
-  --bg-color: #fafafa;
-  --bg-color-1: hsl(0, 0%, 96%);
-  --bg-color-2: hsl(0, 0%, 94%);
-  --bg-color-3: hsl(0, 0%, 92%);
-  --bg-color-4: hsl(0, 0%, 90%);
-  --bg-color-5: hsl(0, 0%, 88%);
-  --bg-color-6: hsl(0, 0%, 86%);
-  --cd-inactive-color: hsl(0, 0%, 75%);
-  --cd-active-color: #E06C75;
-  --cd-accent-color: #4FAFEF;
-  --cd-alternate-color: #C678DD;
+  --bg-color: hsl(44, 87%, 92%);
+  --bg-color-1: hsl(44, 87%, 90%);
+  --bg-color-2: hsl(44, 87%, 88%);
+  --bg-color-3: hsl(44, 87%, 86%);
+  --bg-color-4: hsl(44, 87%, 84%);
+  --bg-color-5: hsl(44, 87%, 82%);
+  --bg-color-6: hsl(44, 87%, 80%);
+  --cd-inactive-color: hsl(44, 87%, 70%);
+  --cd-active-color: #206ea5;
+  --cd-accent-color: #778902;
+  --cd-alternate-color: #238b83;
   --ls-primary-background-color: var(--bg-color);
   --ls-secondary-background-color: var(--bg-color-1);
   --ls-tertiary-background-color: var(--bg-color-2);
@@ -94,10 +94,10 @@ html[data-theme='light'] {
   --ls-mark-color: var(--cd-active-color);
   --ls-border-color: var(--cd-accent-color);
   --ls-secondary-border-color: var(--cd-alternate-color);
-  --ls-guideline-color: var(--cd-inactive-color);
+  --ls-guideline-color: var(--ls-secondary-text-color);
   --ls-menu-hover-color: var(--ls-secondary-background-color);
-  --ls-primary-text-color: #383a42;
-  --ls-secondary-text-color: #5a5d69;
+  --ls-primary-text-color: #556B72;
+  --ls-secondary-text-color: #7b8c93;
   --ls-title-text-color: var(--ls-primary-text-color);
   --ls-link-text-color: var(--ls-secondary-text-color);
   --ls-link-text-hover-color: var(--cd-alternate-color);
@@ -212,7 +212,7 @@ mark {
 }
 
 .block-marker {
-  color: var(--cd-accent-color) !important;
+  color: var(--cd-alternate-color) !important;
   opacity: 0.7;
   font-weight: 700 !important;
 }
@@ -316,14 +316,14 @@ html[data-theme=light] .cp__right-sidebar .block-content {
   color: var(--ls-primary-text-color);
 }
 .dark-theme .block-parents a {
-  color: var(--cd-inactive-color) !important;
+  color: var(--ls-secondary-text-color) !important;
   font-size: 85%;
 }
 .dark-theme .block-parents a .page-ref, .white-theme .block-parents a .page-ref {
   color: var(--ls-link-ref-text-color) !important;
 }
 .white-theme .block-parents a {
-  color: var(--cd-inactive-color) !important;
+  color: var(--ls-secondary-text-color) !important;
   font-size: 85%;
 }
 .dark-theme .block-parents a:hover, .white-theme .block-parents a:hover {
@@ -351,7 +351,7 @@ li.my-2 {
 
 .form-checkbox {
   border: 0px solid !important;
-  background-color: var(--cd-accent-color) !important;
+  background-color: var(--cd-alternate-color) !important;
   opacity: 0.4;
   border-radius: 2px;
 }

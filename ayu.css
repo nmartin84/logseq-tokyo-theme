@@ -1,16 +1,16 @@
 .dark-theme,
 html[data-theme='dark'] {
-  --bg-color: #282c34;
-  --bg-color-1: #2f333d;
-  --bg-color-2: #353b45;
-  --bg-color-3: #3c424e;
-  --bg-color-4: #434956;;
-  --bg-color-5: #49515f;;
-  --bg-color-6: #505868;;
-  --cd-inactive-color: #646d82;
-  --cd-active-color: #E06C75;
-  --cd-accent-color: #4FAFEF;
-  --cd-alternate-color: #C678DD;
+  --bg-color: hsl(222, 22%, 11%);
+  --bg-color-1: hsl(222, 22%, 14%);
+  --bg-color-2: hsl(222, 22%, 17%);
+  --bg-color-3: hsl(222, 22%, 20%);
+  --bg-color-4: hsl(222, 22%, 23%);
+  --bg-color-5: hsl(222, 22%, 26%);
+  --bg-color-6: hsl(222, 22%, 29%);
+  --cd-inactive-color: hsl(222, 22%, 40%);
+  --cd-active-color: #FFD173;
+  --cd-accent-color: #aad94c;
+  --cd-alternate-color: #73D0FF;
   --ls-primary-background-color: var(--bg-color);
   --ls-secondary-background-color: var(--bg-color-1);
   --ls-tertiary-background-color: var(--bg-color-2);
@@ -28,8 +28,8 @@ html[data-theme='dark'] {
   --ls-secondary-border-color: var(--cd-alternate-color);
   --ls-guideline-color: var(--cd-inactive-color);
   --ls-menu-hover-color: var(--ls-secondary-background-color);
-  --ls-primary-text-color: #ABB2BF;
-  --ls-secondary-text-color: #979da8;
+  --ls-primary-text-color: #C7C5BE;
+  --ls-secondary-text-color: #b3b1aa;
   --ls-title-text-color: var(--ls-primary-text-color);
   --ls-link-text-color: var(--ls-secondary-text-color);
   --ls-link-text-hover-color: var(--cd-alternate-color);
@@ -68,17 +68,17 @@ html[data-theme='dark'] {
 
 .white-theme,
 html[data-theme='light'] {
-  --bg-color: #fafafa;
-  --bg-color-1: hsl(0, 0%, 96%);
-  --bg-color-2: hsl(0, 0%, 94%);
-  --bg-color-3: hsl(0, 0%, 92%);
-  --bg-color-4: hsl(0, 0%, 90%);
-  --bg-color-5: hsl(0, 0%, 88%);
-  --bg-color-6: hsl(0, 0%, 86%);
-  --cd-inactive-color: hsl(0, 0%, 75%);
-  --cd-active-color: #E06C75;
-  --cd-accent-color: #4FAFEF;
-  --cd-alternate-color: #C678DD;
+  --bg-color: hsl(210, 17%, 97%);
+  --bg-color-1: hsl(210, 17%, 94%);
+  --bg-color-2: hsl(210, 17%, 91%);
+  --bg-color-3: hsl(210, 17%, 88%);
+  --bg-color-4: hsl(210, 17%, 85%);
+  --bg-color-5: hsl(210, 17%, 82%);
+  --bg-color-6: hsl(210, 17%, 79%);
+  --cd-inactive-color: hsl(210, 17%, 65%);
+  --cd-active-color: #f3bb4c;
+  --cd-accent-color: #aad94c;
+  --cd-alternate-color: #61c6f8;
   --ls-primary-background-color: var(--bg-color);
   --ls-secondary-background-color: var(--bg-color-1);
   --ls-tertiary-background-color: var(--bg-color-2);
@@ -96,8 +96,8 @@ html[data-theme='light'] {
   --ls-secondary-border-color: var(--cd-alternate-color);
   --ls-guideline-color: var(--cd-inactive-color);
   --ls-menu-hover-color: var(--ls-secondary-background-color);
-  --ls-primary-text-color: #383a42;
-  --ls-secondary-text-color: #5a5d69;
+  --ls-primary-text-color: #5C6166;
+  --ls-secondary-text-color: #777d83;
   --ls-title-text-color: var(--ls-primary-text-color);
   --ls-link-text-color: var(--ls-secondary-text-color);
   --ls-link-text-hover-color: var(--cd-alternate-color);
@@ -212,7 +212,7 @@ mark {
 }
 
 .block-marker {
-  color: var(--cd-accent-color) !important;
+  color: var(--cd-alternate-color) !important;
   opacity: 0.7;
   font-weight: 700 !important;
 }
@@ -351,7 +351,7 @@ li.my-2 {
 
 .form-checkbox {
   border: 0px solid !important;
-  background-color: var(--cd-accent-color) !important;
+  background-color: var(--cd-alternate-color) !important;
   opacity: 0.4;
   border-radius: 2px;
 }
@@ -370,19 +370,21 @@ li.my-2 {
 
 .dark-theme .tag {
   font-size: 90% !important;
-  padding: 0px 6px;
-  color: var(--bg-color) !important;
+  padding: 0px 2px;
+  color: var(--cd-active-color) !important;
   font-weight: 600 !important;
-  background-color: var(--cd-active-color);
+  background-color: transparent;
   border-radius: 2px;
+  border: 0px solid var(--cd-active-color);
 }
 .white-theme .tag {
   font-size: 90% !important;
-  padding: 0px 6px;
-  color: var(--bg-color) !important;
+  padding: 0px 2px;
+  color: var(--cd-active-color) !important;
   font-weight: 600 !important;
-  background-color: var(--cd-active-color);
+  background-color: transparent;
   border-radius: 2px;
+  border: 0px solid var(--cd-active-color);
 }
 
 .done .tag {
@@ -390,12 +392,14 @@ li.my-2 {
 }
 
 .dark-theme .block-parents a.tag {
-  color: var(--bg-color) !important;
-  background-color: var(--cd-active-color);
+  color: var(--cd-active-color) !important;
+  background-color: transparent;
+  border: 0px solid var(--cd-active-color);
 }
 .white-theme .block-parents a.tag {
-  color: var(--bg-color) !important;
-  background-color: var(--cd-active-color);
+  color: var(--cd-active-color) !important;
+  background-color: transparent;
+  border: 0px solid var(--cd-active-color);
 }
 
 /* PDF Viewer */

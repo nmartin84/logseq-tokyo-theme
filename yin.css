@@ -1,16 +1,16 @@
 .dark-theme,
 html[data-theme='dark'] {
-  --bg-color: #282c34;
-  --bg-color-1: #2f333d;
-  --bg-color-2: #353b45;
-  --bg-color-3: #3c424e;
-  --bg-color-4: #434956;;
-  --bg-color-5: #49515f;;
-  --bg-color-6: #505868;;
-  --cd-inactive-color: #646d82;
-  --cd-active-color: #E06C75;
-  --cd-accent-color: #4FAFEF;
-  --cd-alternate-color: #C678DD;
+  --bg-color: hsl(210, 23%, 5%);
+  --bg-color-1: hsl(210, 23%, 8%);
+  --bg-color-2: hsl(210, 23%, 11%);
+  --bg-color-3: hsl(210, 23%, 14%);
+  --bg-color-4: hsl(210, 23%, 17%);
+  --bg-color-5: hsl(210, 23%, 20%);
+  --bg-color-6: hsl(210, 23%, 23%);
+  --cd-inactive-color: hsl(210, 23%, 35%);
+  --cd-active-color: #ffc2ee;
+  --cd-accent-color: #C5E478;
+  --cd-alternate-color: #74B6FF;
   --ls-primary-background-color: var(--bg-color);
   --ls-secondary-background-color: var(--bg-color-1);
   --ls-tertiary-background-color: var(--bg-color-2);
@@ -28,8 +28,8 @@ html[data-theme='dark'] {
   --ls-secondary-border-color: var(--cd-alternate-color);
   --ls-guideline-color: var(--cd-inactive-color);
   --ls-menu-hover-color: var(--ls-secondary-background-color);
-  --ls-primary-text-color: #ABB2BF;
-  --ls-secondary-text-color: #979da8;
+  --ls-primary-text-color: #dbe1e6;
+  --ls-secondary-text-color: #c2c7cc;
   --ls-title-text-color: var(--ls-primary-text-color);
   --ls-link-text-color: var(--ls-secondary-text-color);
   --ls-link-text-hover-color: var(--cd-alternate-color);
@@ -68,17 +68,17 @@ html[data-theme='dark'] {
 
 .white-theme,
 html[data-theme='light'] {
-  --bg-color: #fafafa;
-  --bg-color-1: hsl(0, 0%, 96%);
-  --bg-color-2: hsl(0, 0%, 94%);
-  --bg-color-3: hsl(0, 0%, 92%);
-  --bg-color-4: hsl(0, 0%, 90%);
-  --bg-color-5: hsl(0, 0%, 88%);
-  --bg-color-6: hsl(0, 0%, 86%);
-  --cd-inactive-color: hsl(0, 0%, 75%);
-  --cd-active-color: #E06C75;
-  --cd-accent-color: #4FAFEF;
-  --cd-alternate-color: #C678DD;
+  --bg-color: hsl(180, 20%, 99%);
+  --bg-color-1: hsl(180, 20%, 96%);
+  --bg-color-2: hsl(180, 20%, 93%);
+  --bg-color-3: hsl(180, 20%, 90%);
+  --bg-color-4: hsl(180, 20%, 87%);
+  --bg-color-5: hsl(180, 20%, 84%);
+  --bg-color-6: hsl(180, 20%, 81%);
+  --cd-inactive-color: hsl(180, 20%, 65%);
+  --cd-active-color: #FF82DB;
+  --cd-accent-color: #a3c355;
+  --cd-alternate-color: #74B6FF;
   --ls-primary-background-color: var(--bg-color);
   --ls-secondary-background-color: var(--bg-color-1);
   --ls-tertiary-background-color: var(--bg-color-2);
@@ -96,8 +96,8 @@ html[data-theme='light'] {
   --ls-secondary-border-color: var(--cd-alternate-color);
   --ls-guideline-color: var(--cd-inactive-color);
   --ls-menu-hover-color: var(--ls-secondary-background-color);
-  --ls-primary-text-color: #383a42;
-  --ls-secondary-text-color: #5a5d69;
+  --ls-primary-text-color: #1d282f;
+  --ls-secondary-text-color: #334652;
   --ls-title-text-color: var(--ls-primary-text-color);
   --ls-link-text-color: var(--ls-secondary-text-color);
   --ls-link-text-hover-color: var(--cd-alternate-color);
@@ -212,7 +212,7 @@ mark {
 }
 
 .block-marker {
-  color: var(--cd-accent-color) !important;
+  color: var(--cd-alternate-color) !important;
   opacity: 0.7;
   font-weight: 700 !important;
 }
@@ -351,7 +351,7 @@ li.my-2 {
 
 .form-checkbox {
   border: 0px solid !important;
-  background-color: var(--cd-accent-color) !important;
+  background-color: var(--cd-alternate-color) !important;
   opacity: 0.4;
   border-radius: 2px;
 }

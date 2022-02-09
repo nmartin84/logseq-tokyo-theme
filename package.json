@@ -1,47 +1,53 @@
 {
-  "name": "Tokyo Themes",
+  "name": "Logseq One",
   "author": "nmartin84",
-  "version": "0.1.3",
-  "description": "Port of the Obsidian MD theme Tokyo Night",
+  "version": "0.1.0",
+  "description": "The one dark theme for logseq",
   "logseq": {
     "themes": [
       {
-        "name": "Tokyo Night",
-        "url": "./tokyo.css",
-        "description": "Tokyo Night 🏙️",
-        "mode": "dark"
-      },
-      {
-        "name": "Ayu",
-        "url": "./ayu.css",
-        "description": "Ayu 😻",
-        "mode": "dark"
-      },
-      {
         "name": "One",
         "url": "./one.css",
-        "description": "One 🌑",
+        "description": "A dark theme focused around the one.",
+        "mode": "dark"
+      },
+      {
+        "name": "Tokyo",
+        "url": "./tokyo.css",
+        "description": "Tokyo night",
+        "mode": "dark"
+      },
+      {
+        "name": "Solarized",
+        "url": "./solarized.css",
+        "description": "Solarized Theme",
         "mode": "dark"
       },
       {
         "name": "Gruvbox",
         "url": "./gruvbox.css",
-        "description": "Gruvbox 🔥",
+        "description": "Gruvbox...",
         "mode": "dark"
       },
       {
-        "name": "Night Owl",
+        "name": "Yin",
+        "url": "./yin.css",
+        "description": "Yin and Yang",
+        "mode": "dark"
+      },
+      {
+        "name": "Ayu",
+        "url": "./ayu.css",
+        "description": "Ayu Colors",
+        "mode": "dark"
+      },
+      {
+        "name": "Nightowl",
         "url": "./nightowl.css",
-        "description": "Nightowl 🦉",
-        "mode": "dark"
-      },
-      {
-        "name": "Yin and Yang",
-        "url": "./yin-and-yang.css",
-        "description": "Yin and Yang ☯",
+        "description": "A theme for Owls.",
         "mode": "dark"
       }
     ],
-    "id": "tokyo-night"
+    "id": "one"
   }
 }
